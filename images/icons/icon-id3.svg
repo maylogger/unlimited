@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-id3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icon-id3" sketch:type="MSArtboardGroup" fill="#FFFFFF">
+            <path d="M35.282,9 L20.826,9 C19.785,9 19,9.784 19,10.826 L19,53.227 C19,54.234 19.819,55.053 20.826,55.053 C21.798,55.053 22.651,54.201 22.651,53.227 L22.651,12.651 L35.282,12.651 C40.008,12.651 43.853,16.463 43.853,21.15 C43.853,25.877 40.008,29.721 35.282,29.721 L27.164,29.721 C26.157,29.721 25.338,30.541 25.338,31.548 C25.338,32.52 26.191,33.373 27.164,33.373 L35.282,33.373 C41.981,33.373 47.432,27.89 47.432,21.15 C47.432,14.451 41.981,9 35.282,9" id="Imported-Layers" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

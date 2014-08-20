@@ -1,0 +1,5 @@
+.hero-bigtext .hero-bigtext-inner { -ms-behavior: url(../vender/backgroundsize.min.htc); }
+.hero-bigtext .hero-unlimited { -ms-behavior: url(../vender/backgroundsize.min.htc); }
+
+.kp-image { -ms-behavior: url(../vender/backgroundsize.min.htc); }
+.kp-image img { max-height: 482px; }
