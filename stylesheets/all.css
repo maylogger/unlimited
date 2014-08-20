@@ -492,7 +492,7 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 
 .xml .hljs-attribute { color: #f00; }
 
-.message-block { text-align: center; margin: 0 auto; padding-top: 48px; }
+.message-block { min-height: 600px; text-align: center; margin: 0 auto; padding-top: 48px; }
 .message-block .message-block-title { font-size: 24px; line-height: 24px; margin-bottom: 12px; color: black; }
 .message-block .message-block-text { font-size: 15px; line-height: 18px; margin-bottom: 12px; }
 .message-block .btn { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: block; border: none; background-color: #444444; color: white; font-size: 15px; line-height: 24px; width: 100%; padding: 12px; margin-bottom: 12px; -webkit-transition: background-color 0.25s; -moz-transition: background-color 0.25s; -o-transition: background-color 0.25s; transition: background-color 0.25s; }

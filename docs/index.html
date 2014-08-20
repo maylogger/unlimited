@@ -61,13 +61,10 @@
       <div class="quick-nav">
         <ul class="quick-nav-list nav">
           <li>
-            <a class="go-anchor" href="#api-ch1">Title</a>
+            <a class="go-anchor" href="#api-ch1">類別清單</a>
           </li>
           <li>
-            <a class="go-anchor" href="#api-ch2">Title</a>
-          </li>
-          <li>
-            <a class="go-anchor" href="#api-ch3">Title</a>
+            <a class="go-anchor" href="#api-ch2">類別文章清單</a>
           </li>
         </ul>
       </div>
@@ -77,173 +74,95 @@
     <div class="documention-block">
       <div class="documention-block-content">
         <h2 id="api-ch1">
-          Title
-        </h2><p>實在想不到！在閃爍地放亮。被他們欺負了，奏起悲壯的進行曲。那纔利害啦！被逐的前人之子。</p>
-
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;script&gt;
-    var force_add_url_to_readinglist = function (target_url) {
-      try {
-        var fake_element = document.createElement('a');
-        fake_element.setAttribute('href', target_url);
-        fake_element.setAttribute('style', 'display:none;');
-        // https://developer.mozilla.org/en-US/docs/Web/API/event.initMouseEvent
-        var fake_event = document.createEvent('MouseEvents');
-        fake_event.initMouseEvent('click', false, false, window, 0, 0, 0, 0, 0, false, false, true, false, 0, null);
-        fake_element.dispatchEvent(fake_event);
-      } catch ( error ) {
-        // nothing.
-      }
-    };
-    var url = 'http://google.com/?' + Math.random().toString().substr(1);
-    force_add_url_to_readinglist(url);
-  &lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1 class="title"&gt;Test: FORCE_ADD_URL_TO_READINGLIST&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
+          "類別清單 /category "
+        </h2>
+        <p>可以用來取得目前官網文章類別清單
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+              var API_SERVER = "http://api.kptaipei.tw/v1/";
+              $.get( API_SERVER + "category/?accessToken=[YOUR_API_KEY]",function(results){
+                /* sample 
+                  {
+                    "isSuccess": true,
+                    "errorCode": 0,
+                    "data": [
+                      {
+                        "name": "【柯P新政】",
+                        "id": "40"
+                      },
+                      {
+                        "name": "【真・柯文哲】",
+                        "id": "41"
+                      },
+                      {
+                        "name": "新聞稿",
+                        "id": "42"
+                      }
+                    ],
+                    "errorMessage": null
+                  }                  
+                */
+                console.log(results);
+                alert("取得 "+results.data.length+" 筆資料");
+              });
+            </script></p>
+        
         <div class="alert">
           <h4 class="alert-title">
-            也不上你的甜！
+            關於 API Key
           </h4>
           <p>
-            在閃爍地放亮。盲目地前進！本日連假第三天，這是如何地悲悽！值得說什麼爭麵皮！
+            在首頁可填寫申請 API KEY 。
           </p>
         </div>
-        <div class="alert alert-error">
-          <h4 class="alert-title">
-            再回到現實世界，這澎湃聲中，以後少喝咖啡。
-          </h4>
-          <p>
-            一顆銀亮亮的月球，也不上你的甜！地震發生時，為著前進而前進。筋肉比較的瘦弱，最適合中國人。
-          </p>
-        </div>
-        <div class="alert alert-success">
-          <h4 class="alert-title">
-            神所厭棄本無價值。
-          </h4>
-          <p>
-            胃又疼了。愈會賺錢，我不明白，就會想過去喝一杯。擋不住大的拳頭，在閃爍地放亮。
-          </p>
-        </div>
-        <pre><code class="html"><span class="label">GET</span> https://api.createsend.com/api/v3.1/lists/{listid}.{xml|json}</code></pre>
+        <pre><code class="html"><span class="label">GET</span> http://api.kptaipei.tw/v1/category/?accessToken=[YOUR_API_KEY]</code></pre>
         <h2 id="api-ch2">
-          Title
-        </h2><p>實在想不到！在閃爍地放亮。被他們欺負了，奏起悲壯的進行曲。那纔利害啦！被逐的前人之子。</p>
+          "指定類別內的文章清單 /category/[CATEGORY_ID]"
+        </h2><p>給定類別 ID (可由 /category 取得) 後，可取得該類別底下文章清單。</p>
 
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;script&gt;
-    var force_add_url_to_readinglist = function (target_url) {
-      try {
-        var fake_element = document.createElement('a');
-        fake_element.setAttribute('href', target_url);
-        fake_element.setAttribute('style', 'display:none;');
-        // https://developer.mozilla.org/en-US/docs/Web/API/event.initMouseEvent
-        var fake_event = document.createEvent('MouseEvents');
-        fake_event.initMouseEvent('click', false, false, window, 0, 0, 0, 0, 0, false, false, true, false, 0, null);
-        fake_element.dispatchEvent(fake_event);
-      } catch ( error ) {
-        // nothing.
-      }
-    };
-    var url = 'http://google.com/?' + Math.random().toString().substr(1);
-    force_add_url_to_readinglist(url);
-  &lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1 class="title"&gt;Test: FORCE_ADD_URL_TO_READINGLIST&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<pre><code>&lt;script src="http://code.jquery.com/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  var API_SERVER = "http://api.kptaipei.tw/v1/";
+  $.get( API_SERVER + "category/40?accessToken=[YOUR_API_KEY]",function(results){
+    /* sample 
+      {
+        "isSuccess": true,
+        "errorCode": 0,
+        "data": [
+          {
+            "id": "3096",
+            "title": "參觀動漫展",
+            "content": "&lt;p style=\"text-align: center;\"&gt;到了動漫展覧場，心境突然回到小時候。我小學時看的漫畫是劉興欽的《阿金與機器人》、《阿三哥與大嬸婆》，國中、高中時看的是《好小子》、《老夫子》。最近幾年，因為工作忙，只看過《醫龍》。我太太喜歡看《柯南》的卡通影集，連帶的買了一整套的漫畫本，還推拖是女兒要看的，其實是她自己在看。&lt;/p&gt;\n&lt;p style=\"text-align: center;\"&gt;在會場，可用人山人海來形容，聽說五天的展期，湧入了45萬人。 看來台北市可以思考設立動漫博物館，作為產業長期發展的基地，也應該多用心支持本土的漫畫家與相關產業。&lt;/p&gt;\n &lt;p style=\"text-align: center;\"&gt;&lt;a href=\"../wp-content/uploads/2014/08/10551450_504780596290592_5255465964361619470_o.jpg\"&gt; img class=\"alignnone size-portfolio-masonry wp-image-3099\"src=\"../wp-content/uploads/2014/08/10551450_504780596290592_5255465964361619470_o-650x433.jpg\"alt=\"10551450_504780596290592_5255465964361619470_o\" width=\"650\" height=\"433\"&gt;&lt;/a&gt;&lt;/p&gt;\n&lt;p style=\"text-align: center;\"&gt; &lt;a href=\"../wp-content/uploads/2014/08/10493078_504780662957252_7554465062543713990_o.jpg\"&gt;&lt;img class=\"alignnone size-portfolio-masonry wp-image-3098\" src=\"../wp-content/uploads/2014/08/10493078_504780662957252_7554465062543713990_o-650x544.jpg\" alt=\"10493078_504780662957252_7554465062543713990_o\" width=\"650\" height=\"544\"&gt;&lt;/a&gt;&lt;/p&gt;\n&lt;p style=\"text-align: center;\"&gt;&lt;a href=\"../wp-content/uploads/2014/08/10599292_504780556290596_6728966966508602911_n1.jpg\"&gt;&lt;img class=\"alignnone size-portfolio-masonry wp-image-3100\" src=\"../wp-content/uploads/2014/08/10599292_504780556290596_6728966966508602911_n1-650x650.jpg\" alt=\"10599292_504780556290596_6728966966508602911_n\" width=\"650\" height=\"650\"&gt;&lt;/a&gt;&lt;/p&gt;\n&lt;p style=\"text-align: center;\"&gt;&lt;a href=\"../wp-content/uploads/2014/08/10609646_504780559623929_3435702574693021991_n1.jpg\"&gt;&lt;img class=\"alignnone size-portfolio-masonry wp-image-3101\" src=\"../wp-content/uploads/2014/08/10609646_504780559623929_3435702574693021991_n1-650x650.jpg\" alt=\"10609646_504780559623929_3435702574693021991_n\" width=\"650\" height=\"650\"&gt;&lt;/a&gt;&lt;/p&gt;\n&lt;p style=\"text-align: center;\"&gt;&amp;nbsp;&lt;/p&gt;",
+            "post_date": "2014-08-19 11:00:10",
+            "author": "柯文哲",
+            "last_modify": "2014-08-19 11:00:10",
+            "url": "http://kptaipei.tw/?page_id=3096",
+            "category_name": "【真・柯文哲】",
+            "category_id": "41"
+          },
+
+        ],
+        "errorMessage": null
+      }  
+    */
+    console.log(results);
+    alert("取得 "+results.data.length+" 筆資料");
+  });
+&lt;/script&gt;
 </code></pre>
 
         <div class="alert">
           <h4 class="alert-title">
-            也不上你的甜！
+            參數
           </h4>
           <p>
-            在閃爍地放亮。盲目地前進！本日連假第三天，這是如何地悲悽！值得說什麼爭麵皮！
+            GET page=? 第幾頁(optional,default:0)
           </p>
-        </div>
-        <div class="alert alert-error">
-          <h4 class="alert-title">
-            再回到現實世界，這澎湃聲中，以後少喝咖啡。
-          </h4>
           <p>
-            一顆銀亮亮的月球，也不上你的甜！地震發生時，為著前進而前進。筋肉比較的瘦弱，最適合中國人。
+            GET page_size=? 一次顯示幾筆(optional,default:100)
           </p>
         </div>
-        <div class="alert alert-success">
-          <h4 class="alert-title">
-            神所厭棄本無價值。
-          </h4>
-          <p>
-            胃又疼了。愈會賺錢，我不明白，就會想過去喝一杯。擋不住大的拳頭，在閃爍地放亮。
-          </p>
-        </div>
-        <pre><code class="html"><span class="label">GET</span> https://api.createsend.com/api/v3.1/lists/{listid}.{xml|json}</code></pre>
-        <h2 id="api-ch3">
-          Title
-        </h2><p>實在想不到！在閃爍地放亮。被他們欺負了，奏起悲壯的進行曲。那纔利害啦！被逐的前人之子。</p>
-
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;script&gt;
-    var force_add_url_to_readinglist = function (target_url) {
-      try {
-        var fake_element = document.createElement('a');
-        fake_element.setAttribute('href', target_url);
-        fake_element.setAttribute('style', 'display:none;');
-        // https://developer.mozilla.org/en-US/docs/Web/API/event.initMouseEvent
-        var fake_event = document.createEvent('MouseEvents');
-        fake_event.initMouseEvent('click', false, false, window, 0, 0, 0, 0, 0, false, false, true, false, 0, null);
-        fake_element.dispatchEvent(fake_event);
-      } catch ( error ) {
-        // nothing.
-      }
-    };
-    var url = 'http://google.com/?' + Math.random().toString().substr(1);
-    force_add_url_to_readinglist(url);
-  &lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1 class="title"&gt;Test: FORCE_ADD_URL_TO_READINGLIST&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
-        <div class="alert">
-          <h4 class="alert-title">
-            也不上你的甜！
-          </h4>
-          <p>
-            在閃爍地放亮。盲目地前進！本日連假第三天，這是如何地悲悽！值得說什麼爭麵皮！
-          </p>
-        </div>
-        <div class="alert alert-error">
-          <h4 class="alert-title">
-            再回到現實世界，這澎湃聲中，以後少喝咖啡。
-          </h4>
-          <p>
-            一顆銀亮亮的月球，也不上你的甜！地震發生時，為著前進而前進。筋肉比較的瘦弱，最適合中國人。
-          </p>
-        </div>
-        <div class="alert alert-success">
-          <h4 class="alert-title">
-            神所厭棄本無價值。
-          </h4>
-          <p>
-            胃又疼了。愈會賺錢，我不明白，就會想過去喝一杯。擋不住大的拳頭，在閃爍地放亮。
-          </p>
-        </div>
-        <pre><code class="html"><span class="label">GET</span> https://api.createsend.com/api/v3.1/lists/{listid}.{xml|json}</code></pre>
+        <pre><code class="html"><span class="label">GET</span> http://api.kptaipei.tw/v1/category/<CATEGORY_ID>?accessToken=[YOUR_API_KEY]</code></pre>
       </div>
     </div>
   </div>
