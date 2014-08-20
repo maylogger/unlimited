@@ -399,7 +399,7 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 
 .dwonload-demo-intro-title { text-align: center; color: white; }
 .dwonload-demo-intro-title span { display: block; }
-.dwonload-demo-intro-title .en { font-size: 32px; line-height: 24px; margin: 0 auto; margin-bottom: 12px; }
+.dwonload-demo-intro-title .en { font-size: 32px; line-height: 24px; margin: 0 auto; width: 100%; margin-bottom: 12px; }
 .dwonload-demo-intro-title .zh { font-size: 32px; line-height: 24px; margin: 0 auto; margin-bottom: 36px; }
 
 .download-demo-intro-text { color: white; color: rgba(255, 255, 255, 0.9); clear: both; }
