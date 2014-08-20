@@ -406,15 +406,21 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 .download-demo-intro_developers .en { display: block; max-width: 289px; line-height: 0; text-indent: 110%; white-space: nowrap; overflow: hidden; }
 .download-demo-intro_developers .en:after { content: ""; display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/developers_en.png?1408526522'); background-repeat: no-repeat; background-position: 50% 50%; width: 289px; height: 45px; background-image: none, url('/images/developers_en.svg?1407852395'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 289px; height: 0; padding-top: 15.57093%; }
 
-.download-form { margin: 0 -24px; background-color: #fffde8; padding: 36px 24px; text-align: center; }
+.download-form { margin: 0 -24px; background-color: #fffde8; padding: 36px 24px; text-align: center; overflow: hidden; }
 
 .download-form-title { font-size: 36px; line-height: 36px; margin-bottom: 12px; color: #77b783; letter-spacing: -1px; }
 
-.download-form-subtitle { font-size: 15px; line-height: 24px; color: #8a8a8a; margin-bottom: 24px; }
+.download-form-subtitle { font-size: 15px; line-height: 24px; color: #8a8a8a; }
+
+.inputs { position: relative; margin-top: 24px; opacity: 1; -webkit-transition: opacity 0.5s; -moz-transition: opacity 0.5s; -o-transition: opacity 0.5s; transition: opacity 0.5s; }
+.done .inputs input, .done .inputs button { opacity: .3; }
+.inputs .sent { position: absolute; width: 100%; top: 999%; border: 2px solid #a00; color: #a00; font-size: 22px; padding: .5em 0; -webkit-transition: -webkit-transform 0.5s, opacity 0.5s; -webkit-transition-delay: 0.5s, 0.5s; -moz-transition: -moz-transform 0.5s 0.5s, opacity 0.5s 0.5s; -o-transition: -o-transform 0.5s 0.5s, opacity 0.5s 0.5s; transition: transform 0.5s 0.5s, opacity 0.5s 0.5s; -webkit-transform: rotate(-19.74deg) scale(2); -moz-transform: rotate(-19.74deg) scale(2); -ms-transform: rotate(-19.74deg) scale(2); -o-transform: rotate(-19.74deg) scale(2); transform: rotate(-19.74deg) scale(2); opacity: 0; }
+.done .inputs .sent { display: block; top: 20%; -webkit-transform: rotate(-19.74deg) scale(1); -moz-transform: rotate(-19.74deg) scale(1); -ms-transform: rotate(-19.74deg) scale(1); -o-transform: rotate(-19.74deg) scale(1); transform: rotate(-19.74deg) scale(1); opacity: 1; }
 
 .download-form-item { margin-bottom: 30px; }
 .download-form-item input { -webkit-appearance: none; border-radius: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #ddd; padding: 12px 3px; vertical-align: middle; display: block; text-align: center; width: 100%; height: 48px; display: block; }
 .download-form-item input:focus { border: 1px solid #aaa; outline: none; }
+.download-form-item input.input-error { border-color: #a00; }
 
 .download-form-action button { border: none; background-color: #77b783; color: white; width: 100%; height: 48px; }
 

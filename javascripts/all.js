@@ -7,21 +7,9 @@ $(window).scroll(function (event) {
     $('.go-to-top').hide();
 });
 
-// $('.go-anchor').click(function(e){
-//   e.preventDefault();
-//   scrollToAnchor($(this).attr('href'));
-// });
-
 $('.go-to-top').click(function(){
   scrollToTop();
 });
-
-// function
-// function scrollToAnchor(target) {
-//   var url = document.URL.replace(/#.*$/,'')+target;
-//   // window.history.pushState(null, null, url);
-//   $('html,body').animate({scrollTop: $(target).offset().top},'slow');
-// }
 
 $('.go-anchor').on('click',function (e) {
     e.preventDefault();
@@ -60,4 +48,28 @@ if ( $('pre code').length != 0 ) {
   hljs.initHighlightingOnLoad();
 }
 
+function apply_api(){
+  $(".input-error").removeClass("input-error");
+  if($.trim($("#name").val()) == "" ){
+    $("#name").addClass("input-error");
+    return false;
+  }
+  if($.trim($("#email").val()) == ""){
+    $("#email").addClass("input-error");
+    return false;
+  }
+  $(".download-form .submit").text("處理中...");
+  $.post("http://api.kptaipei.tw/v1/register",{name:$("#name").val(),email:$("#email").val()},function(data){
+      if(data.isSuccess){
+          $(".download-form").addClass("done");
+          $(".download-form input, .download-form button").prop('disabled', true);
+          $(".download-form .submit").text("已寄出");
+      }else{
+          $(".download-form .download-form-title").text(data.errorMessage);
+          $(".download-form .download-form-subtitle").text("抱歉，請稍後再試試...");
+      }
+  });
+  return false;
+}
 
+$(".download-form").submit(apply_api);
