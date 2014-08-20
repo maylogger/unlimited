@@ -138,7 +138,7 @@ html { font-size: 16px; line-height: 24px; }
 
 body, .label, .documention-block h1, .documention-block h2, .documention-block h3, .documention-block h4, .documention-block h5, .documention-block h6 { font-family: "Helvetica Neue", "Helvetica", "Arial", "STHeitiTC-Light","Microsoft JhengHei", sans-serif; font-weight: 400; font-style: normal; }
 
-code, pre code { font-family: "Anonymous Pro", "Inconsolata", "Consolas Regular Font", "Monaco", "Courier New" ,MonoSpace; font-weight: 400; font-style: normal; }
+code, pre code, .documention-block .code-note dt, .documention-block .note-warning dt, .documention-block .note-message dt { font-family: "Anonymous Pro", "Inconsolata", "Consolas Regular Font", "Monaco", "Courier New" ,MonoSpace; font-weight: 400; font-style: normal; }
 
 .page-info-title, .dwonload-demo-intro-title .zh, .download-form-title, .how-to-code, .intro-text h2, .intro-text h3 { font-family: "kp-w3", "Helvetica Neue", "Helvetica", "Nimbus Sans L", "Arial", "Liberation Sans", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", "SimHei", "WenQuanYi Zen Hei Sharp", sans-serif; }
 .jf-loading .page-info-title, .jf-loading .dwonload-demo-intro-title .zh, .dwonload-demo-intro-title .jf-loading .zh, .jf-loading .download-form-title, .jf-loading .how-to-code, .jf-loading .intro-text h2, .intro-text .jf-loading h2, .jf-loading .intro-text h3, .intro-text .jf-loading h3 { opacity: 0; }
@@ -174,10 +174,12 @@ blockquote { margin: 0; padding: 0; border: 0; margin-top: 24px; margin-bottom: 
 blockquote cite { display: block; color: #8a8a8a; }
 blockquote cite:before { content: '\2014 \00A0'; }
 
-code { font-size: 13px; line-height: 24px; padding: 0 6px; border: 1px solid #eeeeef; background-color: #f3f3f3; white-space: nowrap; }
+code { font-size: 13px; line-height: 24px; padding: 0 6px; background-color: #f3f3f3; white-space: nowrap; }
 
 pre { margin-top: 24px; margin-bottom: 24px; }
-pre code { display: block; padding: 18px; color: #444444; font-size: 12px; line-height: 1.6; overflow: auto; white-space: pre; -webkit-overflow-scrolling: touch; background-image: linear-gradient(to right, #f3f3f3 12.5%, rgba(243, 243, 243, 0)), linear-gradient(to right, rgba(243, 243, 243, 0), #f3f3f3 87.5%), radial-gradient(0 50%, farthest-side, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)), radial-gradient(100% 50%, farthest-side, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)); background-image: linear-gradient(to right, #f3f3f3 12.5%, rgba(243, 243, 243, 0)), linear-gradient(to right, rgba(243, 243, 243, 0), #f3f3f3 87.5%), radial-gradient(farthest-side at 0 50%, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)), radial-gradient(farthest-side at 100% 50%, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)); background-repeat: no-repeat; background-color: #f3f3f3; background-size: 80px 100%, 80px 100%, 10px 110%, 10px 110%; background-attachment: local, local, scroll, scroll; background-position: left center, right center, left center, right center; }
+pre code { display: block; padding: 18px; color: #444444; font-size: 12px; line-height: 1.6; }
+
+pre code, .documention-block .api { overflow: auto; white-space: pre; -webkit-overflow-scrolling: touch; background-image: linear-gradient(to right, #f3f3f3 12.5%, rgba(243, 243, 243, 0)), linear-gradient(to right, rgba(243, 243, 243, 0), #f3f3f3 87.5%), radial-gradient(0 50%, farthest-side, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)), radial-gradient(100% 50%, farthest-side, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)); background-image: linear-gradient(to right, #f3f3f3 12.5%, rgba(243, 243, 243, 0)), linear-gradient(to right, rgba(243, 243, 243, 0), #f3f3f3 87.5%), radial-gradient(farthest-side at 0 50%, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)), radial-gradient(farthest-side at 100% 50%, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)); background-repeat: no-repeat; background-color: #f3f3f3; background-size: 80px 100%, 80px 100%, 10px 110%, 10px 110%; background-attachment: local, local, scroll, scroll; background-position: left center, right center, left center, right center; }
 
 ol, ul { margin-top: 24px; margin-bottom: 24px; padding-left: 24px; }
 ol ol, ol ul, ul ol, ul ul { margin: 0; }
@@ -197,7 +199,7 @@ img { max-width: 100%; margin-bottom: 24px; }
 
 hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eeeeef; }
 
-.label { display: inline-block; padding: 0px 6px; font-size: 13px; line-height: 24px; color: #eeeeef; background-color: #999; font-weight: bold; }
+.label { display: inline-block; padding: 0px 6px; font-size: 13px; line-height: 24px; color: white; background: #52bbbb; font-weight: bold; }
 
 .wrapper { padding-left: 24px; padding-right: 24px; margin-left: auto; margin-right: auto; }
 .wrapper:after { content: ""; display: table; clear: both; }
@@ -368,19 +370,24 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
   .quick-nav-list { display: block; background-color: transparent; padding: 0; font-size: 15px; line-height: 24px; }
   .quick-nav-list > li { margin: 0; padding: 3px 0; }
   .quick-nav-list .sub-nav li { margin: 6px 0; } }
+.documention-block .api { padding: 1em; margin-bottom: 24px; white-space: nowrap; overflow: auto; }
+.documention-block .api code { background: none; }
 .documention-block h1, .documention-block h2, .documention-block h3, .documention-block h4, .documention-block h5, .documention-block h6 { color: black; }
 .documention-block h2 { margin: 48px 0 24px; border-top: 1px solid #eeeeef; padding-top: 48px; font-size: 28px; line-height: 36px; }
 .documention-block h2:first-child { margin-top: -48px; border-top: 0; }
 .documention-block h3 { font-size: 20px; line-height: 24px; margin: 48px 0 24px; }
 .documention-block h4 { font-size: 16px; line-height: 24px; margin: 24px 0; }
 .documention-block hr { margin: 48px 0; }
-.documention-block .alert { margin: 24px 0; border: 1px solid #d0e5ef; padding: 24px 24px; background-color: #e3eff5; color: #31708f; font-size: 15px; line-height: 24px; }
-.documention-block .alert .alert-title { color: #2a617c; font-size: 16px; line-height: 24px; margin: 0 0 12px; }
-.documention-block .alert *:last-child { margin-bottom: 0px; }
-.documention-block .alert-error { color: #a94442; border-color: #f2dfde; background-color: #f9f1f1; }
-.documention-block .alert-error .alert-title { color: #973d3b; }
-.documention-block .alert-success { color: #3c763d; border-color: #cce5cc; background-color: #ddeedd; }
-.documention-block .alert-success .alert-title { color: #336534; }
+.documention-block .code-note, .documention-block .note-warning, .documention-block .note-message { margin: 24px 0; padding: 24px 24px; background-color: #e3eff5; color: #31708f; font-size: 15px; line-height: 24px; }
+.documention-block .code-note .note-title, .documention-block .note-warning .note-title, .documention-block .note-message .note-title { color: #2a617c; font-size: 16px; line-height: 24px; margin: 0 0 12px; }
+.documention-block .code-note p, .documention-block .note-warning p, .documention-block .note-message p { margin: 0; }
+.documention-block .code-note dl, .documention-block .note-warning dl, .documention-block .note-message dl { margin: 0; padding: 0; border: 0; }
+.documention-block .code-note dt, .documention-block .note-warning dt, .documention-block .note-message dt { font-size: 15px; line-height: 24px; font-weight: normal; }
+.documention-block .code-note dd, .documention-block .note-warning dd, .documention-block .note-message dd { font-size: 12px; line-height: 24px; margin-left: 1em; }
+.documention-block .note-warning { color: #a94442; background-color: #f9f1f1; }
+.documention-block .note-warning .note-title { color: #973d3b; }
+.documention-block .note-message { color: #3c763d; background-color: #ddeedd; }
+.documention-block .note-message .note-title { color: #336534; }
 .documention-block .move-to-top { font-size: 15px; line-height: 24px; float: right; }
 
 @media (min-width: 920px) { .documention-block { border-left: 1px solid #eeeeef; padding-left: 48px; padding-bottom: 24px; } }

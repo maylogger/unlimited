@@ -33,9 +33,6 @@
             <a href="/">首頁</a>
           </li>
           <li>
-            <a href="/submit-works"><span class="mobile-hide">作品</span>投稿</a>
-          </li>
-          <li>
             <a href="/docs">API<span class="mobile-hide"> 說明</span></a>
           </li>
           <li>
@@ -60,109 +57,96 @@
     <div class="sidebar-sticky">
       <div class="quick-nav">
         <ul class="quick-nav-list nav">
-          <li>
-            <a class="go-anchor" href="#api-ch1">類別清單</a>
-          </li>
-          <li>
-            <a class="go-anchor" href="#api-ch2">類別文章清單</a>
-          </li>
+          <li><a class="go-anchor" href="#api-ch1">類別清單</a></li>
+          <li><a class="go-anchor" href="#api-ch2">類別文章清單</a></li>
         </ul>
+        
       </div>
     </div>
   </div>
   <div class="main">
     <div class="documention-block">
-      <div class="documention-block-content">
-        <h2 id="api-ch1">
-          "類別清單 /category "
-        </h2>
-        <p>可以用來取得目前官網文章類別清單
-            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-            <script>
-              var API_SERVER = "http://api.kptaipei.tw/v1/";
-              $.get( API_SERVER + "category/?accessToken=[YOUR_API_KEY]",function(results){
-                /* sample 
-                  {
-                    "isSuccess": true,
-                    "errorCode": 0,
-                    "data": [
-                      {
-                        "name": "【柯P新政】",
-                        "id": "40"
-                      },
-                      {
-                        "name": "【真・柯文哲】",
-                        "id": "41"
-                      },
-                      {
-                        "name": "新聞稿",
-                        "id": "42"
-                      }
-                    ],
-                    "errorMessage": null
-                  }                  
-                */
-                console.log(results);
-                alert("取得 "+results.data.length+" 筆資料");
-              });
-            </script></p>
-        
-        <div class="alert">
-          <h4 class="alert-title">
-            關於 API Key
-          </h4>
-          <p>
-            在首頁可填寫申請 API KEY 。
-          </p>
-        </div>
-        <pre><code class="html"><span class="label">GET</span> http://api.kptaipei.tw/v1/category/?accessToken=[YOUR_API_KEY]</code></pre>
-        <h2 id="api-ch2">
-          "指定類別內的文章清單 /category/[CATEGORY_ID]"
-        </h2><p>給定類別 ID (可由 /category 取得) 後，可取得該類別底下文章清單。</p>
+      <div class="documention-block-content"><h2 id="api-ch1">
+  類別清單
+</h2>
 
-<pre><code>&lt;script src="http://code.jquery.com/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
-&lt;script&gt;
-  var API_SERVER = "http://api.kptaipei.tw/v1/";
-  $.get( API_SERVER + "category/40?accessToken=[YOUR_API_KEY]",function(results){
-    /* sample 
-      {
-        "isSuccess": true,
-        "errorCode": 0,
-        "data": [
-          {
-            "id": "3096",
-            "title": "參觀動漫展",
-            "content": "&lt;p style=\"text-align: center;\"&gt;到了動漫展覧場，心境突然回到小時候。我小學時看的漫畫是劉興欽的《阿金與機器人》、《阿三哥與大嬸婆》，國中、高中時看的是《好小子》、《老夫子》。最近幾年，因為工作忙，只看過《醫龍》。我太太喜歡看《柯南》的卡通影集，連帶的買了一整套的漫畫本，還推拖是女兒要看的，其實是她自己在看。&lt;/p&gt;\n&lt;p style=\"text-align: center;\"&gt;在會場，可用人山人海來形容，聽說五天的展期，湧入了45萬人。 看來台北市可以思考設立動漫博物館，作為產業長期發展的基地，也應該多用心支持本土的漫畫家與相關產業。&lt;/p&gt;\n &lt;p style=\"text-align: center;\"&gt;&lt;a href=\"../wp-content/uploads/2014/08/10551450_504780596290592_5255465964361619470_o.jpg\"&gt; img class=\"alignnone size-portfolio-masonry wp-image-3099\"src=\"../wp-content/uploads/2014/08/10551450_504780596290592_5255465964361619470_o-650x433.jpg\"alt=\"10551450_504780596290592_5255465964361619470_o\" width=\"650\" height=\"433\"&gt;&lt;/a&gt;&lt;/p&gt;\n&lt;p style=\"text-align: center;\"&gt; &lt;a href=\"../wp-content/uploads/2014/08/10493078_504780662957252_7554465062543713990_o.jpg\"&gt;&lt;img class=\"alignnone size-portfolio-masonry wp-image-3098\" src=\"../wp-content/uploads/2014/08/10493078_504780662957252_7554465062543713990_o-650x544.jpg\" alt=\"10493078_504780662957252_7554465062543713990_o\" width=\"650\" height=\"544\"&gt;&lt;/a&gt;&lt;/p&gt;\n&lt;p style=\"text-align: center;\"&gt;&lt;a href=\"../wp-content/uploads/2014/08/10599292_504780556290596_6728966966508602911_n1.jpg\"&gt;&lt;img class=\"alignnone size-portfolio-masonry wp-image-3100\" src=\"../wp-content/uploads/2014/08/10599292_504780556290596_6728966966508602911_n1-650x650.jpg\" alt=\"10599292_504780556290596_6728966966508602911_n\" width=\"650\" height=\"650\"&gt;&lt;/a&gt;&lt;/p&gt;\n&lt;p style=\"text-align: center;\"&gt;&lt;a href=\"../wp-content/uploads/2014/08/10609646_504780559623929_3435702574693021991_n1.jpg\"&gt;&lt;img class=\"alignnone size-portfolio-masonry wp-image-3101\" src=\"../wp-content/uploads/2014/08/10609646_504780559623929_3435702574693021991_n1-650x650.jpg\" alt=\"10609646_504780559623929_3435702574693021991_n\" width=\"650\" height=\"650\"&gt;&lt;/a&gt;&lt;/p&gt;\n&lt;p style=\"text-align: center;\"&gt;&amp;nbsp;&lt;/p&gt;",
-            "post_date": "2014-08-19 11:00:10",
-            "author": "柯文哲",
-            "last_modify": "2014-08-19 11:00:10",
-            "url": "http://kptaipei.tw/?page_id=3096",
-            "category_name": "【真・柯文哲】",
-            "category_id": "41"
-          },
+<p>用來取得目前官網文章類別清單</p>
 
-        ],
-        "errorMessage": null
-      }  
-    */
-    console.log(results);
-    alert("取得 "+results.data.length+" 筆資料");
-  });
-&lt;/script&gt;
-</code></pre>
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/category/?accessToken=[YOUR_API_KEY]</code>
+</div>
 
-        <div class="alert">
-          <h4 class="alert-title">
-            參數
-          </h4>
-          <p>
-            GET page=? 第幾頁(optional,default:0)
-          </p>
-          <p>
-            GET page_size=? 一次顯示幾筆(optional,default:100)
-          </p>
-        </div>
-        <pre><code class="html"><span class="label">GET</span> http://api.kptaipei.tw/v1/category/<CATEGORY_ID>?accessToken=[YOUR_API_KEY]</code></pre>
+<div class="code-note">
+  <p>[YOUR_API_KEY] 的部分在首頁可填寫申請 API KEY 。</p>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "data": [
+    {
+      "name": "【柯P新政】",
+      "id": "40"
+    },
+    {
+      "name": "【真・柯文哲】",
+      "id": "41"
+    },
+    {
+      "name": "新聞稿",
+      "id": "42"
+    }
+  ],
+  "errorMessage": null
+}</code></pre>
+
+<h2 id="api-ch2">
+  指定類別內的文章清單
+</h2>
+
+<p>給定類別 ID (可由 /category 取得) 後，可取得該類別底下文章清單。</p>
+
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/category/&lt;CATEGORY_ID&gt;?accessToken=[YOUR_API_KEY]</code>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "data": [
+    {
+      "id": "3096",
+      "title": "參觀動漫展",
+      "content": "&lt;p style=\&quot;text-align: center;\&quot;&gt;&#x5230;&#x4e86;&#x52d5;&#x6f2b;&#x5c55;&#x89a7;&#x5834;&#xff0c;&#x5fc3;&#x5883;&#x7a81;&#x7136;&#x56de;&#x5230;&#x5c0f;&#x6642;&#x5019;&#x3002;&#x6211;&#x5c0f;&#x5b78;&#x6642;&#x770b;&#x7684;&#x6f2b;&#x756b;&#x662f;&#x5289;&#x8208;&#x6b3d;&#x7684;&#x300a;&#x963f;&#x91d1;&#x8207;&#x6a5f;&#x5668;&#x4eba;&#x300b;&#x3001;&#x300a;&#x963f;&#x4e09;&#x54e5;&#x8207;&#x5927;&#x5b38;&#x5a46;&#x300b;&#xff0c;&#x570b;&#x4e2d;&#x3001;&#x9ad8;&#x4e2d;&#x6642;&#x770b;&#x7684;&#x662f;&#x300a;&#x597d;&#x5c0f;&#x5b50;&#x300b;&#x3001;&#x300a;&#x8001;&#x592b;&#x5b50;&#x300b;&#x3002;&#x6700;&#x8fd1;&#x5e7e;&#x5e74;&#xff0c;&#x56e0;&#x70ba;&#x5de5;&#x4f5c;&#x5fd9;&#xff0c;&#x53ea;&#x770b;&#x904e;&#x300a;&#x91ab;&#x9f8d;&#x300b;&#x3002;&#x6211;&#x592a;&#x592a;&#x559c;&#x6b61;&#x770b;&#x300a;&#x67ef;&#x5357;&#x300b;&#x7684;&#x5361;&#x901a;&#x5f71;&#x96c6;&#xff0c;&#x9023;&#x5e36;&#x7684;&#x8cb7;&#x4e86;&#x4e00;&#x6574;&#x5957;&#x7684;&#x6f2b;&#x756b;&#x672c;&#xff0c;&#x9084;&#x63a8;&#x62d6;&#x662f;&#x5973;&#x5152;&#x8981;&#x770b;&#x7684;&#xff0c;&#x5176;&#x5be6;&#x662f;&#x5979;&#x81ea;&#x5df1;&#x5728;&#x770b;&#x3002;&lt;/p&gt;\n&lt;p style=\&quot;text-align: center;\&quot;&gt;&#x5728;&#x6703;&#x5834;&#xff0c;&#x53ef;&#x7528;&#x4eba;&#x5c71;&#x4eba;&#x6d77;&#x4f86;&#x5f62;&#x5bb9;&#xff0c;&#x807d;&#x8aaa;&#x4e94;&#x5929;&#x7684;&#x5c55;&#x671f;&#xff0c;&#x6e67;&#x5165;&#x4e86;45&#x842c;&#x4eba;&#x3002; &#x770b;&#x4f86;&#x53f0;&#x5317;&#x5e02;&#x53ef;&#x4ee5;&#x601d;&#x8003;&#x8a2d;&#x7acb;&#x52d5;&#x6f2b;&#x535a;&#x7269;&#x9928;&#xff0c;&#x4f5c;&#x70ba;&#x7522;&#x696d;&#x9577;&#x671f;&#x767c;&#x5c55;&#x7684;&#x57fa;&#x5730;&#xff0c;&#x4e5f;&#x61c9;&#x8a72;&#x591a;&#x7528;&#x5fc3;&#x652f;&#x6301;&#x672c;&#x571f;&#x7684;&#x6f2b;&#x756b;&#x5bb6;&#x8207;&#x76f8;&#x95dc;&#x7522;&#x696d;&#x3002;&lt;/p&gt;\n &lt;p style=\&quot;text-align: center;\&quot;&gt;&lt;a href=\&quot;../wp-content/uploads/2014/08/10551450_504780596290592_5255465964361619470_o.jpg\&quot;&gt; img class=\&quot;alignnone size-portfolio-masonry wp-image-3099\&quot;src=\&quot;../wp-content/uploads/2014/08/10551450_504780596290592_5255465964361619470_o-650x433.jpg\&quot;alt=\&quot;10551450_504780596290592_5255465964361619470_o\&quot; width=\&quot;650\&quot; height=\&quot;433\&quot;&gt;&lt;/a&gt;&lt;/p&gt;\n&lt;p style=\&quot;text-align: center;\&quot;&gt; &lt;a href=\&quot;../wp-content/uploads/2014/08/10493078_504780662957252_7554465062543713990_o.jpg\&quot;&gt;&lt;img class=\&quot;alignnone size-portfolio-masonry wp-image-3098\&quot; src=\&quot;../wp-content/uploads/2014/08/10493078_504780662957252_7554465062543713990_o-650x544.jpg\&quot; alt=\&quot;10493078_504780662957252_7554465062543713990_o\&quot; width=\&quot;650\&quot; height=\&quot;544\&quot;&gt;&lt;/a&gt;&lt;/p&gt;\n&lt;p style=\&quot;text-align: center;\&quot;&gt;&lt;a href=\&quot;../wp-content/uploads/2014/08/10599292_504780556290596_6728966966508602911_n1.jpg\&quot;&gt;&lt;img class=\&quot;alignnone size-portfolio-masonry wp-image-3100\&quot; src=\&quot;../wp-content/uploads/2014/08/10599292_504780556290596_6728966966508602911_n1-650x650.jpg\&quot; alt=\&quot;10599292_504780556290596_6728966966508602911_n\&quot; width=\&quot;650\&quot; height=\&quot;650\&quot;&gt;&lt;/a&gt;&lt;/p&gt;\n&lt;p style=\&quot;text-align: center;\&quot;&gt;&lt;a href=\&quot;../wp-content/uploads/2014/08/10609646_504780559623929_3435702574693021991_n1.jpg\&quot;&gt;&lt;img class=\&quot;alignnone size-portfolio-masonry wp-image-3101\&quot; src=\&quot;../wp-content/uploads/2014/08/10609646_504780559623929_3435702574693021991_n1-650x650.jpg\&quot; alt=\&quot;10609646_504780559623929_3435702574693021991_n\&quot; width=\&quot;650\&quot; height=\&quot;650\&quot;&gt;&lt;/a&gt;&lt;/p&gt;\n&lt;p style=\&quot;text-align: center;\&quot;&gt;&amp;nbsp;&lt;/p&gt;",
+      "post_date": "2014-08-19 11:00:10",
+      "author": "柯文哲",
+      "last_modify": "2014-08-19 11:00:10",
+      "url": "http://kptaipei.tw/?page_id=3096",
+      "category_name": "【真・柯文哲】",
+      "category_id": "41"
+    },
+  ],
+  "errorMessage": null
+}</code></pre>
+
+<div class="note-message">
+  <h4 class="note-title">
+    參數
+  </h4>
+  <dl>
+    <dt>GET page=?</dt>
+    <dd>第幾頁 (optional,default:0)</dd>
+    <dt>GET page_size=?</dt>
+    <dd>一次顯示幾筆 (optional,default:100)</dd>
+  </dl>
+</div>
+
       </div>
     </div>
   </div>
