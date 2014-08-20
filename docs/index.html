@@ -57,8 +57,13 @@
     <div class="sidebar-sticky">
       <div class="quick-nav">
         <ul class="quick-nav-list nav">
-          <li><a class="go-anchor" href="#api-ch1">類別清單</a></li>
-          <li><a class="go-anchor" href="#api-ch2">類別文章清單</a></li>
+          <li><a class="go-anchor" href="#api-ch1">文章類別查詢</a></li>
+          <li><a class="go-anchor" href="#api-ch2">類別內容查詢</a></li>
+          <li><a class="go-anchor" href="#api-ch3">相簿清單查詢</a></li>
+          <li><a class="go-anchor" href="#api-ch4">相簿照片查詢</a></li>
+          <li><a class="go-anchor" href="#api-ch5">影片播放清單查詢</a></li>
+          <li><a class="go-anchor" href="#api-ch6">清單內影片查詢</a></li>
+          
         </ul>
         
       </div>
@@ -67,7 +72,7 @@
   <div class="main">
     <div class="documention-block">
       <div class="documention-block-content"><h2 id="api-ch1">
-  類別清單
+  文章類別查詢
 </h2>
 
 <p>用來取得目前官網文章類別清單</p>
@@ -104,7 +109,7 @@
 }</code></pre>
 
 <h2 id="api-ch2">
-  指定類別內的文章清單
+  類別內容查詢
 </h2>
 
 <p>給定類別 ID (可由 /category 取得) 後，可取得該類別底下文章清單。</p>
@@ -143,10 +148,287 @@
     <dt>GET page=?</dt>
     <dd>第幾頁 (optional,default:0)</dd>
     <dt>GET page_size=?</dt>
-    <dd>一次顯示幾筆 (optional,default:100)</dd>
+    <dd>一次顯示幾筆 (optional,default:100,max:500)</dd>
   </dl>
 </div>
 
+
+<h2 id="api-ch3">
+  相簿清單查詢
+</h2>
+
+<p>柯文哲每天的行程都有許多紀錄，在這你可以找到所有相簿</p>
+
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/albums/?accessToken=[YOUR_API_KEY]</code>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "errorMessage": null,
+  "data": [
+    {
+      "id": "72157646239459867",
+      "photos": "15",
+      "videos": 0,
+      "title": "2014.8.20電信工程公會",
+      "description": "",
+      "date_create": 1408525510000,
+      "date_update": 1408525530000,
+      "link": "https://www.flickr.com/photos/110839995@N06/sets/72157646239459867/"
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 500
+  }
+}</code></pre>
+
+<div class="note-message">
+  <h4 class="note-title">
+    參數
+  </h4>
+  <dl>
+    <dt>GET page=?</dt>
+    <dd>第幾頁 (optional,default:0)</dd>
+    <dt>GET page_size=?</dt>
+    <dd>一次顯示幾筆 (optional,default:100,max:500)</dd>
+  </dl>
+</div>
+
+
+<h2 id="api-ch4">
+  相簿照片查詢
+</h2>
+
+<p>給定相簿 ID 之後可以查詢裡面所有相片 </p>
+
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/albums/[ALBUM_ID]?accessToken=[YOUR_API_KEY]</code>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "errorMessage": null,
+  "data": {
+    "set": {
+      "id": "72157646239459867",
+      "title": "2014.8.20電信工程公會"
+    },
+    "photos": [
+      {
+        "id": "14791341020",
+        "images": {
+          "small": "https://farm6.staticflickr.com/5571/14791341020_3854a614d6_n.jpg",
+          "small_square": "https://farm6.staticflickr.com/5571/14791341020_3854a614d6_s.jpg",
+          "large_square": "https://farm6.staticflickr.com/5571/14791341020_3854a614d6_q.jpg",
+          "thumbnail": "https://farm6.staticflickr.com/5571/14791341020_3854a614d6_t.jpg",
+          "medium": "https://farm6.staticflickr.com/5571/14791341020_3854a614d6_z.jpg",
+          "large": "https://farm6.staticflickr.com/5571/14791341020_3854a614d6_b.jpg",
+          "original": "https://farm6.staticflickr.com/5571/14791341020_493c41de8c_o.jpg"
+        },
+        "date_upload": 1408525503000,
+        "date_taken": 1408517557000,
+        "location": {
+          "latitude": 0,
+          "longitude": 0
+        },
+        "title": "IMG_3823",
+        "isprimary": "0",
+        "link": "https://www.flickr.com/photos/110839995@N06/14791341020/in/set-72157646239459867"
+      }
+    ]
+  },
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 500
+  }
+}</code></pre>
+
+<div class="note-message">
+  <h4 class="note-title">
+   說明
+  </h4>
+  <dl>
+    <dt>small_square</dt>
+    <dd> 75x75 正方形裁切</dd>
+    <dt>large_square</dt>
+    <dd> 150x150 正方形裁切</dd>
+
+    <dt> thumbnail</dt>
+    <dd> 裁切比較長的一邊為 100px </dd>
+    <dt> small</dt>
+    <dd> 裁切比較長的一邊為 320px </dd>
+    <dt> medium</dt>
+    <dd> 裁切比較長的一邊為 640px </dd>
+    <dt> large</dt>
+    <dd> 裁切比較長的一邊為 1024px </dd>
+    <dt> original</dt>
+    <dd> 原圖大小 </dd>
+
+  </dl>
+  <h4 class="note-title">
+    參數
+  </h4>
+  <dl>
+    <dt>GET page=?</dt>
+    <dd>第幾頁 (optional,default:0)</dd>
+    <dt>GET page_size=?</dt>
+    <dd>一次顯示幾筆 (optional,default:100,max:500)</dd>
+  </dl>
+</div>
+
+<h2 id="api-ch5">
+   影片播放清單查詢
+</h2>
+
+<p>柯文哲有許多影片清單，像是柯P新政等等等，這裡可以取得"播放清單" (playlist)。</p>
+
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/videos/?accessToken=[YOUR_API_KEY]</code>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "errorMessage": null,
+  "data": [
+    {
+      "id": "PLivp01P9aEvZDSf-DNicnXhmJZQPA8rBc",
+      "title": "向新世代學習",
+      "description": "",
+      "publishedAt": "2014-08-16T11:25:34.000Z",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "link": "https://www.youtube.com/playlist?list=PLivp01P9aEvZDSf-DNicnXhmJZQPA8rBc",
+      "video_count": 5
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 100
+  }
+}</code></pre>
+
+<div class="note-message">
+  <h4 class="note-title">
+    參數
+  </h4>
+  <dl>
+    <dt>GET page=?</dt>
+    <dd>第幾頁 (optional,default:0)</dd>
+    <dt>GET page_size=?</dt>
+    <dd>一次顯示幾筆 (optional,default:100,max:500)</dd>
+  </dl>
+</div>
+
+<h2 id="api-ch6">
+  清單內影片查詢
+</h2>
+
+<p>給定清單 id 查閱特定播放清單(playlist) 裡面的影片們 。</p>
+
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/videos/[PLAYLIST_ID]?accessToken=[YOUR_API_KEY]</code>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "errorMessage": null,
+  "data": [
+    {
+      "id": "YjmkzYpPfTU",
+      "sys_id": "PLpaoUVtD2cSNTIxxkJEdgPeexmJjt4IGN0kBvaQqLkds",
+      "title": "【Go! Youth! 做你自己】柯P向新世代學習-預告片",
+      "description": "Go! Youth! 做你自己- 柯P向新世代學習系列短片，8/17～8/21，一共五天，每天晚上19:00上線。\n\n柯P官方網站：http://kptaipei.tw/\n柯P粉絲專頁：https://www.facebook.com/DoctorKoWJ",
+      "publishedAt": "2014-08-18T10:09:10.000Z",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "link": "https://www.youtube.com/watch?v=YjmkzYpPfTU"
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 100
+  }
+}</code></pre>
+
+<div class="note-message">
+  <h4 class="note-title">
+    參數
+  </h4>
+  <dl>
+    <dt>GET page=?</dt>
+    <dd>第幾頁 (optional,default:0)</dd>
+    <dt>GET page_size=?</dt>
+    <dd>一次顯示幾筆 (optional,default:100,max:500)</dd>
+  </dl>
+</div>
       </div>
     </div>
   </div>
