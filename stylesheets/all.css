@@ -354,11 +354,11 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 .quick-nav-title:before { content: ''; position: absolute; top: 50%; right: 12px; margin-top: -3px; width: 0px; height: 0px; border-style: solid; border-width: 6px 6px 0 6px; border-color: #444444 transparent transparent transparent; }
 
 .quick-nav-list { display: none; margin: 0; padding: 0; border: 0; list-style: none; margin-bottom: 0px; padding-bottom: 1px; font-size: 13px; line-height: 18px; }
-.quick-nav-list > li { margin: 12px; white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; }
-.quick-nav-list a { color: inherit; text-decoration: inherit; cursor: inherit; color: #444444; }
+.quick-nav-list > li { white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; }
+.quick-nav-list a { display: block; padding: 6px; color: inherit; text-decoration: inherit; cursor: inherit; color: #444444; -webkit-transition: color 1s; -moz-transition: color 1s; -o-transition: color 1s; transition: color 1s; }
 .quick-nav-list a:active, .quick-nav-list a:focus { outline: none; }
 .quick-nav-list a:hover { color: #777777; }
-.quick-nav-list > .active > a { color: #444444; font-weight: bold; }
+.quick-nav-list > .active > a { -webkit-transition: color 0.3s; -moz-transition: color 0.3s; -o-transition: color 0.3s; transition: color 0.3s; color: #52bbbb; }
 .quick-nav-list .sub-nav { list-style: none; padding-left: 0; }
 .quick-nav-list .sub-nav li { font-size: 12px; line-height: 18px; padding-left: 18px; margin: 12px 0; white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; }
 .quick-nav-list .sub-nav > .active { border-left: 1px solid #999999; }
@@ -369,8 +369,8 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
   .quick-nav-title { font-size: 22px; line-height: 36px; margin-bottom: 24px; font-weight: bold; padding: 0; cursor: default; background-color: transparent; }
   .quick-nav-title:before { display: none; }
   .quick-nav-list { display: block; background-color: transparent; padding: 0; font-size: 15px; line-height: 24px; }
-  .quick-nav-list > li { margin: 0; padding: 3px 0; }
-  .quick-nav-list .sub-nav li { margin: 6px 0; } }
+  .quick-nav-list > li { margin: 0; }
+  .quick-nav-list a { padding: 3px 0; } }
 .documention-block .api { padding: 1em; margin-bottom: 24px; white-space: nowrap; overflow: auto; }
 .documention-block .api code { background: none; }
 .documention-block h1, .documention-block h2, .documention-block h3, .documention-block h4, .documention-block h5, .documention-block h6 { color: black; }
@@ -452,7 +452,7 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
   .download-demo-intro_developers { padding-right: 2em; }
   .download-demo-intro_developers .download-demo-intro-text { padding-left: 145px; }
   .download-form { width: 280px; margin-left: -140px; top: auto; bottom: -72px; } }
-.workshop { position: relative; padding: 48px 0 72px; background-color: #444444; background-image: url('/images/workshop_s.jpg?1408084436'); background-position: center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; text-align: center; }
+.workshop { position: relative; padding: 48px 0 72px; background-color: #444444; background-image: url('/images/workshop_s.jpg?1408580136'); background-position: center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; text-align: center; }
 .workshop .wrapper { position: relative; z-index: 2; }
 .workshop:after { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(52, 52, 54, 0.3)), color-stop(100%, rgba(52, 52, 54, 0.2))); background-image: -webkit-linear-gradient(rgba(52, 52, 54, 0.3), rgba(52, 52, 54, 0.2)); background-image: -moz-linear-gradient(rgba(52, 52, 54, 0.3), rgba(52, 52, 54, 0.2)); background-image: -o-linear-gradient(rgba(52, 52, 54, 0.3), rgba(52, 52, 54, 0.2)); background-image: linear-gradient(rgba(52, 52, 54, 0.3), rgba(52, 52, 54, 0.2)); }
 
@@ -467,12 +467,12 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 .workshop-subtitle:after { content: ""; display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/workshop_zh.png?1408573062'); background-repeat: no-repeat; background-position: 50% 50%; width: 472px; height: 33px; background-image: none, url('/images/workshop_zh.svg?1408573062'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 472px; height: 0; padding-top: 6.99153%; }
 
 .workshop-date { display: block; max-width: 594px; line-height: 0; text-indent: 110%; white-space: nowrap; overflow: hidden; margin: 0 auto; margin-bottom: 48px; }
-.workshop-date:after { content: ""; display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/workshop_date.png?1408573062'); background-repeat: no-repeat; background-position: 50% 50%; width: 594px; height: 65px; background-image: none, url('/images/workshop_date.svg?1408573062'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 594px; height: 0; padding-top: 10.94276%; }
+.workshop-date:after { content: ""; display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/workshop_date.png?1408580136'); background-repeat: no-repeat; background-position: 50% 50%; width: 594px; height: 65px; background-image: none, url('/images/workshop_date.svg?1408573062'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 594px; height: 0; padding-top: 10.94276%; }
 
 .workshop-event-link { color: inherit; text-decoration: inherit; cursor: inherit; border: 2px solid #e6e1e2; padding: 12px 48px; display: inline-block; font-size: 20px; line-height: 24px; color: #e6e1e2; }
 .workshop-event-link:active, .workshop-event-link:focus { outline: none; }
 
-@media (min-width: 700px) { .workshop { margin: 0 auto; padding-top: 72px; padding-bottom: 240px; background-image: url('/images/workshop.jpg?1408084436'); }
+@media (min-width: 700px) { .workshop { margin: 0 auto; padding-top: 72px; padding-bottom: 240px; background-image: url('/images/workshop.jpg?1408580136'); }
   .vertical-line { height: 120px; }
   .how-to-code { margin-bottom: 48px; font-size: 24px; line-height: 24px; }
   .how-to-code br { display: none; }
@@ -526,7 +526,7 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 .kp-image .kp { display: block; margin: 0 auto; max-width: 500px; width: 100%; height: auto; }
 
 @media (min-width: 700px) { .intro { padding-top: 96px; }
-  .kp-image { width: 100%; background-image: url('/images/intro-icons.png?1408573062'); background-repeat: no-repeat; background-position: center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
+  .kp-image { width: 100%; background-image: url('/images/intro-icons.png?1408580136'); background-repeat: no-repeat; background-position: center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
   .intro-text { width: 100%; }
   .intro-text h2 { margin-bottom: 48px; }
   .intro-text h3 { font-size: 32px; line-height: 48px; } }
