@@ -469,7 +469,7 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 .workshop-subtitle:after { content: ""; display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/workshop_zh.png?1408573062'); background-repeat: no-repeat; background-position: 50% 50%; width: 472px; height: 33px; background-image: none, url('/images/workshop_zh.svg?1408573062'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 472px; height: 0; padding-top: 6.99153%; }
 
 .workshop-date { display: block; max-width: 594px; line-height: 0; text-indent: 110%; white-space: nowrap; overflow: hidden; margin: 0 auto; margin-bottom: 48px; }
-.workshop-date:after { content: ""; display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/workshop_date.png?1408580136'); background-repeat: no-repeat; background-position: 50% 50%; width: 594px; height: 65px; background-image: none, url('/images/workshop_date.svg?1408573062'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 594px; height: 0; padding-top: 10.94276%; }
+.workshop-date:after { content: ""; display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/workshop_date.png?1408617739'); background-repeat: no-repeat; background-position: 50% 50%; width: 594px; height: 65px; background-image: none, url('/images/workshop_date.svg?1408573062'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 594px; height: 0; padding-top: 10.94276%; }
 
 .workshop-event-link { color: inherit; text-decoration: inherit; cursor: inherit; border: 2px solid #e6e1e2; padding: 12px 48px; display: inline-block; font-size: 20px; line-height: 24px; color: #e6e1e2; }
 .workshop-event-link:active, .workshop-event-link:focus { outline: none; }
@@ -515,11 +515,11 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 .message-block .btn:hover { background-color: #52bbbb; text-decoration: none; }
 .message-block .message-block-action { margin-top: 48px; }
 @media (min-width: 700px) { .message-block { padding: 96px 0 48px; }
-  .message-block .message-block-title { font-size: 36px; line-height: 36px; margin-bottom: 24px; }
+  .message-block .message-block-title { font-size: 52px; line-height: 72px; margin-bottom: 24px; }
   .message-block .message-block-text { font-size: 18px; line-height: 24px; }
   .message-block .btn { display: inline-block; width: auto; margin: 0 6px; padding: 12px 24px; } }
 
-.icebaby { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0))), url('/images/icebaby.png?1408616311'); background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408616311'); background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408616311'); background-image: -o-linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408616311'); background-image: linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408616311'); -webkit-background-size: 100% 100%, 600px 266px; -moz-background-size: 100% 100%, 600px 266px; -o-background-size: 100% 100%, 600px 266px; background-size: 100% 100%, 600px 266px; }
+.icebaby { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0))), url('/images/icebaby.png?1408617739'); background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408617739'); background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408617739'); background-image: -o-linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408617739'); background-image: linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408617739'); -webkit-background-size: 100% 100%, 600px 266px; -moz-background-size: 100% 100%, 600px 266px; -o-background-size: 100% 100%, 600px 266px; background-size: 100% 100%, 600px 266px; }
 
 .intro { padding: 10% 0; padding-bottom: 0; color: #444444; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #fffff3)); background: -webkit-linear-gradient(#ffffff, #fffff3); background: -moz-linear-gradient(#ffffff, #fffff3); background: -o-linear-gradient(#ffffff, #fffff3); background: linear-gradient(#ffffff, #fffff3); }
 
@@ -531,7 +531,7 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 .kp-image .kp { display: block; margin: 0 auto; max-width: 500px; width: 100%; height: auto; }
 
 @media (min-width: 700px) { .intro { padding-top: 96px; }
-  .kp-image { width: 100%; background-image: url('/images/intro-icons.png?1408580136'); background-repeat: no-repeat; background-position: center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
+  .kp-image { width: 100%; background-image: url('/images/intro-icons.png?1408617739'); background-repeat: no-repeat; background-position: center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
   .intro-text { width: 100%; }
   .intro-text h2 { margin-bottom: 48px; }
   .intro-text h3 { font-size: 32px; line-height: 48px; } }
