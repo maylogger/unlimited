@@ -445,7 +445,7 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
   .download-demo-intro_developers .zh { float: right; }
   .download-demo-intro_developers .download-demo-intro-text { padding-left: 125px; }
   .download-form { position: absolute; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 50%; left: 50%; bottom: -48px; width: 250px; margin-left: -125px; z-index: 101; }
-  .download-form-title { font-size: 32px; line-height: 36px; } }
+  .download-form-title { font-size: 28px; line-height: 36px; } }
 @media (min-width: 920px) { .download-demo-intro { padding-top: 4em; padding-bottom: 3em; }
   .download-demo-intro_designers { padding-left: 2em; }
   .download-demo-intro_designers .download-demo-intro-text { padding-right: 145px; }
