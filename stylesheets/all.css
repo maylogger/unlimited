@@ -510,13 +510,16 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 
 .message-block { min-height: 600px; text-align: center; margin: 0 auto; padding-top: 48px; }
 .message-block .message-block-title { font-size: 24px; line-height: 24px; margin-bottom: 12px; color: black; }
-.message-block .message-block-text { font-size: 15px; line-height: 18px; margin-bottom: 12px; }
+.message-block .message-block-text { font-size: 15px; line-height: 18px; margin-top: 12px; margin-bottom: 12px; }
 .message-block .btn { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: block; border: none; background-color: #444444; color: white; font-size: 15px; line-height: 24px; width: 100%; padding: 12px; margin-bottom: 12px; -webkit-transition: background-color 0.25s; -moz-transition: background-color 0.25s; -o-transition: background-color 0.25s; transition: background-color 0.25s; }
 .message-block .btn:hover { background-color: #52bbbb; text-decoration: none; }
+.message-block .message-block-action { margin-top: 48px; }
 @media (min-width: 700px) { .message-block { padding: 96px 0 48px; }
   .message-block .message-block-title { font-size: 36px; line-height: 36px; margin-bottom: 24px; }
-  .message-block .message-block-text { font-size: 18px; line-height: 24px; margin-bottom: 24px; }
+  .message-block .message-block-text { font-size: 18px; line-height: 24px; }
   .message-block .btn { display: inline-block; width: auto; margin: 0 6px; padding: 12px 24px; } }
+
+.icebaby { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0))), url('/images/icebaby.png?1408616311'); background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408616311'); background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408616311'); background-image: -o-linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408616311'); background-image: linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408616311'); -webkit-background-size: 100% 100%, 600px 266px; -moz-background-size: 100% 100%, 600px 266px; -o-background-size: 100% 100%, 600px 266px; background-size: 100% 100%, 600px 266px; }
 
 .intro { padding: 10% 0; padding-bottom: 0; color: #444444; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #fffff3)); background: -webkit-linear-gradient(#ffffff, #fffff3); background: -moz-linear-gradient(#ffffff, #fffff3); background: -o-linear-gradient(#ffffff, #fffff3); background: linear-gradient(#ffffff, #fffff3); }
 
