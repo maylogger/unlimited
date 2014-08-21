@@ -403,9 +403,9 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 .dwonload-demo-intro-title .en { font-size: 32px; line-height: 24px; margin: 0 auto; width: 100%; margin-bottom: 12px; }
 .dwonload-demo-intro-title .zh { font-size: 32px; line-height: 24px; margin: 0 auto; margin-bottom: 36px; }
 
-.download-demo-intro-text { color: white; color: rgba(255, 255, 255, 0.9); clear: both; }
+.download-demo-intro-text { color: white; clear: both; }
 
-.download-demo-intro_designers { background-color: #f6aa3c; }
+.download-demo-intro_designers { background-color: #f19a1d; }
 .download-demo-intro_designers .download-demo-intro-text { float: left; }
 .download-demo-intro_designers .en { display: block; max-width: 225px; line-height: 0; text-indent: 110%; white-space: nowrap; overflow: hidden; }
 .download-demo-intro_designers .en:after { content: ""; display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/designers_en.png?1408526522'); background-repeat: no-repeat; background-position: 50% 50%; width: 225px; height: 45px; background-image: none, url('/images/designers_en.svg?1407852394'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 225px; height: 0; padding-top: 20%; }
@@ -431,9 +431,10 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 .download-form-item input:focus { border: 1px solid #aaa; outline: none; }
 .download-form-item input.input-error { border-color: #a00; }
 
-.download-form-action button { border: none; background-color: #77b783; color: white; width: 100%; height: 48px; }
+.download-form-action button { border: none; background-color: #77b783; color: white; width: 100%; height: 48px; -webkit-transition: background-color 0.25s; -moz-transition: background-color 0.25s; -o-transition: background-color 0.25s; transition: background-color 0.25s; }
+.download-form-action button:hover, .download-form-action button:focus { outline: none; background-color: #4e935b; }
 
-@media (min-width: 700px) { .download-demo { position: relative; background-color: #f6aa3c; }
+@media (min-width: 700px) { .download-demo { position: relative; background-color: #f19a1d; }
   .download-demo:before { content: ''; width: 50%; background-color: #3382b5; position: absolute; top: 0; right: 0; height: 100%; }
   .download-demo-content { margin: 0 -48px; }
   .download-demo-intro { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 36px 24px; width: 50%; float: left; min-height: 300px; position: relative; z-index: 100; }
@@ -493,7 +494,7 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 
 .hljs-string, .hljs-title, .hljs-parent, .hljs-tag .hljs-value, .hljs-rules .hljs-value, .ruby .hljs-symbol, .ruby .hljs-symbol .hljs-string, .hljs-template_tag, .django .hljs-variable, .hljs-addition, .hljs-flow, .hljs-stream, .apache .hljs-tag, .hljs-date, .tex .hljs-formula, .coffeescript .hljs-attribute { color: #a31515; }
 
-.ruby .hljs-string, .hljs-decorator, .hljs-filter .hljs-argument, .hljs-localvars, .hljs-array, .hljs-attr_selector, .hljs-pseudo, .hljs-pi, .hljs-doctype, .hljs-deletion, .hljs-envvar, .hljs-shebang, .hljs-preprocessor, .hljs-pragma, .userType, .apache .hljs-sqbracket, .nginx .hljs-built_in, .tex .hljs-special, .hljs-prompt { color: #c37709; }
+.ruby .hljs-string, .hljs-decorator, .hljs-filter .hljs-argument, .hljs-localvars, .hljs-array, .hljs-attr_selector, .hljs-pseudo, .hljs-pi, .hljs-doctype, .hljs-deletion, .hljs-envvar, .hljs-shebang, .hljs-preprocessor, .hljs-pragma, .userType, .apache .hljs-sqbracket, .nginx .hljs-built_in, .tex .hljs-special, .hljs-prompt { color: #9e610a; }
 
 .hljs-phpdoc, .hljs-javadoc, .hljs-xmlDocTag { color: #808080; }
 
