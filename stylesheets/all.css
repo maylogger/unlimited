@@ -336,17 +336,17 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 .pagination li .disable:hover { color: #999999; background-color: transparent; }
 @media (min-width: 700px) { .pagination li a, .pagination li span { font-size: 16px; line-height: 24px; } }
 
-.submit-works-form { max-width: 400px; margin: 0 auto 5em; }
+.submit-your-works-form { max-width: 400px; margin: 0 auto 5em; }
 
-.submit-works-form-item { margin-bottom: 18px; }
-.submit-works-form-item label { display: block; margin-bottom: 6px; width: 100%; font-size: 16px; line-height: 24px; font-weight: bold; }
-.submit-works-form-item input, .submit-works-form-item textarea { -webkit-appearance: none; border-radius: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #ddd; padding: 12px; display: block; width: 100%; display: block; }
-.submit-works-form-item input:focus, .submit-works-form-item textarea:focus { border: 1px solid #aaa; outline: none; background-color: #ffe; }
-.submit-works-form-item textarea { height: 120px; }
+.submit-your-works-form-item { margin-bottom: 18px; }
+.submit-your-works-form-item label { display: block; margin-bottom: 6px; width: 100%; font-size: 16px; line-height: 24px; font-weight: bold; }
+.submit-your-works-form-item input, .submit-your-works-form-item textarea { -webkit-appearance: none; border-radius: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #ddd; padding: 12px; display: block; width: 100%; display: block; }
+.submit-your-works-form-item input:focus, .submit-your-works-form-item textarea:focus { border: 1px solid #aaa; outline: none; background-color: #ffe; }
+.submit-your-works-form-item textarea { height: 120px; }
 
-.submit-works-form-action button { border: none; background-color: #444444; color: white; width: 100%; height: 48px; -webkit-transition: background-color 0.25s; -moz-transition: background-color 0.25s; -o-transition: background-color 0.25s; transition: background-color 0.25s; }
-.submit-works-form-action button:hover { background-color: #52bbbb; }
-.submit-works-form-action button:focus { outline: none; }
+.submit-your-works-form-action button { border: none; background-color: #444444; color: white; width: 100%; height: 48px; -webkit-transition: background-color 0.25s; -moz-transition: background-color 0.25s; -o-transition: background-color 0.25s; transition: background-color 0.25s; }
+.submit-your-works-form-action button:hover { background-color: #52bbbb; }
+.submit-your-works-form-action button:focus { outline: none; }
 
 .quick-nav { position: relative; background-color: #f6f6f6; }
 

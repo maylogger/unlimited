@@ -16,8 +16,8 @@ body { min-width: 960px; }
 .main { width: 74.46809%; float: right; margin-right: 0; }
 
 .hero-bigtext { margin-bottom: 50px; max-width: 600px; }
-.hero-bigtext .hero-bigtext-inner { display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/bigtext-for-ie8.png?1408611425'); background-repeat: no-repeat; background-position: 50% 50%; width: 600px; height: 360px; background-image: none, url('/images/bigtext-for-ie8.svg'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 600px; height: 0; padding-top: 60%; }
-.hero-bigtext .hero-unlimited { display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/unlimited-for-ie8.png?1408611425'); background-repeat: no-repeat; background-position: 50% 50%; width: 600px; height: 53px; background-image: none, url('/images/unlimited-for-ie8.svg'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 600px; height: 0; padding-top: 8.83333%; }
+.hero-bigtext .hero-bigtext-inner { display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/bigtext-for-ie8.png?1408612038'); background-repeat: no-repeat; background-position: 50% 50%; width: 600px; height: 360px; background-image: none, url('/images/bigtext-for-ie8.svg'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 600px; height: 0; padding-top: 60%; }
+.hero-bigtext .hero-unlimited { display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/unlimited-for-ie8.png?1408612038'); background-repeat: no-repeat; background-position: 50% 50%; width: 600px; height: 53px; background-image: none, url('/images/unlimited-for-ie8.svg'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 600px; height: 0; padding-top: 8.83333%; }
 
 .hero-nav li { display: inline-block; margin: 0 1em; }
 .hero-nav li a { font-size: 26px; }
@@ -40,7 +40,7 @@ body { min-width: 960px; }
 .intro span.mobile-hide { display: inline !important; }
 .intro br.pad-hide { display: none !important; }
 
-.kp-image { width: 100%; background-image: url('/images/intro-icons.png?1408580136'); background-repeat: no-repeat; background-position: center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; -ms-behavior: url(/vender/backgroundsize.min.htc); }
+.kp-image { width: 100%; background-image: url('/images/intro-icons.png?1408617739'); background-repeat: no-repeat; background-position: center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; -ms-behavior: url(/vender/backgroundsize.min.htc); }
 .kp-image .kp { width: auto; }
 
 .intro-text { width: 80%; font-size: 20px; }
