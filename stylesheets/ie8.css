@@ -116,9 +116,9 @@ body { min-width: 960px; }
 .message-block .message-block-text { font-size: 18px; line-height: 24px; margin-bottom: 24px; }
 .message-block .btn { display: inline-block; width: auto; margin: 0 6px; padding: 12px 24px; }
 
-.portfolio-list-item { width: 31.91489%; float: left; margin-right: 2.12766%; margin-right: -100%; margin-bottom: 48px; }
-.portfolio-list-item:nth-child(3n + 1) { margin-left: 0%; clear: left; }
-.portfolio-list-item:nth-child(3n + 2) { margin-left: 34.04255%; clear: none; }
-.portfolio-list-item:nth-child(3n + 3) { margin-left: 68.08511%; clear: none; }
+.showroom-list-item { width: 31.91489%; float: left; margin-right: 2.12766%; margin-right: -100%; margin-bottom: 48px; }
+.showroom-list-item:nth-child(3n + 1) { margin-left: 0%; clear: left; }
+.showroom-list-item:nth-child(3n + 2) { margin-left: 34.04255%; clear: none; }
+.showroom-list-item:nth-child(3n + 3) { margin-left: 68.08511%; clear: none; }
 
 .pagination li a, .pagination li span { font-size: 16px; line-height: 24px; }
