@@ -298,8 +298,8 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 @media (min-width: 700px) { .page-info { padding: 48px 0; text-align: center; }
   .page-info-title { font-size: 42px; line-height: 48px; color: black; margin-bottom: 12px; }
   .page-info-subtitle { font-size: 20px; line-height: 24px; } }
-@media (min-width: 920px) { .page-info { padding-bottom: 0px; margin-bottom: 48px; }
-  .page-info .page-info-subtitle { padding-bottom: 48px; border-bottom: 1px solid #eeeeef; } }
+@media (min-width: 920px) { .page-info.page-info_with-line { padding-bottom: 0px; margin-bottom: 48px; }
+  .page-info.page-info_with-line .page-info-subtitle { padding-bottom: 48px; border-bottom: 1px solid #eeeeef; } }
 .sidebar { margin-bottom: 24px; }
 
 @media (max-width: 919px) { .sidebar-sticky { width: 100% !important; } }
