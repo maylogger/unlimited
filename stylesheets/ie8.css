@@ -109,7 +109,7 @@ body { min-width: 960px; }
 .quick-nav-list > li { margin: 0; }
 .quick-nav-list a { padding: 3px 0; }
 
-.documention-block { border-left: 1px solid #eeeeef; padding-left: 48px; padding-bottom: 24px; }
+.docs { border-left: 1px solid #eeeeef; padding-left: 48px; padding-bottom: 24px; }
 
 .message-block { min-height: 600px; padding: 96px 0 48px; }
 .message-block .message-block-title { font-size: 36px; line-height: 36px; margin-bottom: 24px; }

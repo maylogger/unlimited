@@ -136,9 +136,9 @@ br.desktop-hide { display: block; }
 
 html { font-size: 16px; line-height: 24px; }
 
-body, .label, .documention-block h1, .documention-block h2, .documention-block h3, .documention-block h4, .documention-block h5, .documention-block h6 { font-family: "Helvetica Neue", "Helvetica", "Arial", "STHeitiTC-Light","Microsoft JhengHei", sans-serif; font-weight: 400; font-style: normal; }
+body, .label, .docs h1, .docs h2, .docs h3, .docs h4, .docs h5, .docs h6 { font-family: "Helvetica Neue", "Helvetica", "Arial", "STHeitiTC-Light","Microsoft JhengHei", sans-serif; font-weight: 400; font-style: normal; }
 
-code, pre code, .documention-block .code-note dt, .documention-block .note-warning dt, .documention-block .note-message dt { font-family: "Anonymous Pro", "Inconsolata", "Consolas Regular Font", "Monaco", "Courier New" ,MonoSpace; font-weight: 400; font-style: normal; }
+code, pre code, .docs .code-note dt, .docs .note-warning dt, .docs .note-message dt { font-family: "Anonymous Pro", "Inconsolata", "Consolas Regular Font", "Monaco", "Courier New" ,MonoSpace; font-weight: 400; font-style: normal; }
 
 .page-info-title, .dwonload-demo-intro-title .zh, .download-form-title, .how-to-code, .intro-text h2, .intro-text h3 { font-family: "kp-w3", "Helvetica Neue", "Helvetica", "Nimbus Sans L", "Arial", "Liberation Sans", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", "SimHei", "WenQuanYi Zen Hei Sharp", sans-serif; }
 .jf-loading .page-info-title, .jf-loading .dwonload-demo-intro-title .zh, .dwonload-demo-intro-title .jf-loading .zh, .jf-loading .download-form-title, .jf-loading .how-to-code, .jf-loading .intro-text h2, .intro-text .jf-loading h2, .jf-loading .intro-text h3, .intro-text .jf-loading h3 { opacity: 0; }
@@ -150,7 +150,7 @@ code, pre code, .documention-block .code-note dt, .documention-block .note-warni
 
 .download-form-subtitle { font-family: Georgia, "Times New Roman", Times, serif; font-weight: 400; font-style: normal; }
 
-.documention-block .move-to-top, .dwonload-demo-intro-title, .download-demo-intro-text, .workshop-event-link, .message-block .btn, .intro { -webkit-font-smoothing: subpixel-antialiased; }
+.docs .move-to-top, .dwonload-demo-intro-title, .download-demo-intro-text, .workshop-event-link, .message-block .btn, .intro { -webkit-font-smoothing: subpixel-antialiased; }
 
 body { -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; color: #444444; }
 
@@ -179,7 +179,7 @@ code { font-size: 13px; line-height: 24px; padding: 0 6px; background-color: #f3
 pre { margin-top: 24px; margin-bottom: 24px; }
 pre code { display: block; padding: 18px; color: #444444; font-size: 12px; line-height: 1.6; }
 
-pre code, .documention-block .api { overflow: auto; white-space: pre; -webkit-overflow-scrolling: touch; background-image: linear-gradient(to right, #f3f3f3 12.5%, rgba(243, 243, 243, 0)), linear-gradient(to right, rgba(243, 243, 243, 0), #f3f3f3 87.5%), radial-gradient(0 50%, farthest-side, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)), radial-gradient(100% 50%, farthest-side, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)); background-image: linear-gradient(to right, #f3f3f3 12.5%, rgba(243, 243, 243, 0)), linear-gradient(to right, rgba(243, 243, 243, 0), #f3f3f3 87.5%), radial-gradient(farthest-side at 0 50%, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)), radial-gradient(farthest-side at 100% 50%, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)); background-repeat: no-repeat; background-color: #f3f3f3; background-size: 80px 100%, 80px 100%, 10px 110%, 10px 110%; background-attachment: local, local, scroll, scroll; background-position: left center, right center, left center, right center; }
+pre code { overflow: auto; white-space: pre; -webkit-overflow-scrolling: touch; background-image: linear-gradient(to right, #f3f3f3 12.5%, rgba(243, 243, 243, 0)), linear-gradient(to right, rgba(243, 243, 243, 0), #f3f3f3 87.5%), radial-gradient(0 50%, farthest-side, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)), radial-gradient(100% 50%, farthest-side, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)); background-image: linear-gradient(to right, #f3f3f3 12.5%, rgba(243, 243, 243, 0)), linear-gradient(to right, rgba(243, 243, 243, 0), #f3f3f3 87.5%), radial-gradient(farthest-side at 0 50%, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)), radial-gradient(farthest-side at 100% 50%, rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0)); background-repeat: no-repeat; background-color: #f3f3f3; background-size: 80px 100%, 80px 100%, 10px 110%, 10px 110%; background-attachment: local, local, scroll, scroll; background-position: left center, right center, left center, right center; }
 
 ol, ul { margin-top: 24px; margin-bottom: 24px; padding-left: 24px; }
 ol ol, ol ul, ul ol, ul ul { margin: 0; }
@@ -218,7 +218,7 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 .header .logo a { margin: 0 auto; display: block; max-width: 509px; line-height: 0; text-indent: 110%; white-space: nowrap; overflow: hidden; }
 .header .logo a:after { content: ""; display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/logo_s.png?1408573062'); background-repeat: no-repeat; background-position: 50% 50%; width: 509px; height: 89px; background-image: none, url('/images/logo_s.svg?1408573062'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 509px; height: 0; padding-top: 17.48527%; }
 .header .main-nav { display: block; padding: 0; margin: 0 auto; text-align: center; list-style: none; }
-.header .main-nav li { display: inline; margin: 0 .75em; }
+.header .main-nav li { display: inline; margin: 0 .25em; }
 .header .main-nav li a { color: inherit; text-decoration: inherit; cursor: inherit; color: white; font-size: 18px; line-height: 24px; }
 .header .main-nav li a:active, .header .main-nav li a:focus { outline: none; }
 @media (min-width: 700px) { .header { padding-top: 48px; padding-bottom: 24px; }
@@ -350,49 +350,52 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 
 .quick-nav { position: relative; background-color: #f6f6f6; }
 
-.quick-nav-title { display: block; font-size: 14px; line-height: 24px; background-color: #e3e3e3; padding: 3px 12px; position: relative; color: #444444; }
+.quick-nav-title { display: block; font-size: 13px; line-height: 24px; background-color: #e3e3e3; padding: 6px 12px; position: relative; color: #444444; }
 .quick-nav-title:hover { color: #444444; text-decoration: none; }
 .quick-nav-title:before { content: ''; position: absolute; top: 50%; right: 12px; margin-top: -3px; width: 0px; height: 0px; border-style: solid; border-width: 6px 6px 0 6px; border-color: #444444 transparent transparent transparent; }
 
-.quick-nav-list { display: none; margin: 0; padding: 0; border: 0; list-style: none; margin-bottom: 0px; padding-bottom: 1px; font-size: 13px; line-height: 18px; }
+.quick-nav-list { display: none; margin: 0; padding: 0; border: 0; list-style: none; margin-bottom: 0px; padding: 6px 0; font-size: 13px; line-height: 18px; }
 .quick-nav-list > li { white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; }
-.quick-nav-list a { display: block; padding: 6px; color: inherit; text-decoration: inherit; cursor: inherit; color: #444444; -webkit-transition: color 1s; -moz-transition: color 1s; -o-transition: color 1s; transition: color 1s; }
-.quick-nav-list a:active, .quick-nav-list a:focus { outline: none; }
-.quick-nav-list a:hover { color: #777777; }
-.quick-nav-list > .active > a { -webkit-transition: color 0.3s; -moz-transition: color 0.3s; -o-transition: color 0.3s; transition: color 0.3s; color: #52bbbb; }
+.quick-nav-list .go-anchor { display: block; padding: 6px 12px; color: inherit; text-decoration: inherit; cursor: inherit; -webkit-transition: color 1s; -moz-transition: color 1s; -o-transition: color 1s; transition: color 1s; }
+.quick-nav-list .go-anchor:active, .quick-nav-list .go-anchor:focus { outline: none; }
+.quick-nav-list .go-anchor .new-api, .quick-nav-list .go-anchor .maybe-api { display: inline-block; background: #52bbbb; color: white; padding: 0 .5em; margin: 0 .3em; font-size: 11px; line-height: 18px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; }
+.quick-nav-list .go-anchor .maybe-api { background-color: #ccc; }
+.quick-nav-list span.go-anchor { color: #ccc; }
+.quick-nav-list > .active > .go-anchor { -webkit-transition: color 0.3s; -moz-transition: color 0.3s; -o-transition: color 0.3s; transition: color 0.3s; color: #52bbbb; }
 .quick-nav-list .sub-nav { list-style: none; padding-left: 0; }
 .quick-nav-list .sub-nav li { font-size: 12px; line-height: 18px; padding-left: 18px; margin: 12px 0; white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; }
 .quick-nav-list .sub-nav > .active { border-left: 1px solid #999999; }
-.quick-nav-list .sub-nav > .active > a { color: #444444; }
+.quick-nav-list .sub-nav > .active > .go-anchor { color: #444444; }
 .quick-nav-list.is-open { display: block; }
 
-@media (min-width: 920px) { .quick-nav { background-color: transparent; }
+@media (min-width: 920px) { .quick-nav { background-color: transparent; padding-bottom: 24px; }
   .quick-nav-title { font-size: 22px; line-height: 36px; margin-bottom: 24px; font-weight: bold; padding: 0; cursor: default; background-color: transparent; }
   .quick-nav-title:before { display: none; }
   .quick-nav-list { display: block; background-color: transparent; padding: 0; font-size: 15px; line-height: 24px; }
   .quick-nav-list > li { margin: 0; }
-  .quick-nav-list a { padding: 3px 0; } }
-.documention-block .api { padding: 1em; margin-bottom: 24px; white-space: nowrap; overflow: auto; }
-.documention-block .api code { background: none; }
-.documention-block h1, .documention-block h2, .documention-block h3, .documention-block h4, .documention-block h5, .documention-block h6 { color: black; }
-.documention-block h2 { margin: 48px 0 24px; border-top: 1px solid #eeeeef; padding-top: 48px; font-size: 28px; line-height: 36px; }
-.documention-block h2:first-child { margin-top: -48px; border-top: 0; }
-.documention-block h3 { font-size: 20px; line-height: 24px; margin: 48px 0 24px; }
-.documention-block h4 { font-size: 16px; line-height: 24px; margin: 24px 0; }
-.documention-block hr { margin: 48px 0; }
-.documention-block .code-note, .documention-block .note-warning, .documention-block .note-message { margin: 24px 0; padding: 24px 24px; background-color: #e3eff5; color: #31708f; font-size: 15px; line-height: 24px; }
-.documention-block .code-note .note-title, .documention-block .note-warning .note-title, .documention-block .note-message .note-title { color: #2a617c; font-size: 16px; line-height: 24px; margin: 0 0 12px; }
-.documention-block .code-note p, .documention-block .note-warning p, .documention-block .note-message p { margin: 0; }
-.documention-block .code-note dl, .documention-block .note-warning dl, .documention-block .note-message dl { margin: 0; padding: 0; border: 0; }
-.documention-block .code-note dt, .documention-block .note-warning dt, .documention-block .note-message dt { font-size: 15px; line-height: 24px; font-weight: normal; }
-.documention-block .code-note dd, .documention-block .note-warning dd, .documention-block .note-message dd { font-size: 12px; line-height: 24px; margin-left: 1em; }
-.documention-block .note-warning { color: #a94442; background-color: #f9f1f1; }
-.documention-block .note-warning .note-title { color: #973d3b; }
-.documention-block .note-message { color: #3c763d; background-color: #ddeedd; }
-.documention-block .note-message .note-title { color: #336534; }
-.documention-block .move-to-top { font-size: 15px; line-height: 24px; float: right; }
+  .quick-nav-list .go-anchor { padding: 3px 0; }
+  .quick-nav-list .go-anchor .new-api, .quick-nav-list .go-anchor .maybe-api { position: relative; font-size: 12px; line-height: 18px; top: -1px; } }
+.docs .api { padding: 1em; margin-bottom: 24px; word-break: break-all; overflow: hidden; background-color: #f3f3f3; }
+.docs .api code { background: none; white-space: normal; }
+.docs h1, .docs h2, .docs h3, .docs h4, .docs h5, .docs h6 { color: black; }
+.docs h2 { margin: 48px 0 24px; border-top: 1px solid #eeeeef; padding-top: 48px; font-size: 28px; line-height: 36px; }
+.docs h2:first-child { margin-top: -48px; border-top: 0; }
+.docs h3 { font-size: 20px; line-height: 24px; margin: 48px 0 24px; }
+.docs h4 { font-size: 16px; line-height: 24px; margin: 24px 0; }
+.docs hr { margin: 48px 0; }
+.docs .code-note, .docs .note-warning, .docs .note-message { margin: 24px 0; padding: 24px 24px; background-color: #e3eff5; color: #31708f; font-size: 15px; line-height: 24px; }
+.docs .code-note .note-title, .docs .note-warning .note-title, .docs .note-message .note-title { color: #2a617c; font-size: 16px; line-height: 24px; margin: 0 0 12px; }
+.docs .code-note p, .docs .note-warning p, .docs .note-message p { margin: 0; }
+.docs .code-note dl, .docs .note-warning dl, .docs .note-message dl { margin: 0; padding: 0; border: 0; }
+.docs .code-note dt, .docs .note-warning dt, .docs .note-message dt { font-size: 15px; line-height: 24px; font-weight: normal; }
+.docs .code-note dd, .docs .note-warning dd, .docs .note-message dd { font-size: 12px; line-height: 24px; margin-left: 1em; }
+.docs .note-warning { color: #a94442; background-color: #f9f1f1; }
+.docs .note-warning .note-title { color: #973d3b; }
+.docs .note-message { color: #3c763d; background-color: #ddeedd; }
+.docs .note-message .note-title { color: #336534; }
+.docs .move-to-top { font-size: 15px; line-height: 24px; float: right; }
 
-@media (min-width: 920px) { .documention-block { border-left: 1px solid #eeeeef; padding-left: 48px; padding-bottom: 24px; } }
+@media (min-width: 920px) { .docs { border-left: 1px solid #eeeeef; padding-left: 48px; padding-bottom: 24px; } }
 .download-demo-content { margin: 0 -24px; }
 
 .download-demo-intro { padding: 48px 24px; }
