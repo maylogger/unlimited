@@ -59,7 +59,7 @@ function apply_api(){
     return false;
   }
   $(".download-form .submit").text("處理中...");
-  $.post("http://api.kptaipei.tw/v1/register",{name:$("#name").val(),email:$("#email").val()},function(data){
+  $.post("http://api2.kptaipei.tw/v1/register",{name:$("#name").val(),email:$("#email").val()},function(data){
       if(data.isSuccess){
           $(".download-form").addClass("done");
           $(".download-form input, .download-form button").prop('disabled', true);
