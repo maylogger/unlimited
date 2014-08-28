@@ -140,9 +140,9 @@ body, .label, .docs h1, .docs h2, .docs h3, .docs h4, .docs h5, .docs h6 { font-
 
 code, pre code, .docs .code-note dt, .docs .note-warning dt, .docs .note-message dt { font-family: "Anonymous Pro", "Inconsolata", "Consolas Regular Font", "Monaco", "Courier New" ,MonoSpace; font-weight: 400; font-style: normal; }
 
-.page-info-title, .dwonload-demo-intro-title .zh, .download-form-title, .how-to-code, .intro-text h2, .intro-text h3 { font-family: "kp-w3", "Helvetica Neue", "Helvetica", "Nimbus Sans L", "Arial", "Liberation Sans", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", "SimHei", "WenQuanYi Zen Hei Sharp", sans-serif; }
-.jf-loading .page-info-title, .jf-loading .dwonload-demo-intro-title .zh, .dwonload-demo-intro-title .jf-loading .zh, .jf-loading .download-form-title, .jf-loading .how-to-code, .jf-loading .intro-text h2, .intro-text .jf-loading h2, .jf-loading .intro-text h3, .intro-text .jf-loading h3 { opacity: 0; }
-.jf-active .page-info-title, .jf-active .dwonload-demo-intro-title .zh, .dwonload-demo-intro-title .jf-active .zh, .jf-active .download-form-title, .jf-active .how-to-code, .jf-active .intro-text h2, .intro-text .jf-active h2, .jf-active .intro-text h3, .intro-text .jf-active h3 { opacity: 1; -webkit-transition: opacity 0.5s; -webkit-transition-delay: 0.1s; -moz-transition: opacity 0.5s 0.1s; -o-transition: opacity 0.5s 0.1s; transition: opacity 0.5s 0.1s; }
+.page-info-title, .dwonload-demo-intro-title .zh, .download-form-title, .how-to-code, .forum a, .intro-text h2, .intro-text h3 { font-family: "kp-w3", "Helvetica Neue", "Helvetica", "Nimbus Sans L", "Arial", "Liberation Sans", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", "SimHei", "WenQuanYi Zen Hei Sharp", sans-serif; }
+.jf-loading .page-info-title, .jf-loading .dwonload-demo-intro-title .zh, .dwonload-demo-intro-title .jf-loading .zh, .jf-loading .download-form-title, .jf-loading .how-to-code, .jf-loading .forum a, .forum .jf-loading a, .jf-loading .intro-text h2, .intro-text .jf-loading h2, .jf-loading .intro-text h3, .intro-text .jf-loading h3 { opacity: 0; }
+.jf-active .page-info-title, .jf-active .dwonload-demo-intro-title .zh, .dwonload-demo-intro-title .jf-active .zh, .jf-active .download-form-title, .jf-active .how-to-code, .jf-active .forum a, .forum .jf-active a, .jf-active .intro-text h2, .intro-text .jf-active h2, .jf-active .intro-text h3, .intro-text .jf-active h3 { opacity: 1; -webkit-transition: opacity 0.5s; -webkit-transition-delay: 0.1s; -moz-transition: opacity 0.5s 0.1s; -o-transition: opacity 0.5s 0.1s; transition: opacity 0.5s 0.1s; }
 
 .header .main-nav, .header .main-nav li a, .hero-nav { font-family: "kp-w4", "Helvetica Neue", "Helvetica", "Nimbus Sans L", "Arial", "Liberation Sans", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", "SimHei", "WenQuanYi Zen Hei Sharp", sans-serif; }
 .jf-loading .header .main-nav, .header .jf-loading .main-nav, .jf-loading .header .main-nav li a, .header .main-nav li .jf-loading a, .jf-loading .hero-nav { opacity: 0; }
@@ -150,7 +150,7 @@ code, pre code, .docs .code-note dt, .docs .note-warning dt, .docs .note-message
 
 .download-form-subtitle { font-family: Georgia, "Times New Roman", Times, serif; font-weight: 400; font-style: normal; }
 
-.docs .move-to-top, .dwonload-demo-intro-title, .download-demo-intro-text, .workshop-event-link, .message-block .btn, .intro { -webkit-font-smoothing: subpixel-antialiased; }
+.docs .move-to-top, .dwonload-demo-intro-title, .download-demo-intro-text, a.workshop-event-link, .message-block .btn, .intro { -webkit-font-smoothing: subpixel-antialiased; }
 
 body { -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; color: #444444; }
 
@@ -214,15 +214,15 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
   .sidebar { width: 23.40426%; float: left; margin-right: 2.12766%; }
   .main { width: 74.46809%; float: right; margin-right: 0; } }
 .header { background: #52bbbb; padding-top: 24px; padding-bottom: 18px; }
-.header .logo { width: 90%; margin: 0 auto; position: relative; left: 5px; margin-bottom: 12px; }
+.header .logo { width: 90%; max-width: 350px; margin: 0 auto; position: relative; left: 5px; margin-bottom: 12px; }
 .header .logo a { margin: 0 auto; display: block; max-width: 509px; line-height: 0; text-indent: 110%; white-space: nowrap; overflow: hidden; }
 .header .logo a:after { content: ""; display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/logo_s.png?1408573062'); background-repeat: no-repeat; background-position: 50% 50%; width: 509px; height: 89px; background-image: none, url('/images/logo_s.svg?1408573062'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 509px; height: 0; padding-top: 17.48527%; }
 .header .main-nav { display: block; padding: 0; margin: 0 auto; text-align: center; list-style: none; }
-.header .main-nav li { display: inline; margin: 0 .25em; }
+.header .main-nav li { display: inline; margin: 0 .35em; }
 .header .main-nav li a { color: inherit; text-decoration: inherit; cursor: inherit; color: white; font-size: 18px; line-height: 24px; }
 .header .main-nav li a:active, .header .main-nav li a:focus { outline: none; }
 @media (min-width: 700px) { .header { padding-top: 48px; padding-bottom: 24px; }
-  .header .logo { position: relative; left: 12px; margin-bottom: 12px; }
+  .header .logo { position: relative; left: 12px; margin-bottom: 12px; max-width: none; }
   .header .main-nav li a { font-size: 22px; line-height: 48px; } }
 @media (min-width: 920px) { .header .main-nav li a:hover { border-bottom: 2px solid white; } }
 
@@ -407,6 +407,8 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 .dwonload-demo-intro-title .zh { font-size: 32px; line-height: 24px; margin: 0 auto; margin-bottom: 36px; }
 
 .download-demo-intro-text { color: white; clear: both; }
+.download-demo-intro-text a { color: inherit; text-decoration: inherit; cursor: inherit; color: rgba(255, 255, 255, 0.75); border-bottom: 2px solid rgba(255, 255, 255, 0.75); padding: 1px; }
+.download-demo-intro-text a:active, .download-demo-intro-text a:focus { outline: none; }
 
 .download-demo-intro_designers { background-color: #f19a1d; }
 .download-demo-intro_designers .download-demo-intro-text { float: left; }
@@ -459,11 +461,9 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
   .download-form { width: 280px; margin-left: -140px; top: auto; bottom: -72px; } }
 .workshop { position: relative; padding: 48px 0 72px; background-color: #444444; background-image: url('/images/workshop_s.jpg?1408580136'); background-position: center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; text-align: center; }
 .workshop .wrapper { position: relative; z-index: 2; }
-.workshop:after { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(52, 52, 54, 0.3)), color-stop(100%, rgba(52, 52, 54, 0.2))); background-image: -webkit-linear-gradient(rgba(52, 52, 54, 0.3), rgba(52, 52, 54, 0.2)); background-image: -moz-linear-gradient(rgba(52, 52, 54, 0.3), rgba(52, 52, 54, 0.2)); background-image: -o-linear-gradient(rgba(52, 52, 54, 0.3), rgba(52, 52, 54, 0.2)); background-image: linear-gradient(rgba(52, 52, 54, 0.3), rgba(52, 52, 54, 0.2)); }
+.workshop:after { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(52, 52, 54, 0.5)), color-stop(100%, rgba(52, 52, 54, 0.4))); background-image: -webkit-linear-gradient(rgba(52, 52, 54, 0.5), rgba(52, 52, 54, 0.4)); background-image: -moz-linear-gradient(rgba(52, 52, 54, 0.5), rgba(52, 52, 54, 0.4)); background-image: -o-linear-gradient(rgba(52, 52, 54, 0.5), rgba(52, 52, 54, 0.4)); background-image: linear-gradient(rgba(52, 52, 54, 0.5), rgba(52, 52, 54, 0.4)); }
 
 .how-to-code { font-size: 18px; line-height: 24px; margin-bottom: 30px; color: #e6e1e2; }
-
-.vertical-line { margin-bottom: 24px; display: inline-block; height: 60px; border-left: 1px dashed #e6e1e2; opacity: 0.75; }
 
 .workshop-title { display: block; max-width: 731px; line-height: 0; text-indent: 110%; white-space: nowrap; overflow: hidden; margin: 0 auto; margin-bottom: 5%; }
 .workshop-title:after { content: ""; display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/workshop_en.png?1408573062'); background-repeat: no-repeat; background-position: 50% 50%; width: 731px; height: 55px; background-image: none, url('/images/workshop_en.svg?1408573062'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 731px; height: 0; padding-top: 7.52394%; }
@@ -474,18 +474,28 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 .workshop-date { display: block; max-width: 594px; line-height: 0; text-indent: 110%; white-space: nowrap; overflow: hidden; margin: 0 auto; margin-bottom: 48px; }
 .workshop-date:after { content: ""; display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/workshop_date.png?1408617739'); background-repeat: no-repeat; background-position: 50% 50%; width: 594px; height: 65px; background-image: none, url('/images/workshop_date.svg?1408573062'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 594px; height: 0; padding-top: 10.94276%; }
 
-.workshop-event-link { color: inherit; text-decoration: inherit; cursor: inherit; border: 2px solid #e6e1e2; padding: 12px 48px; display: inline-block; font-size: 20px; line-height: 24px; color: #e6e1e2; }
-.workshop-event-link:active, .workshop-event-link:focus { outline: none; }
+a.workshop-event-link { position: relative; color: inherit; text-decoration: inherit; cursor: inherit; border: 2px solid #e6e1e2; padding: 12px 12px 12px 73px; display: inline-block; font-size: 15px; line-height: 24px; color: #e6e1e2; background: rgba(0, 0, 0, 0.3); -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-transition: background-color 0.5s; -moz-transition: background-color 0.5s; -o-transition: background-color 0.5s; transition: background-color 0.5s; }
+a.workshop-event-link:active, a.workshop-event-link:focus { outline: none; }
+a.workshop-event-link .ticket { position: absolute; left: 12px; bottom: 0; display: block; max-width: 138px; line-height: 0; text-indent: 110%; white-space: nowrap; overflow: hidden; width: 55px; }
+a.workshop-event-link .ticket:after { content: ""; display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/ticket.png?1409247235'); background-repeat: no-repeat; background-position: 50% 50%; width: 138px; height: 149px; background-image: none, url('/images/ticket.svg?1409247236'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 138px; height: 0; padding-top: 107.97101%; }
+a.workshop-event-link:hover { background: black; }
 
-@media (min-width: 700px) { .workshop { margin: 0 auto; padding-top: 72px; padding-bottom: 240px; background-image: url('/images/workshop.jpg?1408580136'); }
-  .vertical-line { height: 120px; }
-  .how-to-code { margin-bottom: 48px; font-size: 24px; line-height: 24px; }
+@media (min-width: 700px) { .workshop { margin: 0 auto; padding-top: 72px; background-image: url('/images/workshop.jpg?1408580136'); }
+  .how-to-code { margin-bottom: 96px; font-size: 24px; line-height: 24px; }
   .how-to-code br { display: none; }
-  .vertical-line { margin-bottom: 36px; }
   .workshop-title { margin-bottom: 30px; }
   .workshop-subtitle { margin-bottom: 30px; }
-  .workshop-date { margin-bottom: 60px; } }
+  .workshop-date { margin-bottom: 60px; }
+  a.workshop-event-link { margin-top: 120px; margin-bottom: 72px; font-size: 20px; line-height: 24px; padding: 12px 24px 12px 174px; }
+  a.workshop-event-link .ticket { left: 24px; width: 138px; -webkit-transition: -webkit-transform 1s; -moz-transition: -moz-transform 1s; -o-transition: -o-transform 1s; transition: transform 1s; -webkit-transform-origin: 50% 100% 0; -moz-transform-origin: 50% 100% 0; -ms-transform-origin: 50% 100% 0; -o-transform-origin: 50% 100% 0; transform-origin: 50% 100% 0; }
+  a.workshop-event-link:hover .ticket, a.workshop-event-link:active .ticket { -webkit-transition: -webkit-transform 0.3s; -moz-transition: -moz-transform 0.3s; -o-transition: -o-transform 0.3s; transition: transform 0.3s; -webkit-transform: scale(1.15); -moz-transform: scale(1.15); -ms-transform: scale(1.15); -o-transform: scale(1.15); transform: scale(1.15); } }
 @media (min-width: 920px) { .workshop { padding-top: 120px; background-attachment: fixed; } }
+.forum { text-align: center; font-size: 20px; line-height: 24px; padding-top: 48px; padding-bottom: 48px; }
+.forum a { position: relative; top: -.1em; color: inherit; text-decoration: inherit; cursor: inherit; color: #52bbbb; padding-bottom: .2em; border-bottom: 1px solid #52bbbb; }
+.forum a:active, .forum a:focus { outline: none; }
+@media (min-width: 700px) { .forum { font-size: 32px; line-height: 48px; }
+  .forum a { border-bottom-width: 2px; } }
+
 /*
 
 Visual Studio-like style based on original C# coloring by Jason Diamond <jason@diamond.name>
@@ -522,7 +532,7 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
   .message-block .message-block-text { font-size: 18px; line-height: 24px; }
   .message-block .btn { display: inline-block; width: auto; margin: 0 6px; padding: 12px 24px; } }
 
-.icebaby { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0))), url('/images/icebaby.png?1408617739'); background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408617739'); background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408617739'); background-image: -o-linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408617739'); background-image: linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408617739'); -webkit-background-size: 100% 100%, 600px 266px; -moz-background-size: 100% 100%, 600px 266px; -o-background-size: 100% 100%, 600px 266px; background-size: 100% 100%, 600px 266px; }
+.icebaby { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0))), url('/images/icebaby.png?1408617739'); background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408617739'); background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408617739'); background-image: -o-linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408617739'); background-image: linear-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0)), url('/images/icebaby.png?1408617739'); -webkit-background-size: 100% 100%, 600px 266px; -moz-background-size: 100% 100%, 600px 266px; -o-background-size: 100% 100%, 600px 266px; background-size: 100% 100%, 600px 266px; background-position: center top, center top; }
 
 .intro { padding: 10% 0; padding-bottom: 0; color: #444444; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #fffff3)); background: -webkit-linear-gradient(#ffffff, #fffff3); background: -moz-linear-gradient(#ffffff, #fffff3); background: -o-linear-gradient(#ffffff, #fffff3); background: linear-gradient(#ffffff, #fffff3); }
 
@@ -530,6 +540,8 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 .intro-text h1, .intro-text h2, .intro-text h3, .intro-text h4, .intro-text h5, .intro-text h6 { text-align: center; }
 .intro-text h2 { font-size: 42px; line-height: 48px; margin-bottom: 36px; }
 .intro-text h3 { font-size: 42px; line-height: 48px; margin-top: 48px; margin-bottom: 0px; }
+.intro-text a { color: inherit; text-decoration: inherit; cursor: inherit; color: rgba(0, 0, 0, 0.75); margin: 2px; border-bottom: 2px solid rgba(0, 0, 0, 0.2); padding: 1px; }
+.intro-text a:active, .intro-text a:focus { outline: none; }
 
 .kp-image .kp { display: block; margin: 0 auto; max-width: 500px; width: 100%; height: auto; }
 
