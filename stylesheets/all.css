@@ -478,8 +478,7 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 
 a.workshop-event-link { position: relative; color: inherit; text-decoration: inherit; cursor: inherit; border: 2px solid #e6e1e2; padding: 12px 12px 12px 73px; display: inline-block; font-size: 15px; line-height: 24px; color: #e6e1e2; background: rgba(0, 0, 0, 0.3); -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-transition: background-color 0.5s; -moz-transition: background-color 0.5s; -o-transition: background-color 0.5s; transition: background-color 0.5s; }
 a.workshop-event-link:active, a.workshop-event-link:focus { outline: none; }
-a.workshop-event-link .ticket { position: absolute; left: 12px; bottom: 0; display: block; max-width: 138px; line-height: 0; text-indent: 110%; white-space: nowrap; overflow: hidden; width: 55px; }
-a.workshop-event-link .ticket:after { content: ""; display: block; text-indent: 110%; white-space: nowrap; overflow: hidden; background-image: url('/images/ticket.png?1409249455'); background-repeat: no-repeat; background-position: 50% 50%; width: 138px; height: 149px; background-image: none, url('/images/ticket.svg?1409249455'); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; width: 100%; max-width: 138px; height: 0; padding-top: 107.97101%; }
+a.workshop-event-link .ticket { margin: 0; padding: 0; border: 0; position: absolute; left: 12px; bottom: 0; width: 55px; height: auto; }
 a.workshop-event-link:hover { background: black; }
 
 @media (min-width: 700px) { .workshop { margin: 0 auto; padding-top: 72px; background-image: url('/images/workshop.jpg?1408580136'); }
