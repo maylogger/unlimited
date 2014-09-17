@@ -63,16 +63,21 @@
           <a class="quick-nav-title" href="#">API 選單</a>
         </h3>
         <ul class="quick-nav-list nav is-open">
+        
+          <li><a class="go-anchor" href="#api-license">資料授權條款<span class="new-api">新增</span></a></li>
           <li><a class="go-anchor" href="#api-ch1">文章類別</a></li>
           <li><a class="go-anchor" href="#api-ch2">類別內容</a></li>
           <li><a class="go-anchor" href="#api-ch3">相簿清單</a></li>
           <li><a class="go-anchor" href="#api-ch4">相簿照片</a></li>
           <li><a class="go-anchor" href="#api-ch5">影片播放清單</a></li>
           <li><a class="go-anchor" href="#api-ch6">清單內影片</a></li>
-          <li><a class="go-anchor" href="#api-ch7">台北調音樂清單<span class="new-api">新增</span></a></li>
-          <li><a class="go-anchor" href="#api-ch8">台北調播放清單內歌曲<span class="new-api">新增</span></a></li>
-          <li><span class="go-anchor" href="#api-ch9">競選經費<span class="maybe-api">期待中</span></span></li>
-          <li><span class="go-anchor" href="#api-ch10">野生柯P現在位置<span class="maybe-api">期待中</span></span></li>
+          <li><a class="go-anchor" href="#api-ch7">台北調音樂清單</a></li>
+          <li><a class="go-anchor" href="#api-ch8">台北調播放清單內歌曲</a></li>
+          <li><span class="go-anchor" href="#api-ch9">競選經費查詢<span class="maybe-api">期待中</span></span></li>
+          <li><span class="go-anchor" href="#api-ch10">MG149 帳戶明細<span class="maybe-api">期待中</span></span></li>
+          <li><span class="go-anchor" href="#api-ch11">SICU 帳戶明細<span class="maybe-api">期待中</span></span></li>
+          <li><span class="go-anchor" href="#api-ch12">柯文哲醫師歷年所得<span class="maybe-api">期待中</span></span></li>
+          <li><span class="go-anchor" href="#api-ch13">陳佩琪醫師歷年所得<span class="maybe-api">期待中</span></span></li>
         </ul>
         
       </div>
@@ -80,7 +85,35 @@
   </div>
   <div class="main">
     <div class="docs">
-      <div class="docs-content"><h2 id="api-ch1">
+      <div class="docs-content">
+<h2 id="api-license">
+  資料授權條款
+</h2>
+
+<p>說明文章授權條款</p>
+
+<div>
+  <ul>
+    <li>
+      <p><em class="important">除 /musics 資料以外</em> 採用 <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> 條款，即為：</p>  
+      <ol>
+        <li>要有來源標示（柯文哲野生官網）</li>
+        <li>可以自由利用（無論營利與否），具體細節請參考上述條款。</li>
+      </ol>
+    </li>
+    <li>
+      <p>/musics 音樂內容授權：</p>
+      <ol>
+        <li>不可重製</li>
+        <li>僅可在非商業用途前提下播放音樂</li>
+        <li>要有來源(柯文哲野生官網)、平台(soundcloud)與音樂作者標示</li>
+      </ol>
+    </li>
+  </ul>
+</div>
+
+
+<h2 id="api-ch1">
   文章類別查詢
 </h2>
 
@@ -524,21 +557,105 @@
   "errorCode": 0,
   "errorMessage": null,
   "data": [
-    {
-      "musicID": "1",
-      "soundcloudID": "try",
-      "votes": "80",
-      "song_name": "Try",
-      "groupname": "康容宣",
-      "link": " ",
-      "lyric": "Try shadows always over there\nEven the sunshine never left\nBut if you don't want to come out\nYou'll never know  how  wonderful  The sky\n\nDou't escape dont'tgive yourself much reason\n\nDou't escape. Just give yourself only one chance\n\n\nPlease hard try       Try and try\n\nPlease hard try      Try and try",
-      "creative": "台北，是個忙碌的都市，在這邊生活，一定會遇到很多不愉快\n令人沮喪的事，壓力大難免產生負面情緒\n\n希望大家都能不要在自己的小圈圈裡面，而是出來多接觸這個忙碌卻有點冷漠有點人情味的台北"
-    }
+      {
+        "musicID": 48,
+        "soundcloudID": "onhdaixllula",
+        "votes": "24",
+        "song_name": "流水帳進行曲",
+        "groupname": "石倍宗",
+        "link": null,
+        "creative": " ",
+        "tags": "華語",
+        "track_id": 163687452,
+        "waveform_url": "https://w1.sndcdn.com/OhVu2jGhThio_m.png",
+        "stream_url": "https://api.soundcloud.com/tracks/163687452/stream?client_id=7d716d401f4d5096ceb5ab87fc0dc217",
+        "play_count": 1158,
+        "favoritings_count": 0,
+        "soundcloud_url": "http://soundcloud.com/kptaipei/onhdaixllula"
+      }
+
   ],
   "pageInfo": {
     "totalResults": 1,
     "resultsPerPage": 150
   }
+}</code></pre>
+
+<div class="note-message">
+  <h4 class="note-title">
+    參數
+  </h4>
+  <dl>
+    <dt>GET page=?</dt>
+    <dd>第幾頁 (optional,default:0)</dd>
+    <dt>GET page_size=?</dt>
+    <dd>一次顯示幾筆 (optional,default:100,max:500)</dd>
+  </dl>
+</div>
+
+
+
+<h2 id="api-ch9">
+  競選經費查詢
+</h2>
+
+ <p>
+    主要欄位說明
+    <ul>
+      <li>account : 會計科目</li>
+      <li>start_date : 開始日期(yyyy/mm/dd) 形式</li>
+      <li>end_date : 結束日期(yyyy/mm/dd) 形式</li>
+      <li>start_timestamp :  timestamp (毫秒為單位的時間戳記) ，注意是"大於"、不是"超過"</li>
+      <li>end_timestamp : timestamp (毫秒為單位的時間戳記)，但注意是"未達"、不是"小於"。</li>
+      <li>label : 詳細內容</li>
+      <li>price : 金額</li>
+      <li>type : [income|expense] (收入|支出)</li>
+      <li>props : 各種類型會計科目的額外資料，像是人事費有銀行名(bank)跟帳戶(account)，
+        政治獻金有匿名與否(anonymous) 跟捐贈人數(counts)，支出費用則有傳票(voucher) 等資料。</li>
+    </ul>
+ </p>
+
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/financial/all[PLAYLIST_ID]?accessToken=[YOUR_API_KEY]</code>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "errorMessage": null,
+  "data": [
+    {
+      "account": "網路募款捐贈-匿名",
+      "start_date": "2014/4/1",
+      "end_date": "2014/4/30",
+      "label": "網路募款捐贈-匿名-四月份",
+      "props": {
+        "anonymous": 1,
+        "counts": 0
+      },
+      "price": 0,
+      "type": "income",
+      "start_timestamp": 1396281600000,
+      "end_timestamp": 1398873600000
+    },
+    {
+      "account": "網路募款捐贈-非匿名",
+      "start_date": "2014/4/1",
+      "end_date": "2014/4/30",
+      "label": "網路募款捐贈-非匿名-四月份",
+      "props": {
+        "anonymous": 0,
+        "counts": 0
+      },
+      "price": 0,
+      "type": "income",
+      "start_timestamp": 1396281600000,
+      "end_timestamp": 1398873600000
+    }
+  ]
 }</code></pre>
 
 <div class="note-message">

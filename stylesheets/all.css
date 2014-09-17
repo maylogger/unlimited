@@ -363,7 +363,7 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 .quick-nav-list .go-anchor .new-api, .quick-nav-list .go-anchor .maybe-api { display: inline-block; background: #52bbbb; color: white; padding: 0 .5em; margin: 0 .3em; font-size: 11px; line-height: 18px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; }
 .quick-nav-list .go-anchor .maybe-api { background-color: #ccc; }
 .quick-nav-list span.go-anchor { color: #ccc; }
-.quick-nav-list > .active > .go-anchor { -webkit-transition: color 0.3s; -moz-transition: color 0.3s; -o-transition: color 0.3s; transition: color 0.3s; color: #52bbbb; }
+.quick-nav-list > .active > .go-anchor { -webkit-transition: color 0.3s; -moz-transition: color 0.3s; -o-transition: color 0.3s; transition: color 0.3s; color: #52bbbb; background-color: #f1f1f1; }
 .quick-nav-list .sub-nav { list-style: none; padding-left: 0; }
 .quick-nav-list .sub-nav li { font-size: 12px; line-height: 18px; padding-left: 18px; margin: 12px 0; white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; }
 .quick-nav-list .sub-nav > .active { border-left: 1px solid #999999; }
@@ -371,12 +371,13 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 .quick-nav-list.is-open { display: block; }
 
 @media (min-width: 920px) { .quick-nav { background-color: transparent; padding-bottom: 24px; }
-  .quick-nav-title { font-size: 22px; line-height: 36px; margin-bottom: 24px; font-weight: bold; padding: 0; cursor: default; background-color: transparent; }
+  .quick-nav-title { font-size: 22px; line-height: 36px; margin-bottom: 24px; font-weight: bold; padding: 0; padding-left: 5px; cursor: default; background-color: transparent; }
   .quick-nav-title:before { display: none; }
   .quick-nav-list { display: block; background-color: transparent; padding: 0; font-size: 15px; line-height: 24px; }
   .quick-nav-list > li { margin: 0; }
-  .quick-nav-list .go-anchor { padding: 3px 0; }
-  .quick-nav-list .go-anchor .new-api, .quick-nav-list .go-anchor .maybe-api { position: relative; font-size: 12px; line-height: 18px; top: -1px; } }
+  .quick-nav-list .go-anchor { -webkit-transition: background-color 0.5s; -moz-transition: background-color 0.5s; -o-transition: background-color 0.5s; transition: background-color 0.5s; padding: 3px 5px; }
+  .quick-nav-list .go-anchor .new-api, .quick-nav-list .go-anchor .maybe-api { position: relative; font-size: 12px; line-height: 18px; float: right; top: 3px; }
+  .quick-nav-list .go-anchor:hover { -webkit-transition: background-color 0.3s; -moz-transition: background-color 0.3s; -o-transition: background-color 0.3s; transition: background-color 0.3s; background-color: #f1f1f1; } }
 .docs .api { padding: 1em; margin-bottom: 24px; word-break: break-all; overflow: hidden; background-color: #f3f3f3; }
 .docs .api code { background: none; white-space: normal; }
 .docs h1, .docs h2, .docs h3, .docs h4, .docs h5, .docs h6 { color: black; }
@@ -385,6 +386,9 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #eee
 .docs h3 { font-size: 20px; line-height: 24px; margin: 48px 0 24px; }
 .docs h4 { font-size: 16px; line-height: 24px; margin: 24px 0; }
 .docs hr { margin: 48px 0; }
+.docs li { margin-top: 6px; margin-bottom: 6px; }
+.docs li p { margin: 0; padding: 0; border: 0; }
+.docs em { font-style: normal; color: #aa0000; }
 .docs .code-note, .docs .note-warning, .docs .note-message { margin: 24px 0; padding: 24px 24px; background-color: #e3eff5; color: #31708f; font-size: 15px; line-height: 24px; }
 .docs .code-note .note-title, .docs .note-warning .note-title, .docs .note-message .note-title { color: #2a617c; font-size: 16px; line-height: 24px; margin: 0 0 12px; }
 .docs .code-note p, .docs .note-warning p, .docs .note-message p { margin: 0; }
