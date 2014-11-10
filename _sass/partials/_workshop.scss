@@ -1,0 +1,143 @@
+.workshop {
+  position: relative;
+  padding: rhythm(2) 0 rhythm(3);
+  background-color: $color-black;
+  background: {
+    image: image-url("workshop_s.jpg");
+    position: center center;
+  }
+  @include background-size(cover);
+  text-align: center;
+  .wrapper {
+    position: relative;
+    z-index: 2;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    @include background-image(
+      linear-gradient( rgba(#343436, .5), rgba(#343436, .4) )
+    );
+  }
+}
+
+.how-to-code {
+  @include adjust-font-size-to(18px);
+  @include trailer(1.25);
+  color: $color-workshop-white;
+  @extend %large-font;
+}
+
+.workshop-title {
+  // @include trailer(0.5);
+  // @include set-scalable-svg-wrapper(workshop_en);
+  // span { @include replace-text-with-scalable-svg(workshop_en); }
+  @include replace-text-with-scalable-svg-using-pesudo(workshop_en);
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+.workshop-subtitle {
+  // @include trailer(0.5);
+  // @include set-scalable-svg-wrapper(workshop_zh);
+  // span { @include replace-text-with-scalable-svg(workshop_zh); }
+  @include replace-text-with-scalable-svg-using-pesudo(workshop_zh);
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+.workshop-date {
+  // @include set-scalable-svg-wrapper(workshop_date);
+  // span { @include replace-text-with-scalable-svg(workshop_date); }
+  @include replace-text-with-scalable-svg-using-pesudo(workshop_date);
+  margin: 0 auto;
+  @include trailer(2);
+}
+
+a.workshop-event-link {
+  $ticket-size: 55px;
+  $button-padding: 12px;
+  position: relative;
+  @extend %subpixel;
+  @include unstyled-link;
+  border: 2px solid $color-workshop-white;
+  padding: $button-padding $button-padding $button-padding ($ticket-size + $button-padding * 1.5 );
+  display: inline-block;
+  @include adjust-font-size-to(15px);
+  @include link-colors($color-workshop-white);
+  background: rgba(black,.3);
+  @include border-radius(5px);
+  @include transition(background-color .5s);
+  .ticket {
+    @include reset-box-model;
+    position: absolute;
+    left: $button-padding;
+    bottom: 0;
+    width: $ticket-size;
+    height: auto;
+  }
+  &:hover {
+    background: black;
+  }
+}
+
+@include at-breakpoint($pad) {
+  .workshop {
+    margin: 0 auto;
+    @include padding-leader(3);
+    background: {
+      image: image-url("workshop.jpg");
+    }
+  }
+  .how-to-code {
+    @include trailer(4);
+    @include adjust-font-size-to(24px, 1);
+    br {
+      display: none;
+    }
+  }
+  .workshop-title {
+    @include trailer(1.25);
+  }
+  .workshop-subtitle {
+    @include trailer(1.25);
+  }
+  .workshop-date {
+    @include trailer(2.5);
+    // @include adjust-font-size-to(102px, 4);
+    // font-weight: bold;
+  }
+  a.workshop-event-link {
+    $ticket-size: 138px;
+    $button-padding: 24px;
+    @include leader(5);
+    @include trailer(3);
+    @include adjust-font-size-to(20px);
+    padding: ( $button-padding / 2 ) $button-padding ( $button-padding / 2 ) ($ticket-size + $button-padding * 1.5 );
+    .ticket {
+      left: $button-padding;
+      width: $ticket-size;
+      @include transition( transform 1s );
+      @include transform-origin( 50%, 100%, 0 );
+    }
+    &:hover .ticket,
+    &:active .ticket {
+      @include transition( transform .3s );
+      @include transform( scale(1.15) );
+    }
+  }
+}
+
+@include at-breakpoint($desktop) {
+  .workshop {
+    @include padding-leader(5);
+    background: {
+      attachment: fixed;
+    }
+  } // .workshop
+}

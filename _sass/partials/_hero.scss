@@ -1,0 +1,105 @@
+.hero {
+  position: relative;
+  width: 100%;
+  // height: 90%;
+  // min-height: 600px;
+  background-color: #4FBBBA;
+  overflow: hidden;
+  h1 {
+    @include reset-box-model;
+  }
+}
+.hero-containter {
+  position: relative;
+  padding: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  z-index: 100000;
+}
+.hero-logo {
+  display: block;
+  max-width: image-width("logo.png");
+  margin: 0 auto;
+  margin-bottom: 35px;
+  .hero-logo-inner {
+    display: block;
+    @include replace-text-with-scalable-svg("logo");
+  }
+}
+.hero-bigtext {
+  display: block;
+  @include transition(width, .5s);
+  position: relative;
+  width: 100%;
+  max-width: image-width("bigtext.png");
+  margin: 0 auto 35px;
+  .hero-bigtext-inner {
+    display: block;
+    @include replace-text-with-scalable-svg("bigtext");
+  }
+  .hero-unlimited {
+    display: block;
+    @include replace-text-with-scalable-svg("unlimited");
+    position: absolute;
+    left:0; right: 0;
+    bottom: 0; top: 0;
+    max-width: image-width("unlimited.png");
+    margin: auto;
+    z-index: 100001;
+  }
+}
+.hero-nav {
+  @extend %large-font-bold;
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  list-style: none;
+  li {
+    margin: 16px 0;
+    a {
+      @include unstyled-link;
+      font-size: 20px;
+      color: white;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+
+@include at-breakpoint($pad) {
+  .hero-bigtext {
+    margin-bottom: 50px;
+  }
+  .hero-nav {
+    li {
+      display: inline-block;
+      margin: 0 .5em;
+      a {
+        font-size: 22px;
+      }
+    }
+  } // .hero-nav
+}
+
+
+@include at-breakpoint($desktop) {
+  .hero-containter {
+    padding: 30px 0 60px;
+  }
+  // 如果視窗高度低於 800px 就把 logo 縮為 50% 寬
+  @media (max-height: 800px) {
+    .hero-bigtext { width: 50%; }
+  }
+  .hero-nav {
+    li {
+      margin: 0 1em;
+      a {
+        font-size: 26px;
+      }
+      a:hover {
+        border-bottom: 2px solid white;
+      }
+    }
+  } // .hero-nav
+}

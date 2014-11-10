@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "文哲不說神經病"
+subtitle:  ""
+excerpt: "由網友 高俊煜 製作的一款野生官網"
+author: "高俊煜"
+image: "/images/posts/a-wildkp-fb.png"
+cover: "/images/posts/a-wildkp-1.png"
+date: 2014-11-11 00:00:00
+categories: showroom web
+---
+
+[link-1]:http://kptaipei.wha.la/
+
+### 作品網址
+[http://kptaipei.wha.la/][link-1]
+
+### 作品介紹
+<strong>文哲不說神經病</strong> 是由網友 高俊煜 響應柯文哲陣營推出的「柯文哲野生官網」活動，所製作的一款野生官網。
+
+作者表示希望藉由一點小小的貢獻，使用柯文哲野生官網提供的 API 服務，建立柯 P 文宣網站，希望能用一些時事新聞手法，達到為柯P宣傳的效果。

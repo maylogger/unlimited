@@ -1,0 +1,9 @@
+.label {
+  @extend %helvetica;
+  display: inline-block;
+  padding: rhythm(0) rhythm(0.25);
+  @include adjust-font-size-to(13px);
+  color: white;
+  background: $color-turquoise;
+  font-weight: bold;
+}

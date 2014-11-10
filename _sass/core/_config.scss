@@ -1,0 +1,103 @@
+// =========================================
+// 專案前置設定
+// =========================================
+
+
+// ---- compass setting ----
+// hide
+$hide-text-direction: right;
+
+// compass vertical rhythm
+$base-font-size: 16px;
+$base-line-height: 24px;
+$relative-font-sizing: false;
+
+// compass support ie
+$legacy-support-for-ie: false;
+
+
+// ---- susy setting ----
+// basic for susy
+$total-columns  : 4;
+$column-width   : 72px;
+$gutter-width   : 24px;
+$grid-padding   : $gutter-width;
+
+// add media
+$phone          : $total-columns;
+$pad            : 700px 8;
+$desktop        : 920px 12;
+
+// class variable
+$page-container: ".wrapper";
+
+
+// ---- vendor mixin libraries ----
+@import "compass";
+@import "susy";
+
+
+
+// =========================================
+// global variables
+// =========================================
+
+
+// ======== Base Color ========
+// gray
+$color-white        : rgba(white,.9);
+$color-black        : #444;
+$color-gray         : #999;
+$color-gray-light   : #eeeeef;
+$color-workshop-white:#e6e1e2;
+$color-red          : #a00;
+
+// blue
+$color-blue-light   : #dee9ef;
+$color-blue         : #3382b5;
+$color-blue-dark    : darken($color-blue, 10%);
+
+$color-orange: #F19A1D;
+
+$color-green: #77b783;
+
+$color-turquoise: #52bbbb;
+
+
+// text-color
+$text-black         : #444;
+$text-black-light   : #666;
+$text-gray          : #8a8a8a;
+$text-gray-light    : lighten($text-gray, 15%);
+
+// btn-color
+$btn-bg-color: $color-black;
+$btn-color: white;
+$btn-hover-bg-color: $color-turquoise;
+
+
+// ======== Typography ========
+// font-size
+$font-size-xxl : $base-font-size * 2;
+$font-size-xl  : $base-font-size * 1.5;
+$font-size-l   : $base-font-size * 1.25;
+$font-size-m   : $base-font-size * 1;
+$font-size-s   : $base-font-size * .875;
+$font-size-xs  : $base-font-size * .75;
+
+// text-color
+$global-text-color            : $text-black;
+$global-text-color-muted      : $text-gray;
+$global-link-color       : $color-turquoise;
+$global-link-color-hover : darken($color-turquoise, 20%);
+
+// background & border
+$global-background       : #f3f3f3;
+$global-divider          : $color-gray-light;
+$global-divider-dark     : #ccc;
+
+
+
+// =========================================
+// partial variables
+// =========================================

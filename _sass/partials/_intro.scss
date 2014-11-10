@@ -1,0 +1,86 @@
+.intro {
+  padding: 10% 0;
+  padding-bottom: 0;
+  color: $color-black;
+  @extend %subpixel;
+  @include background(
+    linear-gradient(white, #fffff3)
+  );
+}
+
+%intro-title {
+  text-align: center;
+  @include adjust-font-size-to(26px, 1);
+  letter-spacing: -1px;
+  font-weight: normal;
+}
+
+.intro-text {
+  width: 100%;
+  max-width: 30em;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.5;
+  #{headings()} {
+    text-align: center;
+  }
+  h2 {
+    @extend %large-font;
+    @include adjust-font-size-to(42px);
+    @include trailer(1.5);
+  }
+  h3 {
+    @extend %large-font;
+    @include adjust-font-size-to(42px);
+    @include leader(2);
+    @include trailer(0);
+  }
+  a {
+    @include unstyled-link;
+    @include link-colors( rgba(black,.75) );
+    margin: 2px;
+    border-bottom: 2px solid rgba(black,.2);
+    padding: 1px;
+  }
+}
+
+.kp-image {
+  .kp {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@include at-breakpoint($pad) {
+  .intro {
+    padding-top: rhythm(4);
+  }
+  .kp-image {
+    width: 100%;
+    background: {
+      image: image-url("intro-icons.png");
+      repeat: no-repeat;
+      position: center;
+    }
+    @include background-size(contain);
+  }
+  .intro-text {
+    width: 100%;
+    h2 {
+      @include trailer(2);
+    }
+    h3 {
+      @include adjust-font-size-to(32px);
+    }
+  }
+}
+
+@include at-breakpoint($desktop) {
+  .intro-text {
+    width: 80%;
+    font-size: 20px;
+  }
+}

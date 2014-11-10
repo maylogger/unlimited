@@ -1,0 +1,7 @@
+<meta content="{% if page.title %}{{page.title}} - {{site.site-name}}{% else %}{{site.site-title}}{% endif %}" property="og:title">
+<meta content="{{site.site-name}}" property="og:site_name">
+<meta content="{{site.og-image}}" property="og:image">
+<meta content="{% if page.image %}{{page.image}}{% else %}{{site.og-image}}{% endif %}" property="og:image">
+<meta content="{% if page.excerpt %}{{page.excerpt}}{% else %}{{site.site-description}}{% endif %}" property="og:description">
+<meta content="{{site.og-type}}" property="og:type">
+<meta content="{{site.fb-admins}}" property="fb:admins">

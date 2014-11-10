@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    {% include layout_head.html %}
+    {% include layout_og.html %}
+  </head>
+  <body data-spy="scroll" data-target=".quick-nav" data-offset="48">
+    {% include header.html %}
+    <div class="content">
+      {{ content }}
+    </div>
+    {% include footer.html %}
+    {% include layout_foot.html %}
+  </body>
+</html>

@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "柯 P 挑戰"
+subtitle:  "快速找到你想要的政見內容"
+excerpt: "一款運用野生官網 API 寫出來的柯 P 對對樂小遊戲"
+author: "andretw"
+image: "/images/posts/kp-game-fb.png"
+cover: "/images/posts/kp-game-1.png"
+date: 2014-11-11 00:00:00
+categories: showroom web
+---
+
+[link-1]:http://lab.andretw.com/kp/
+[link-2]:https://github.com/andretw/kp
+
+### 作品網址
+[http://lab.andretw.com/kp/][link-1]
+
+### 作品介紹
+
+<q class="right">Let's play a game...</q>
+
+<strong>柯 P 挑戰</strong> 是由網友 andretw 響應柯文哲陣營推出的「柯文哲野生官網」活動，所製作出的一款網頁小遊戲。如果你以為這只是一款「簡單的」遊戲，那你就錯了！隨著關卡不停提升，圖片的數量也不停增加、難度也不斷提高，最終，你所得到的終究是一個甜甜圈 ... 。
+
+### 遊戲開始
+1. 進入頁面後即開始遊戲，會預先讓瀏覽者預覽所有圖片幾秒鐘
+2. 當圖片蓋上之後，瀏覽者需翻開兩張相同的圖片
+3. 當所有圖片都正確翻開後，點擊上方「下一關」按鈕繼續遊戲
+4. 翻錯次數過多、愛心用完之後，會跳出甜甜圈，遊戲結束
+5. 圖片數量會依照關卡，越來越多，難度也慢慢提高，愛心數量也會增加
+
+![遊戲結束後，開發者貼心奉上甜甜圈](/images/posts/kp-game-4.png)

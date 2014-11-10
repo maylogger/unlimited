@@ -1,0 +1,263 @@
+.download-demo-content {
+  margin: 0 rhythm(-1);
+}
+
+.download-demo-intro {
+  padding: rhythm(2) rhythm(1);
+  @include pie-clearfix;
+}
+
+.dwonload-demo-intro-title {
+  text-align: center;
+  color: white;
+  @extend %subpixel;
+  span {
+    display: block;
+  }
+  .en {
+    @include adjust-font-size-to(32px, 1);
+    margin: 0 auto;
+    width: 100%;
+    @include trailer(0.5);
+  }
+  .zh {
+    @extend %large-font;
+    @include adjust-font-size-to(32px, 1);
+    margin: 0 auto;
+    @include trailer(1.5);
+  }
+}
+
+.download-demo-intro-text {
+  color: white;
+  clear: both;
+  @extend %subpixel;
+  a {
+    @include unstyled-link;
+    @include link-colors( rgba(white,.75) );
+    border-bottom: 2px solid rgba(white,.75);
+    padding: 1px;
+  }
+}
+
+.download-demo-intro_designers {
+  background-color: $color-orange;
+  .download-demo-intro-text {
+    float: left;
+  }
+  .en {
+    // @include set-scalable-svg-wrapper(designers_en);
+    // span { @include replace-text-with-scalable-svg(designers_en); }
+    @include replace-text-with-scalable-svg-using-pesudo(designers_en);
+  }
+}
+
+.download-demo-intro_developers {
+  background-color: $color-blue;
+  .download-demo-intro-text {
+    float: right;
+  }
+  .en {
+    // @include set-scalable-svg-wrapper(developers_en);
+    // span { @include replace-text-with-scalable-svg(developers_en); }
+    @include replace-text-with-scalable-svg-using-pesudo(developers_en);
+  }
+}
+
+
+.download-form {
+  margin: 0 rhythm(-1);
+  background-color: #fffde8;
+  padding: rhythm(1.5) rhythm(1);
+  text-align: center;
+  overflow: hidden;
+}
+
+.download-form-title {
+  @include adjust-font-size-to(36px, 1.5);
+  @include trailer(.5);
+  @extend %large-font;
+  color: $color-green;
+  letter-spacing: -1px;
+}
+
+.download-form-subtitle {
+  @extend %serif;
+  @include adjust-font-size-to(15px, 1);
+  color: $text-gray;
+}
+
+.inputs {
+  position: relative;
+  @include leader(1);
+  opacity: 1;
+  @include transition(opacity .5s);
+  .done & input,
+  .done & button {
+    opacity: .3;
+  }
+  .sent {
+    position: absolute;
+    width: 100%;
+    top: 999%;
+    border: 2px solid #a00;
+    color: #a00;
+    // @extend %large-font-bold;
+    font-size: 22px;
+    padding: .5em 0;
+    @include transition( transform .5s .5s, opacity .5s .5s );
+    @include transform( rotate(-19.74deg) scale(2) );
+    opacity: 0;
+  }
+  .done & .sent {
+    display: block;
+    top: 20%;
+    @include transform( rotate(-19.74deg) scale(1) );
+    opacity: 1;
+  }
+}
+
+.download-form-item {
+  @include trailer(1.25);
+  input {
+    -webkit-appearance: none;
+    border-radius: 0;
+    @include box-sizing(border-box);
+    border: 1px solid #ddd;
+    padding: 12px 3px;
+    vertical-align: middle;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 48px;
+    display: block;
+    &:focus {
+      border: 1px solid #aaa;
+      outline: none;
+    }
+    &.input-error {
+      border-color: #a00;
+    }
+  }
+}
+.download-form-action {
+  button {
+    border: none;
+    background-color: $color-green;
+    color: white;
+    width: 100%;
+    height: 48px;
+    @include transition(background-color .25s); // multiple: comma-delimited
+    &:hover, &:focus {
+      outline: none;
+      background-color: darken($color-green, 15%);
+    }
+  }
+}
+
+$download-form: 250px;
+@include at-breakpoint($pad) {
+
+
+  .download-demo {
+    position: relative;
+    background-color: $color-orange;
+    &:before {
+      content: '';
+      width: 50%;
+      background-color: $color-blue;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  }
+
+  .download-demo-content {
+    margin: 0 (-$grid-padding);
+  }
+
+  .download-demo-intro {
+    // position: relative;
+    @include box-sizing(border-box);
+    padding: rhythm(1.5) rhythm(1);
+    width: 50%;
+    float: left;
+    min-height: 300px;
+    position: relative;
+    z-index: 100;
+    .zh {
+      clear: both;
+    }
+  }
+
+  .download-demo-intro-text {
+    max-width: 400px;
+  }
+
+
+  .download-demo-intro_designers {
+    .en {
+      float: left;
+    }
+    .zh {
+      float: left;
+    }
+    .download-demo-intro-text {
+      padding-right: $download-form / 2;
+    }
+  }
+
+  .download-demo-intro_developers {
+    .en {
+      float: right;
+    }
+    .zh {
+      float: right;
+    }
+    .download-demo-intro-text {
+      padding-left: $download-form / 2;
+    }
+  }
+
+  .download-form {
+    position: absolute;
+    @include box-sizing(border-box);
+    width: 50%;
+    left: 50%;
+    bottom: rhythm(-2);
+    width: $download-form;
+    margin-left: -( $download-form / 2 );
+    z-index: 101;
+  }
+
+  .download-form-title {
+    @include adjust-font-size-to(28px, 1.5);
+  }
+
+}
+
+@include at-breakpoint($desktop) {
+  .download-demo-intro {
+    padding-top: 4em;
+    padding-bottom: 3em;
+  }
+  .download-demo-intro_designers {
+    padding-left: 2em;
+    .download-demo-intro-text {
+      padding-right: $download-form / 2 + 20px;
+    }
+  }
+  .download-demo-intro_developers {
+    padding-right: 2em;
+    .download-demo-intro-text {
+      padding-left: $download-form / 2 + 20px;
+    }
+  }
+  .download-form {
+    width: 280px;
+    margin-left: - (280px / 2);
+    top: auto;
+    bottom: rhythm(-3);
+  }
+}

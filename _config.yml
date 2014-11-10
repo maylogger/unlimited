@@ -5,3 +5,6 @@ site-description: "以前有人說⋯⋯政府的網站很糟糕，設計得不�
 og-type: "website"
 og-image: "http://unlimited.kptaipei.tw/images/fb.png"
 fb-admins: "612130717"
+
+# Build settings
+markdown: kramdown

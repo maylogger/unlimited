@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    {% include layout_head.html %}
+    {% include layout_og.html %}
+  </head>
+  <body data-spy="scroll" data-target=".quick-nav" data-offset="48">
+    {% include header.html %}
+    <div class="content">
+      <div class="wrapper">
+        <div class="go-to-top"></div>
+        <div class="post">
+          <div class="post-header">
+            <h1 class="post-title">
+              {{ page.title }}
+            </h1>
+            <p class="post-subtitle">
+              {{ page.subtitle }}
+            </p>
+            <span class="post-author">作者：{{ page.author }}</span>
+          </div>
+          <div class="post-content">
+            <img src="{{ page.cover }}">
+            {{ content }}
+            <div class="sns-links">
+              <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                <a class="a2a_button_facebook"><i class="ss ss-facebook"></i> 分享到 Facebook</a>
+                <a class="a2a_button_twitter"><i class="ss ss-twitter"></i> 分享到 Twitter</a>
+                <a class="a2a_button_google_plus"><i class="ss ss-googleplus"></i> 分享到 Google+</a>
+                <a class="a2a_button_plurk"><i class="ss ss-share"></i> 分享到 Plurk</a>
+                <a class="a2a_button_email"><i class="ss ss-mail"></i> Email 轉寄</a>
+              </div>
+            </div>
+
+            <script type="text/javascript">var a2a_config = a2a_config || {}; a2a_config.onclick = 1; a2a_config.locale = "zh-TW";</script><script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+
+          </div>
+          <div class="post-footer">
+            <!-- more posts -->
+            <h3>更多野生作品</h3>
+            <ul id="random_posts"></ul>
+            <!-- disqus comments -->
+            <h3>留言</h3>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+              var disqus_shortname = 'kpunlimited';
+              (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+    {% include layout_foot.html %}
+    <script>
+      function generateRandomPosts() {
+        $.getJSON("/search.json", function(data) {
+          var postsCount = data.length;
+          var posts = data;
+          var randomIndexUsed = [];
+          var counter = 0;
+          var numberOfPosts = 3;
+          var divRandomPosts = $("#random_posts");
+          while (counter < numberOfPosts) {
+            var randomIndex = Math.floor(Math.random() * postsCount);
+            if (randomIndexUsed.indexOf(randomIndex) == "-1") {
+              var postHREF = posts[randomIndex].href,
+                  postTitle = posts[randomIndex].title,
+                  postSubtitle = posts[randomIndex].subtitle,
+                  postAuthor = posts[randomIndex].author;
+              divRandomPosts.append('<li><a href="'+postHREF+'">'+postTitle+'</a><p>'+postSubtitle+' | '+postAuthor+'</p></li>');
+              randomIndexUsed.push(randomIndex);
+              counter++;
+            }
+          }
+        });
+      }
+      if (!Array.prototype.indexOf) {
+        Array.prototype.indexOf = function(elt /*, from*/) {
+          var len = this.length >>> 0;
+          var from = Number(arguments[1]) || 0;
+          from = (from < 0) ? Math.ceil(from) : Math.floor(from);
+          if (from < 0)
+            from += len;
+          for (; from < len; from++) {
+            if (from in this &&
+                this[from] === elt)
+              return from;
+          }
+          return -1;
+        };
+      }
+      $(document).ready(function() {
+          generateRandomPosts();
+      });
+    </script>
+  </body>
+</html>

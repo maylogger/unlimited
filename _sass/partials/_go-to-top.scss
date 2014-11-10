@@ -1,0 +1,28 @@
+.go-to-top {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 1000;
+  cursor: pointer;
+  display: none;
+  &:before {
+    display: block;
+    width: 44px;
+    height: 44px;
+    content: "☝";
+    text-align: center;
+    line-height: 44px;
+    font-size: 32px;
+    color: white;
+    background-color: $color-turquoise;
+    opacity: .6;
+    @include transition(opacity 0.25s);
+  }
+  &:hover:before {
+    opacity: 1;
+  }
+  @include at-breakpoint($pad) {
+    bottom: 30px;
+    right: 30px;
+  }
+}

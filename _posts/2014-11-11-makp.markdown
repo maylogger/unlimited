@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "MA柯P"
+subtitle:  "線上柯 P 行程導覽之旅"
+excerpt: "一個將柯 P 的所有資料（包含文章、照片及影音檔）與 OpenStreetMap 作結合的線上地圖應用"
+author: "戴立舟"
+image: "/images/posts/makp-fb.png"
+cover: "/images/posts/makp-1.png"
+date: 2014-11-11 00:00:00
+categories: showroom web
+---
+
+[link-1]:https://unlimited-kp.appspot.com/
+[link-2]:https://github.com/Gogistics/prjTWPublicMovements/tree/master/prjUnlimitedKP
+
+### 作品網址
+[https://unlimited-kp.appspot.com/][link-1]
+
+### 作品介紹
+<strong>MA柯P</strong> 是由網友 戴立舟 所創作的柯 P 野生官網，是一個將柯 P 的所有資料──包含文章、照片及影音檔──與 OpenStreetMap 作結合的線上地圖應用。
+
+<strong>MA柯P</strong> 目前的動畫資料為 Demo 用（暫無 Responsive Web Design版本），作者希望在不久的未來，能夠改版成聯繫到柯 P 真實的行腳記錄；而記錄的目的，是希望能夠讓一般民眾了解過程中的資金運用、分配（辦活動基本上一定會有開銷），以及能夠進一步分析在不同區域所舉辦的活動之性質，此一概念也呼應了柯文哲<strong>「透明政府、全民參與」</strong>的核心政治理念。
+
+在「照相集」頁面中，作者加入分類功能，並將柯 P 的活動據點，結合 Leaflet.js 與 D3 js， 並進一步做了分析及視覺化（例如分部區域及比例）。而樹狀設計的概念，也提供瀏覽者能夠更蜥蜴的重組文章與主題之間的關連。
+
+### 旅程開始嘍！
+1. 進入頁面依照文字導覽，點擊地圖區塊，即開始依序進行地圖導覽，在導覽結束後會播放政策宣傳影片
+2. 在頁面下方，還有其他內容，可供連結瀏覽
+3. 右下方音樂播放器為「台北調你來定調」之參賽樂曲，進入頁面後將會自動開始播放
+

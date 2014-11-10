@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "KP Today"
+subtitle:  "與柯 P 線上合照"
+excerpt: "讓我們為您與 柯P 合照"
+author: "nole kao"
+image: "/images/posts/kp-today-fb.png"
+cover: "/images/posts/kp-today-1.png"
+date: 2014-11-11 00:00:00
+categories: showroom web app
+---
+
+[link-1]:http://work.yongmedia.com.tw/kpToday/
+
+### 作品網址
+[http://work.yongmedia.com.tw/kpToday/][link-1]
+
+### 作品介紹
+柯文哲官方網站中，定期會丟出新的政見，並發布到各社群媒體上，讓民眾有機會接觸候選人的政見理念。但是在官方的網站中除了靜態的內容呈現外，並無直接與民眾互動的線上管道，因此網友 nole kao 製作了一款 <strong>KP Today</strong> 的線上平台，經由「柯 P 野生官網」提供的 API，擷取了當中的政見內容，重新設計版面並與社群應用、線上投票模組結合後，讓網民能夠對於特定政見，投票表達「支持」或「不支持」的立場，並能留下您寶貴的建議與想法
+
+###操作介面
+在登入臉書帳號後，即能參與政見投票，並給予建議
+![步驟一](/images/posts/kp-today-2.png)
+
+站方會自動統計投票的相關的數據
+![步驟二](/images/posts/kp-today-3.png)

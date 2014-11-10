@@ -1,0 +1,19 @@
+.forum {
+  text-align: center;
+  @include adjust-font-size-to(20px);
+  @include padding-leader(2);
+  @include padding-trailer(2);
+  a {
+    position: relative;
+    top: -.1em;
+    @extend %large-font;
+    @include unstyled-link;
+    @include link-colors($color-turquoise);
+    padding-bottom: .2em;
+    border-bottom: 1px solid $color-turquoise;
+  }
+  @include at-breakpoint($pad) {
+    @include adjust-font-size-to(32px);
+    a { border-bottom-width: 2px; }
+  }
+}

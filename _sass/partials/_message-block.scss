@@ -1,0 +1,74 @@
+.message-block {
+
+  min-height: 600px;
+  text-align: center;
+  margin: 0 auto;
+  @include padding-leader(2);
+
+  .message-block-title {
+    @include adjust-font-size-to(24px, 1);
+    @include trailer(0.5);
+    color: black;
+  }
+
+  .message-block-text {
+    @include adjust-font-size-to(15px, 3/4);
+    @include leader(0.5);
+    @include trailer(0.5);
+  }
+
+  .btn {
+    @include box-sizing(border-box);
+    @extend %subpixel;
+    display: block;
+    border: none;
+    background-color: $btn-bg-color;
+    color: $btn-color;
+    @include adjust-font-size-to(15px);
+    width: 100%;
+    padding: rhythm(0.5);
+    @include trailer(0.5);
+    @include transition(background-color 0.25s); // multiple: comma-delimited
+    &:hover {
+      background-color: $btn-hover-bg-color;
+      text-decoration: none;
+    }
+  }
+
+  .message-block-action {
+    @include leader(2);
+  }
+
+  @include at-breakpoint($pad) {
+
+    padding: rhythm(4) 0 rhythm(2);
+
+    .message-block-title {
+      @include adjust-font-size-to(52px);
+      @include trailer(1);
+    }
+
+    .message-block-text {
+      @include adjust-font-size-to(18px);
+    }
+
+    .btn {
+      display: inline-block;
+      width: auto;
+      margin: 0 rhythm(.25);
+      padding: rhythm(0.5) rhythm(1);
+    }
+
+  }
+
+}
+
+
+.icebaby {
+  @include background-image(
+    linear-gradient( rgba(white,.9) 30%, rgba(white,0) ),
+    image-url("icebaby.png")
+  );
+  @include background-size("100% 100%, 600px 266px");
+  background-position: center top, center top;
+}

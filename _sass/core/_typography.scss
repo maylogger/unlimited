@@ -1,0 +1,231 @@
+@include establish-baseline;
+
+%avenir {
+  font-family: "AvenirNext-DemiBoldItalic", "Avenir-HeavyOblique", "Arial", "STHeitiTC-Light", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+%helvetica {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "STHeitiTC-Light","Microsoft JhengHei", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+%code-font {
+  font-family: "Anonymous Pro", "Inconsolata", "Consolas Regular Font", "Monaco", "Courier New" ,MonoSpace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%large-font {
+  font-family:
+    "kp-w3",
+    "Helvetica Neue",
+    "Helvetica",
+    "Nimbus Sans L",
+    "Arial",
+    "Liberation Sans",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    "Wenquanyi Micro Hei",
+    "WenQuanYi Zen Hei",
+    "ST Heiti",
+    "SimHei",
+    "WenQuanYi Zen Hei Sharp",
+    sans-serif;
+    .jf-loading & { opacity: 0 }
+    .jf-active & { opacity: 1; @include transition( opacity .5s .1s ); }
+}
+
+%large-font-bold {
+  font-family:
+    "kp-w4",
+    "Helvetica Neue",
+    "Helvetica",
+    "Nimbus Sans L",
+    "Arial",
+    "Liberation Sans",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    "Wenquanyi Micro Hei",
+    "WenQuanYi Zen Hei",
+    "ST Heiti",
+    "SimHei",
+    "WenQuanYi Zen Hei Sharp",
+    sans-serif;
+    .jf-loading & { opacity: 0 }
+    .jf-active & { opacity: 1; @include transition( opacity .5s .1s ); }
+}
+
+%serif {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%subpixel {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+body {
+  @extend %helvetica;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: $global-text-color;
+}
+
+// heading
+#{headings()} {
+  @include reset-box-model;
+  // @extend %large-font;
+  font-weight: normal;
+}
+h1 {
+  @include adjust-font-size-to($font-size-xxl);
+}
+h2 {
+  @include adjust-font-size-to($font-size-xl);
+}
+h3 {
+  @include adjust-font-size-to($font-size-l);
+}
+h4 {
+  @include adjust-font-size-to($font-size-m);
+}
+h5 {
+  @include adjust-font-size-to($font-size-s);
+}
+h6 {
+  @include adjust-font-size-to($font-size-xs);
+}
+
+p {
+  @include leader(0);
+  @include trailer(1);
+  @include adjust-font-size-to($base-font-size);
+}
+
+
+// 引用他處文獻
+blockquote {
+  @include reset-box-model;
+  @include leader(1);
+  @include trailer(1);
+  border-left: 3px solid $global-divider;
+  padding-left: rhythm(1);
+  @include adjust-font-size-to($base-font-size);
+  cite {
+    display: block;
+    color: $global-text-color-muted;
+    &:before {
+      content: '\2014 \00A0';
+    }
+  }
+}
+
+code {
+  // display: inline-block;
+  @extend %code-font;
+  @include adjust-font-size-to(13px);
+  padding: 0 6px;
+  background-color: $global-background;
+  white-space: nowrap;
+}
+
+// code 示範區
+pre {
+  @include leader(1);
+  @include trailer(1);
+  code {
+    @extend %code-font;
+    display: block;
+    padding: rhythm(.75);
+    color: $global-text-color;
+    font-size:  $base-font-size * 0.75;
+    line-height: 1.6;
+    @extend %code-scroll;
+  }
+}
+
+%code-scroll {
+  overflow: auto;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  $background-color: $global-background;
+  $shadow-color: #999;
+  $cover-size: 80px;
+  $cover-position: 12.5%;
+  $shadow-size: $cover-size * ($cover-position/100%);
+  $shadow-weight: .3;
+  background-image:
+    /* Shadow covers */
+    linear-gradient(to right, $background-color $cover-position, rgba($background-color, 0) ),
+    linear-gradient(to right, rgba($background-color, 0),  $background-color ( 100% - $cover-position ) ),
+    /* Shadows */
+    radial-gradient(0 50%, farthest-side, rgba($shadow-color, $shadow-weight), rgba($shadow-color, 0) ),
+    radial-gradient(100% 50%,farthest-side, rgba($shadow-color, $shadow-weight), rgba($shadow-color, 0) );
+  background-image:
+    /* Shadow covers */
+    linear-gradient(to right, $background-color $cover-position, rgba($background-color, 0) ),
+    linear-gradient(to right, rgba($background-color, 0),  $background-color ( 100% - $cover-position ) ),
+    /* Shadows */
+    radial-gradient(farthest-side at 0 50%,  rgba($shadow-color, $shadow-weight), rgba( $shadow-color, 0) ),
+    radial-gradient(farthest-side at 100% 50%,  rgba($shadow-color, $shadow-weight), rgba( $shadow-color, 0) );
+  background-repeat: no-repeat;
+  background-color: $background-color;
+  background-size: $cover-size 100%, $cover-size 100%, $shadow-size 110%, $shadow-size 110%;
+  background-attachment: local, local, scroll, scroll;
+  background-position: left center, right center, left center, right center;
+}
+
+
+// list
+ol, ul {
+  @include leader(1);
+  @include trailer(1);
+  padding-left: 24px;
+  ol, ul {
+    margin: 0;
+  }
+}
+
+dl {
+  @include leader(1);
+  @include trailer(1);
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin: 0;
+
+  }
+}
+
+
+// inline style
+a {
+  @include link-colors($global-link-color, $global-link-color-hover);
+  @include hover-link;
+  cursor: pointer !important;
+  img {
+    border: none;
+  }
+}
+
+.break-all {
+  @include word-break(break-all);
+}
+
+img {
+  max-width: 100%;
+  @include trailer(1);
+}
+
+// divider
+hr, .divider {
+  @include leader(1);
+  @include trailer(1);
+  border-top: 1px solid $global-divider;
+}

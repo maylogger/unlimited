@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "柯 P 新政閱讀器"
+subtitle:  "讓你的眼睛，舒服到不能再舒服"
+excerpt: "一款柯文哲政見線上閱讀工具"
+author: "白超熠"
+image: "/images/posts/kp-reader-fb.png"
+cover: "/images/posts/kp-reader-1.png"
+date: 2014-11-11 00:00:00
+categories: showroom web
+---
+
+[link-1]:http://minipai.github.io/kp-reader/
+[link-2]:http://minipai.tumblr.com/post/95863472192/p
+
+### 作品網址
+[http://minipai.github.io/kp-reader/][link-1]
+
+### 作品介紹
+
+<q class="right">不只舒適，更舒服</q>
+
+<strong>柯 P 新政閱讀器</strong> 是由網友 白超熠 響應柯文哲陣營推出的「柯文哲野生官網」活動，所設計的一款柯文哲政見線上閱讀工具，以極簡化的風格、柔和質樸的配色，搭配適當的文字大小與行距，讓文字之間共鳴出最完美的頻率。
+
+作者 白超熠 表示：「自柯文哲陣營推出了『野生官網』這個工程師玩具後，我就在想我能做什麼。基本上我對照片影片什麼的都沒什麼興趣，大概就覺得政見該好好看一下吧！所以就做了這個 UI 抄自 Reeder 的東西。」

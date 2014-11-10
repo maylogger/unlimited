@@ -1,0 +1,69 @@
+.showroom-list {
+  @include pie-clearfix;
+}
+
+.showroom-list-item {
+  display: block;
+  @include trailer(1.5);
+  width: 100%;
+  color: $text-black;
+  &:hover {
+    text-decoration: none;
+    color: $text-gray;
+  }
+}
+
+.showroom-list-item-photo {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+  background-color: #eee;
+  outline: 1px solid #eee;
+  @include trailer(0.5);
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include trailer(0);
+  }
+}
+
+.showroom-list-item-info {
+  @include trailer(0.25);
+
+  .web-name {
+    color: $color-black;
+    margin-right: 6px;
+    font-weight: bold;
+    @include adjust-font-size-to(18px);
+  }
+  .author {
+    color: $text-gray;
+  }
+
+}
+
+.showroom-list-item-introduce {
+  @include adjust-font-size-to(15px, 1);
+  @include trailer(0);
+}
+
+
+
+@include at-breakpoint($pad) {
+  .showroom-list-item {
+    @include isolate-grid(4);
+    @include trailer(2);
+  }
+}
+
+
+@include at-breakpoint($desktop) {
+  .showroom-list-item {
+    @include isolate-grid(4);
+  }
+
+}

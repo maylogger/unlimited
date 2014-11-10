@@ -1,0 +1,37 @@
+
+#{$page-container} {
+  $container-style: fluid;
+  @include container;
+}
+
+.content {
+  @include padding-trailer(1.5);
+}
+
+
+@include at-breakpoint($pad) {
+  $grid-padding: 48px;
+  #{$page-container} {
+    @include container;
+  }
+  .content {
+    @include padding-trailer(2.5);
+  }
+}
+
+
+@include at-breakpoint($desktop) {
+  $container-style: magic;
+  #{$page-container} {
+    @include container;
+  }
+
+  .sidebar {
+    @include span-columns(3, $total_columns);
+  }
+
+  .main {
+    @include span-columns(9 omega, $total_columns);
+  }
+
+}

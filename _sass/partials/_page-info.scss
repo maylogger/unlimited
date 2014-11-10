@@ -1,0 +1,46 @@
+.page-info {
+  padding: rhythm(1.5) 0;
+  text-align: center;
+}
+
+.page-info-title {
+  @include adjust-font-size-to(28px, 1.25);
+  @extend %large-font;
+  color: black;
+  @include trailer(.125);
+}
+.page-info-subtitle {
+  @include adjust-font-size-to(16px);
+  @include trailer(0);
+  color: $text-gray;
+}
+
+@include at-breakpoint($pad) {
+  .page-info {
+    padding: rhythm(2) 0;
+    text-align: center;
+  }
+  .page-info-title {
+    @include adjust-font-size-to(42px, 2);
+    color: black;
+    @include trailer(0.5);
+  }
+  .page-info-subtitle {
+    @include adjust-font-size-to(20px);
+
+  }
+
+}
+
+
+@include at-breakpoint($desktop) {
+
+  .page-info.page-info_with-line {
+    @include padding-trailer(0);
+    @include trailer(2);  
+    .page-info-subtitle {
+      @include padding-trailer(2);
+      border-bottom: 1px solid $global-divider;
+    }
+  }
+}

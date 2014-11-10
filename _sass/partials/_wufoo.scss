@@ -1,0 +1,139 @@
+#container{
+  background: #FFFFFB;
+  border:1px solid #e3e3e3;
+  margin:0 auto;
+  width: 100%;
+  max-width: 550px;
+}
+.wufoo{
+  letter-spacing: .01em;
+  margin:20px 14px 0 14px;
+  padding:0 0 20px 0;
+  position:relative;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    width: auto;
+    margin: 0;
+    padding: 6px 1% 9px 1%;
+    clear: both;
+    position: relative;
+    &.notStacked div span {
+      width: auto;
+      margin: 0 7px 0 0;
+    }
+    div {
+      margin: 0;
+      padding: 0;
+      color: #444;
+      span {
+        margin: 0;
+        display: block;
+        width: 100%;
+        float: left;
+      }
+    }
+    span {
+      margin: 0 .3em 0 0;
+      padding: 0;
+      float: left;
+      color: #444;
+    }
+    input.text,
+    textarea.textarea {
+      -webkit-appearance: none;
+      border-radius: 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      padding: 12px 8px;
+      vertical-align: middle;
+      width: 100%;
+      height: 48px;
+      &:focus {
+        border: 1px solid #aaa;
+        outline: none;
+      }
+    }
+    textarea {
+      &.small {
+        height: 5.5em;
+      }
+      &.large {
+        height: 14em;
+      }
+    }
+    fieldset {
+      display: block;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    .checkbox,
+    .radio {
+      display: block;
+      margin: 4px 0 0 0;
+      padding: 0;
+      width: 13px;
+      height: 13px;
+    }
+    .other {
+      margin: 0 0 8px 25px;
+    }
+    .desc {
+      font-size: 95%;
+      font-weight: bold;
+      color: #222;
+      line-height: 150%;
+      margin: 0;
+      padding: 0 0 3px 0;
+      border: none;
+      display: block;
+      white-space: normal;
+      width: 100%;
+    }
+    .choice {
+      display: block;
+      cursor: pointer;
+      font-size: 100%;
+      line-height: 150%;
+      margin: -17px 0 0 23px;
+      padding: 0 0 5px 0;
+      color: #222;
+      width: 88%;
+    }
+    .instruct {
+      color: #888;
+      margin-bottom: rhythm(.5);
+      line-height: 1.4;
+    }
+    .req {
+      display: inline;
+      float: none;
+      color: red !important;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+    }
+    .submit {
+      border: none;
+      background-color: $color-green;
+      color: white;
+      width: 100%;
+      height: 48px;
+      @include transition(background-color .25s); // multiple: comma-delimited
+      &:hover, &:focus {
+        outline: none;
+        background-color: darken($color-green, 15%);
+      }
+    }
+  }
+  .hide {
+    display:none !important
+  }
+}

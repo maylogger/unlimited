@@ -1,0 +1,121 @@
+.docs {
+
+  .api {
+    padding: 1em;
+    @include trailer(1);
+    word-break: break-all;
+    overflow: hidden;
+    background-color: $global-background;
+    code {
+      background: none;
+      white-space: normal;
+    }
+  }
+
+  #{headings()}{
+    color: black;
+    @extend %helvetica;
+  }
+
+  h2 {
+    margin: rhythm(2) 0 rhythm(1);
+    border-top: 1px solid $global-divider;
+    @include padding-leader(2);
+    @include adjust-font-size-to(28px, 1.5);
+    &:first-child {
+      @include leader(-2);
+      border-top: 0;
+    }
+  }
+
+  h3 {
+    @include adjust-font-size-to(20px, 1);
+    margin: rhythm(2) 0 rhythm(1);
+  }
+
+  h4 {
+    @include adjust-font-size-to(16px, 1);
+    margin: rhythm(1) 0;
+  }
+
+  hr {
+    margin: rhythm(2) 0;
+  }
+
+  li {
+    @include leader(1/4);
+    @include trailer(1/4);
+    p { @include reset-box-model; }
+  }
+
+  em {
+    font-style: normal;
+    color: $color-red;
+  }
+
+  .code-note {
+    $note-color: #31708f;
+    margin: rhythm(1) 0;
+    padding: rhythm(1) rhythm(1);
+    background-color: lighten($note-color, 55%);
+    color: $note-color;
+    @include adjust-font-size-to(15px);
+    .note-title {
+      color: darken($note-color, 5%);
+      @include adjust-font-size-to(16px);
+      margin: 0 0 rhythm(0.5);
+    }
+    p {
+      margin: 0;
+    }
+    dl {
+      @include reset-box-model;
+    }
+    dt {
+      @include adjust-font-size-to(15px);
+      @extend %code-font;
+      font-weight: normal;
+    }
+    dd {
+      @include adjust-font-size-to(12px);
+      margin-left: 1em;
+    }
+  }
+
+  .note-warning {
+    @extend .code-note;
+    $note-warning-color: #a94442;
+    color: $note-warning-color;
+    background-color: lighten($note-warning-color, 50%);
+    .note-title {
+      color: darken($note-warning-color, 5%);
+    }
+  }
+
+  .note-message {
+    @extend .code-note;
+    $note-message-color: #3c763d;
+    color: $note-message-color;
+    background-color: lighten($note-message-color, 55%);
+    .note-title {
+      color: darken($note-message-color, 5%);
+    }
+  }
+
+  .move-to-top {
+    @include adjust-font-size-to(15px);
+    float: right;
+    // color: $text-gray;
+    @extend %subpixel;
+  }
+
+}
+
+
+@include at-breakpoint($desktop) {
+ .docs {
+    border-left: 1px solid $global-divider;
+    padding-left: rhythm(2);
+    @include padding-trailer(1);
+ }
+}

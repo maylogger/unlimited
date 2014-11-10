@@ -1,0 +1,70 @@
+.header {
+  background: $color-turquoise;
+  @include padding-leader(1);
+  @include padding-trailer(3/4);
+  .logo {
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
+    position: relative;
+    left: 5px;
+    @include trailer(.5);
+    a {
+      margin: 0 auto;
+      @include replace-text-with-scalable-svg-using-pesudo(logo_s);
+    }
+  }
+
+  .main-nav {
+    @extend %large-font-bold;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+    li {
+      display: inline;
+      margin: 0 .35em;
+      a {
+        @include unstyled-link;
+        color: white;
+        @include adjust-font-size-to(18px);
+        @extend %large-font-bold;
+      }
+    }
+  }
+
+  @include at-breakpoint($pad) {
+
+    @include padding-leader(2);
+    @include padding-trailer(1);
+
+    .logo {
+      position: relative;
+      left: 12px;
+      @include trailer(.5);
+      max-width: none;
+    }
+
+    .main-nav {
+      li a {
+        @include adjust-font-size-to(22px);
+      }
+    }
+
+  }
+
+  @include at-breakpoint($desktop) {
+
+    .main-nav {
+      li {
+        a:hover {
+          border-bottom: 2px solid white;
+        }
+      }
+    }
+
+  }
+
+}
+

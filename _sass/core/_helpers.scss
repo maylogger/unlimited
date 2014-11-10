@@ -1,0 +1,111 @@
+// debug background grid
+@mixin layout-debug {
+
+  $grid-background-column-color: rgba(#f15a14,.2);
+  $grid-background-baseline-color: rgba(#009a8e,.3);
+  $grid-background-baseline-height: $base-line-height;
+
+  body {
+    @include baseline-grid-background;
+  }
+
+  #{$page-container} {
+    @include susy-grid-background;
+    @include at-breakpoint($pad) {
+      @include susy-grid-background;
+    }
+    @include at-breakpoint($desktop) {
+      @include susy-grid-background;
+    }
+  }
+}
+
+
+// replace text with svg mixin
+@mixin replace-text-with-svg($image-name) {
+  @include replace-text-with-dimensions("#{$image-name}.png");
+  background-image: none, image-url("#{$image-name}.svg");
+}
+
+@mixin replace-text-with-scalable-svg-using-pesudo($image-name, $pesudo-class: after) {
+  $width: image-width("#{$image-name}.png");
+  $height: image-height("#{$image-name}.png");
+  display: block;
+  max-width: $width;
+  line-height: 0;
+  @include hide-text;
+  &:#{$pesudo-class} {
+    content: "";
+    display: block;
+    @include replace-text-with-dimensions("#{$image-name}.png");
+    background-image: none, image-url("#{$image-name}.svg");
+    @include background-size(contain);
+    background-position: center center;
+    width: 100%;
+    max-width: $width;
+    height: 0;
+    padding-top: $height / $width * 100%;
+  }
+}
+
+
+@mixin replace-text-with-scalable-svg($image-name) {
+  display: block;
+  $width: image-width("#{$image-name}.png");
+  $height: image-height("#{$image-name}.png");
+  @include replace-text-with-svg($image-name);
+  @include background-size(contain);
+  background-position: center center;
+  width: 100%;
+  max-width: image-width("#{$image-name}.png");
+  height: 0;
+  padding-top: $height / $width * 100%;
+}
+
+// @mixin set-scalable-svg-wrapper($image-name){
+//   max-width: image-width("#{$image-name}.png");
+//   width: 100%;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+
+// form placeholder color mixin
+@mixin input-placeholder-color($color) {
+
+    &::-webkit-input-placeholder { /* WebKit browsers */
+      color: $color;
+      -webkit-font-smoothing: antialiased;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: $color;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: lighten($color, 10%);
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: $color;
+    }
+
+}
+
+.mobile-hide {
+  display: none !important;
+  @include at-breakpoint($pad) {
+    display: inline !important;
+  }
+}
+
+br {
+  &.pad-hide {
+    display: block;
+    @include at-breakpoint($pad) {
+      display: none !important;
+    }
+  }
+  &.desktop-hide {
+    display: block;
+    @include at-breakpoint($desktop) {
+      display: none !important;
+    }
+  }
+}

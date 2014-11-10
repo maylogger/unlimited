@@ -1,0 +1,17 @@
+.sidebar {
+  @include trailer(1);
+}
+
+
+// hack for hc-sticky
+@media (max-width: 919px) {
+  .sidebar-sticky {
+    width: 100% !important;
+  }
+}
+
+@include at-breakpoint($desktop) {
+
+
+
+}

@@ -1,0 +1,137 @@
+.quick-nav {
+  position: relative;
+  background-color: #f6f6f6;
+}
+
+.quick-nav-title {
+  display: block;
+  @include adjust-font-size-to(13px);
+  background-color: #e3e3e3;
+  padding: 6px 12px;
+  position: relative;
+  color: $global-text-color;
+  &:hover {
+    color: $global-text-color;
+    text-decoration: none;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: rhythm(.5);
+    margin-top: - 3px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: $global-text-color transparent transparent transparent;
+  }
+}
+
+.quick-nav-list {
+  display: none;
+  @include reset-box-model;
+  list-style: none;
+  @include trailer(0);
+  padding: rhythm(1/4) 0;
+  @include adjust-font-size-to(13px, 3/4);
+  > li {
+    @include ellipsis;
+  }
+  > li > a,
+  .go-anchor {
+    display: block;
+    padding: 6px 12px;
+    @include unstyled-link;
+    @include transition( color 1s);
+    .new-api, .maybe-api {
+      display: inline-block;
+      background: $color-turquoise;
+      color: white;
+      padding: 0 .5em;
+      margin: 0 .3em;
+      @include adjust-font-size-to(11px, 3/4);
+      @include border-radius(2px);
+    }
+    .maybe-api {
+      background-color: #ccc;
+    }
+
+  }
+  span.go-anchor {
+    color: #ccc;
+  }
+  > .active {
+    > .go-anchor {
+      @include transition( color .3s);
+      color: $color-turquoise;
+      background-color: #f1f1f1;
+    }
+  }
+  .sub-nav {
+    list-style: none;
+    padding-left: 0;
+    li {
+      @include adjust-font-size-to(12px, 3/4);
+      padding-left: rhythm(.75);
+      margin: rhythm(.5) 0;
+      @include ellipsis;
+    }
+    > .active {
+      border-left: 1px solid $color-gray;
+      > .go-anchor {
+        color: $color-black;
+      }
+    }
+  }
+  &.is-open {
+    display: block;
+  }
+}
+
+@include at-breakpoint($desktop) {
+  .quick-nav {
+    background-color: transparent;
+    padding-bottom: 24px;
+  }
+
+  .quick-nav-title {
+    @include adjust-font-size-to(22px, 1.5);
+    @include trailer(1);
+    font-weight: bold;
+    padding: 0;
+    padding-left: 5px;
+    cursor: default;
+    background-color: transparent;
+    &:before {
+      display: none;
+    }
+  }
+
+  .quick-nav-list {
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    @include adjust-font-size-to(15px, 1);
+    > li {
+      margin: 0;
+    }
+    .sub-nav li {
+    }
+    > li > a,
+    .go-anchor {
+      @include transition( background-color .5s );
+      padding: 3px 5px;
+      .new-api, .maybe-api {
+        position: relative;
+        @include adjust-font-size-to(12px, 3/4);
+        float: right;
+        top: 3px;
+      }
+      &:hover {
+        @include transition( background-color .3s );
+        background-color: #f1f1f1;
+      }
+    }
+  }
+}
