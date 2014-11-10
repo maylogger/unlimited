@@ -4,7 +4,7 @@ title:  "WithKP"
 subtitle:  "與柯 P 線上合照"
 excerpt: "讓我們為您與 柯P 合照"
 author: "Zhun Yin"
-image: "/images/posts/with-kp-fb.png"
+image: "http://unlimited.kptaipei.tw/images/posts/with-kp-fb.png"
 cover: "/images/posts/with-kp-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom web
@@ -20,7 +20,7 @@ categories: showroom web
 <q class="right">讓我們為您與 柯P 合照</q>
 
 想跟柯 P 合照嗎？馬上來試試看吧！
-這款網友 Zhun Yin 開發「WithKP - 與柯 P 線上合照」工具，只要把電腦裡的照片上傳就可以快速合成一張與柯 P 的合照，您還可以從四款不同的柯 P 人像中，挑選出一張最適合的與照片做結合，此外您還可以自由的縮放大小、移動擺放柯 P 到適合的大小和位置，輕輕鬆鬆就完成了一張與柯 P 的合照。
+這款網友 Zhun Yin 開發 <strong>[WithKP - 與柯 P 線上合照][link-1]</strong>工具，只要把電腦裡的照片上傳就可以快速合成一張與柯 P 的合照，您還可以從四款不同的柯 P 人像中，挑選出一張最適合的與照片做結合，此外您還可以自由的縮放大小、移動擺放柯 P 到適合的大小和位置，輕輕鬆鬆就完成了一張與柯 P 的合照。
 
 ###使用說明
 

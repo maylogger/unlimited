@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "柯P很忙"
+subtitle:  "KP IS BUSY"
+excerpt: "這是一個讓你每天打開新分頁都會看到柯P然後看到很膩的應用"
+author: "趙心宇"
+image: "http://unlimited.kptaipei.tw/images/posts/kp-is-busy-fb.png"
+cover: "/images/posts/kp-is-busy-1.png"
+date: 2014-11-11 00:00:00
+categories: showroom chrome extension
+---
+
+[link-1]: http://goo.gl/Cw5Am1
+
+### 作品網址
+[http://goo.gl/Cw5Am1][link-1]
+
+### 作品介紹
+由網友 趙心宇 所開發的 <strong>[柯P很忙][link-1]</strong> Chrome 擴充套件，好奇台北市長候選人柯P柯先生每天去了哪裡，跟誰同行，做了些什麼事情嗎？安裝此 Chrome 套件，讓使用者於每一次 Chrome 瀏覽器開啟新分頁的時候，都可以瀏覽到柯文哲最新的所有活動剪影紀錄，跟著忙碌的柯文哲上山下海，總覽台北的每個街頭角落，讓人人都可以鍵盤掃街，鍵盤拜票！
+
+### 安裝Chrome擴充套件
+1. 進入 [Chrome線上應用程式商店][link-1]，點擊彈出框右上角「+ 免費」按鈕，安裝瀏覽器擴充套件
+2. 畫面顯示確認新增提示，點擊「新增」按鈕，確認安裝
+3. 此後每次在開新分頁時，就能看到柯文哲最新動態照片

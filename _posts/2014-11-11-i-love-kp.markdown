@@ -4,7 +4,7 @@ title:  "I LOVE KP"
 subtitle:  "一個英文版的野生官網"
 excerpt: "由網友 Robin 製作的一款英文版野生官網"
 author: "Robin"
-image: "/images/posts/i-love-kp-fb.png"
+image: "http://unlimited.kptaipei.tw/images/posts/i-love-kp-fb.png"
 cover: "/images/posts/i-love-kp-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom web
@@ -16,7 +16,7 @@ categories: showroom web
 [http://kptaipei.ikwb.com/][link-1]
 
 ### 作品介紹
-<strong>I LOVE KP</strong> 是由網友 Robin 響應柯文哲陣營推出的「柯文哲野生官網」活動，所製作的一款野生官網。
+<strong>[I LOVE KP][link-1]</strong> 是由網友 Robin 響應柯文哲陣營推出的「柯文哲野生官網」活動，所製作的一款野生官網。
 
 此一野生官網使用模板快速，搭配 API 快速開發的柯 P 宣傳網站英文版
 名為 <strong>I LOVE KP</strong>，採用英文──國際共通語言，提高柯 P 的國際形象。

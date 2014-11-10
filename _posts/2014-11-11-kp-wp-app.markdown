@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "柯P野生APP"
+subtitle:  "一款野生的 Windows Phone App"
+excerpt: "由網友 eternaltung 開發的 WP App，詳細收錄了柯文哲官方所有文章、影片、相簿等"
+author: "eternaltung"
+image: "http://unlimited.kptaipei.tw/images/posts/kp-wp-app-fb.png"
+cover: "/images/posts/kp-wp-app-1.png"
+date: 2014-11-11 00:00:00
+categories: showroom app
+---
+
+[link-1]:http://www.windowsphone.com/zh-tw/store/app/%e6%9f%afp%e9%87%8e%e7%94%9fapp/c47e9984-4a40-4c7d-bd26-a9c4e1172b3e
+
+### 安裝網址
+[http://www.windowsphone.com/zh-tw/store/app/%e6%9f%afp%e9%87%8e%e7%94%9fapp/c47e9984-4a40-4c7d-bd26-a9c4e1172b3e][link-1]
+
+### 作品介紹
+
+這款由網友 eternaltung 開發的野生 APP <strong>[柯P野生APP][link-1]</strong> (Windows Phone) ，讓 WP 平台的用戶也能輕鬆的在手機中，瀏覽柯文哲的文章、相簿與影片，讓支持者能夠方便的或許相關資訊，並了解政見內容。相簿中也能觀賞柯文哲出席不同地區活動的影像紀錄。
+
+作者 eternaltung 表示：「自己本身就是支持柯文哲的台北市民，剛好有開放的API讓我也可以在熟悉的領域給予柯P支持！」

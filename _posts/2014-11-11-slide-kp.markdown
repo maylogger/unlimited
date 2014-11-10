@@ -4,7 +4,7 @@ title:  "柯 P 滑出來對你說政見 Plugin"
 subtitle:  "Mr. KP slide in and talks to you"
 excerpt: "讓您可以簡單、輕鬆地在個人網站或網誌中埋入「柯P彩蛋」，並讓更多人得以了解柯文哲之政見"
 author: "愛新覺羅玄燁"
-image: "/images/posts/slide-kp-fb.png"
+image: "http://unlimited.kptaipei.tw/images/posts/slide-kp-fb.png"
 cover: "/images/posts/slide-kp-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom web plugin
@@ -20,7 +20,7 @@ categories: showroom web plugin
 
 <q class="right">在安裝「柯 P 滑出來對你說政見」之後 ... 我震驚了</q>
 
-由網友 愛新覺羅玄燁 所開發的<strong>「柯 P 滑出來對你說政見」Plugin</strong>，讓廣大的網友、鄉民朋友，凡自備網站或部落格者，皆可在自己的網站中，輕輕鬆鬆、簡簡單單地嵌入此款 jQuery Plugin，設定完成之後，每當有訪客造訪您的網站、並捲動到頁面最底端時，柯 P 就會自動滑出來向他們說明政見，同時也提供政見的原始連結，方便瀏覽者了解更多詳細內容。
+由網友 愛新覺羅玄燁 所開發的 <strong>[柯 P 滑出來對你說政見」Plugin][link-1]</strong>，讓廣大的網友、鄉民朋友，凡自備網站或部落格者，皆可在自己的網站中，輕輕鬆鬆、簡簡單單地嵌入此款 jQuery Plugin，設定完成之後，每當有訪客造訪您的網站、並捲動到頁面最底端時，柯 P 就會自動滑出來向他們說明政見，同時也提供政見的原始連結，方便瀏覽者了解更多詳細內容。
 
 此外還有網友，藉由此款 Plugin 延伸製作成 Firefox Addon，在安裝瀏覽器附加元件之後，不管你逛的是甜甜圈網站、總統府網站、英雄聯盟官網、甚或是連勝文的官網，柯 P 都會冒出來與你相見歡了！
 

@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "KP Got Yo!  KP嘎油!"
+subtitle:  "Yo! 就是最簡單的打招呼方式"
+excerpt: "Yo! 就是最簡單的打招呼方式，希望透過這樣的方式讓柯p跟大家互動"
+author: "ucheng"
+image: "http://unlimited.kptaipei.tw/images/posts/kpgotyo-fb.png"
+cover: "/images/posts/kpgotyo-1.png"
+date: 2014-11-11 00:00:00
+categories: showroom app
+---
+
+[link-1]:http://kpgotyo.herokuapp.com
+[link-2]:http://goo.gl/KdUyMr
+[link-3]:http://goo.gl/mYQqVm
+
+### 作品網址
+[http://kpgotyo.herokuapp.com][link-1]
+
+### 作品介紹
+經由與 <strong>[Yo App][link-1]</strong> 的結合，每當柯文哲官方網站中丟出新的政見或訊息時，就會自動推送「YO!」給訂閱者，並且附上文章連結，讓您可以即時的收取柯 P 的最新消息。
+
+###如何使用
+1. 安裝 Yo App<br>
+   [http://goo.gl/KdUyMr][link-2] (ios)<br>
+   [http://goo.gl/mYQqVm][link-3] (android)
+2. 將 「KPGOTYO」 加入朋友
+3. 當 KP 官網有新文章，就會收到 Yo，打 開Yo APP 會自動開啟該文章連結
+
