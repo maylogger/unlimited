@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "KP Today"
-subtitle:  "與柯 P 線上合照"
-excerpt: "讓我們為您與 柯P 合照"
+subtitle:  "你今天 KP 了沒？"
+excerpt: "線上瞭解並提供政見認同或反對意見"
 author: "nole kao"
 image: "http://unlimited.kptaipei.tw/images/posts/kp-today-fb.png"
 cover: "/images/posts/kp-today-1.png"
