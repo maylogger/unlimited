@@ -4,7 +4,7 @@ title:  "KP Got Yo!  KP嘎油!"
 subtitle:  "Yo! 就是最簡單的打招呼方式"
 excerpt: "Yo! 就是最簡單的打招呼方式，希望透過這樣的方式讓柯p跟大家互動"
 author: "ucheng"
-image: "http://unlimited.kptaipei.tw/images/posts/kpgotyo-fb.png"
+image: "http://demo-unlimited.unfoldgroup.com/images/posts/kpgotyo-fb.png"
 cover: "/images/posts/kpgotyo-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom app

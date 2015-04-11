@@ -4,7 +4,7 @@ title:  "柯P野生APP"
 subtitle:  "Andorid 版野生 APP"
 excerpt: "這是一款由開放 API 所製成的 Android 版「野生 App」"
 author: "李思諒"
-image: "http://unlimited.kptaipei.tw/images/posts/kp-wild-android-app-fb.png"
+image: "http://demo-unlimited.unfoldgroup.com/images/posts/kp-wild-android-app-fb.png"
 cover: "/images/posts/kp-wild-android-app-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom app

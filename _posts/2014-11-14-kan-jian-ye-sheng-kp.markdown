@@ -4,7 +4,7 @@ title:  "看見野生柯P"
 subtitle:  "一款野生 APP"
 excerpt: "由網友 Wayne Lin 所開發的 iOS App"
 author: "Wayne Lin"
-image: "http://unlimited.kptaipei.tw/images/posts/kan-jian-ye-sheng-kp-fb.png"
+image: "http://demo-unlimited.unfoldgroup.com/images/posts/kan-jian-ye-sheng-kp-fb.png"
 cover: "/images/posts/kan-jian-ye-sheng-kp-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom app

@@ -4,7 +4,7 @@ title:  "柯P語錄"
 subtitle:  "語錄是最能夠打動人心的力量之一"
 excerpt: "由網友 Sapp Liu 開發的 iOS App，詳細收錄了柯文哲官方所有文章、影片、台北調音樂、相簿等"
 author: "Sapp Liu"
-image: "http://unlimited.kptaipei.tw/images/posts/kp-talks-app-fb.png"
+image: "http://demo-unlimited.unfoldgroup.com/images/posts/kp-talks-app-fb.png"
 cover: "/images/posts/kp-talks-app-1.jpg"
 date: 2014-11-11 00:00:00
 categories: showroom app

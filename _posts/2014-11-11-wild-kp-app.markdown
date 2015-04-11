@@ -4,7 +4,7 @@ title:  "野生柯P"
 subtitle:  "一款野生 APP"
 excerpt: "由網友 pct 業餘時間所開發的 iOS App"
 author: "pct"
-image: "http://unlimited.kptaipei.tw/images/posts/wild-kp-app-fb.png"
+image: "http://demo-unlimited.unfoldgroup.com/images/posts/wild-kp-app-fb.png"
 cover: "/images/posts/wild-kp-app-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom app

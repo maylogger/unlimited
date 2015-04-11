@@ -4,7 +4,7 @@ title:  "I LOVE KP"
 subtitle:  "一個英文版的野生官網"
 excerpt: "由網友 Robin 製作的一款英文版野生官網"
 author: "Robin"
-image: "http://unlimited.kptaipei.tw/images/posts/i-love-kp-fb.png"
+image: "http://demo-unlimited.unfoldgroup.com/images/posts/i-love-kp-fb.png"
 cover: "/images/posts/i-love-kp-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom web

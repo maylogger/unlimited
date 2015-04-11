@@ -4,7 +4,7 @@ title:  "KPSDK"
 subtitle:  "Android 版野生 SDK"
 excerpt: "這是一款由網友 李思諒 所製作的野生 Android App SDK，方便網友快速開發生產「野生 APP」"
 author: "李思諒"
-image: "http://unlimited.kptaipei.tw/images/posts/kp-android-sdk-fb.png"
+image: "http://demo-unlimited.unfoldgroup.com/images/posts/kp-android-sdk-fb.png"
 cover: "/images/posts/kp-android-sdk-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom sdk

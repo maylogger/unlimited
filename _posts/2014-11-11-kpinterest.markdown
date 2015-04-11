@@ -4,7 +4,7 @@ title:  "KPinterest"
 subtitle:  "以瀑布流相簿形式呈現的野生官網"
 excerpt: "以瀑布流相簿形式呈現的野生官網"
 author: "莊為任"
-image: "http://unlimited.kptaipei.tw/images/posts/kpinterest-fb.png"
+image: "http://demo-unlimited.unfoldgroup.com/images/posts/kpinterest-fb.png"
 cover: "/images/posts/kpinterest-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom web

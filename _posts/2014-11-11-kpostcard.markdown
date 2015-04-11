@@ -4,7 +4,7 @@ title:  "柯文哲明信片服務"
 subtitle:  "～免費的哦～"
 excerpt: "這是一款提供實體柯 P 明信片寄送的線上服務"
 author: "Bevis"
-image: "http://unlimited.kptaipei.tw/images/posts/kpostcard-fb.png"
+image: "http://demo-unlimited.unfoldgroup.com/images/posts/kpostcard-fb.png"
 cover: "/images/posts/kpostcard-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom web

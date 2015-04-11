@@ -4,7 +4,7 @@ title:  "柯文哲野生官網"
 subtitle:  "BrianHsu.moe 分站"
 excerpt: "讓資料以簡單、乾淨的樣貌，在千世輾轉後，與你的眼眸相遇"
 author: "Brian Hsu"
-image: "http://unlimited.kptaipei.tw/images/posts/wildkp-brianhsu-moe-fb.png"
+image: "http://demo-unlimited.unfoldgroup.com/images/posts/wildkp-brianhsu-moe-fb.png"
 cover: "/images/posts/wildkp-brianhsu-moe-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom web

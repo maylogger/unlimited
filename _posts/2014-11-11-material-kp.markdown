@@ -4,7 +4,7 @@ title:  "Material KP"
 subtitle:  "簡單大方的野生官網"
 excerpt: "以 Google 的 Material Design 為範本所打造的野生官網"
 author: "郭韋廷"
-image: "http://unlimited.kptaipei.tw/images/posts/material-kp-fb.png"
+image: "http://demo-unlimited.unfoldgroup.com/images/posts/material-kp-fb.png"
 cover: "/images/posts/material-kp-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom web

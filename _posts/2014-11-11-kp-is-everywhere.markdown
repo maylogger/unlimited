@@ -4,7 +4,7 @@ title:  "柯文哲關鍵字小幫手"
 subtitle:  "KP IS EVERYWHERE"
 excerpt: "安裝了這個之後，當瀏覽的網頁出現關鍵字，就介紹一條相關的政見，也許剛好就是你有興趣的政見囉！"
 author: "19"
-image: "http://unlimited.kptaipei.tw/images/posts/kp-is-everywhere-fb.png"
+image: "http://demo-unlimited.unfoldgroup.com/images/posts/kp-is-everywhere-fb.png"
 cover: "/images/posts/kp-is-everywhere-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom chrome extension
