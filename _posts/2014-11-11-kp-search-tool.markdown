@@ -4,7 +4,7 @@ title:  "KP 搜尋器"
 subtitle:  "快速找到你想要的政見內容"
 excerpt: "輸入關鍵字後，頁面會自動媒合相關的政策、影片、照片，並即時顯現"
 author: "muki 與 dca"
-image: "http://demo-unlimited.unfoldgroup.com/images/posts/kp-search-tool-fb.png"
+image: "http://unlimited.evenwu.com/images/posts/kp-search-tool-fb.png"
 cover: "/images/posts/kp-search-tool-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom web

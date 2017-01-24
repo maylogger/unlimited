@@ -4,7 +4,7 @@ title:  "柯 P 挑戰"
 subtitle:  "快速找到你想要的政見內容"
 excerpt: "一款運用野生官網 API 寫出來的柯 P 對對樂小遊戲"
 author: "andretw"
-image: "http://demo-unlimited.unfoldgroup.com/images/posts/kp-game-fb.png"
+image: "http://unlimited.evenwu.com/images/posts/kp-game-fb.png"
 cover: "/images/posts/kp-game-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom web

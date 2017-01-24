@@ -4,7 +4,7 @@ title:  "文哲不說神經病"
 subtitle:  ""
 excerpt: "由網友 高俊煜 製作的一款野生官網"
 author: "高俊煜"
-image: "http://demo-unlimited.unfoldgroup.com/images/posts/a-wildkp-fb.png"
+image: "http://unlimited.evenwu.com/images/posts/a-wildkp-fb.png"
 cover: "/images/posts/a-wildkp-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom web

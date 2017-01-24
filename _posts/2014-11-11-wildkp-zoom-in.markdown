@@ -4,7 +4,7 @@ title:  "大字版柯 P 野生官網"
 subtitle:  "適合長者"
 excerpt: "針對「長者」所設計的野生官網，放大了文字與圖片的大小，對於長者在閱讀時，更加友善"
 author: "唐宗浩"
-image: "http://demo-unlimited.unfoldgroup.com/images/posts/wildkp-zoom-in-fb.png"
+image: "http://unlimited.evenwu.com/images/posts/wildkp-zoom-in-fb.png"
 cover: "/images/posts/wildkp-zoom-in-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom web

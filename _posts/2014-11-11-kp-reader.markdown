@@ -4,7 +4,7 @@ title:  "柯 P 新政閱讀器"
 subtitle:  "讓你的眼睛，舒服到不能再舒服"
 excerpt: "一款柯文哲政見線上閱讀工具"
 author: "白超熠"
-image: "http://demo-unlimited.unfoldgroup.com/images/posts/kp-reader-fb.png"
+image: "http://unlimited.evenwu.com/images/posts/kp-reader-fb.png"
 cover: "/images/posts/kp-reader-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom web

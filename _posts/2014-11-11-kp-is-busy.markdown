@@ -4,7 +4,7 @@ title:  "柯P很忙"
 subtitle:  "KP IS BUSY"
 excerpt: "這是一個讓你每天打開新分頁都會看到柯P然後看到很膩的應用"
 author: "趙心宇"
-image: "http://demo-unlimited.unfoldgroup.com/images/posts/kp-is-busy-fb.png"
+image: "http://unlimited.evenwu.com/images/posts/kp-is-busy-fb.png"
 cover: "/images/posts/kp-is-busy-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom chrome extension

@@ -4,7 +4,7 @@ title:  "柯 P 政策導讀"
 subtitle:  "一字一句，為你朗讀"
 excerpt: "與 Google 語音結合打造的「線上政見朗讀工具」，幫助更多朋友了解政見內容"
 author: "李致賢"
-image: "http://demo-unlimited.unfoldgroup.com/images/posts/kp-policy-speech-fb.png"
+image: "http://unlimited.evenwu.com/images/posts/kp-policy-speech-fb.png"
 cover: "/images/posts/kp-policy-speech-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom web

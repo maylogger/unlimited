@@ -4,7 +4,7 @@ title:  "柯 P 滑出來對你說政見 Plugin"
 subtitle:  "Mr. KP slide in and talks to you"
 excerpt: "讓您可以簡單、輕鬆地在個人網站或網誌中埋入「柯P彩蛋」，並讓更多人得以了解柯文哲之政見"
 author: "愛新覺羅玄燁"
-image: "http://demo-unlimited.unfoldgroup.com/images/posts/slide-kp-fb.png"
+image: "http://unlimited.evenwu.com/images/posts/slide-kp-fb.png"
 cover: "/images/posts/slide-kp-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom web plugin

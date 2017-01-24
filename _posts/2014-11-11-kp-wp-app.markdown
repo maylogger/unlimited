@@ -4,7 +4,7 @@ title:  "柯P野生APP"
 subtitle:  "一款野生的 Windows Phone App"
 excerpt: "由網友 eternaltung 開發的 WP App，詳細收錄了柯文哲官方所有文章、影片、相簿等"
 author: "eternaltung"
-image: "http://demo-unlimited.unfoldgroup.com/images/posts/kp-wp-app-fb.png"
+image: "http://unlimited.evenwu.com/images/posts/kp-wp-app-fb.png"
 cover: "/images/posts/kp-wp-app-1.png"
 date: 2014-11-11 00:00:00
 categories: showroom app
