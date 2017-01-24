@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+
+<title>柯文哲野生官網 unlimited - API 說明</title>
+<meta description="以前有人說⋯⋯政府的網站很糟糕，設計得不夠好。所謂「官方」作的，不一定是最好、也不一定是市民想要的。甚至，對於什麼樣的網站才是「好」的，每個人也有不同的想像。因此，我們將市長候選人的網站開放，向市民徵求不同的想像、創意，自己來製作心目中理想的「官方網站」、無限個不一樣的柯文哲官方網站。">
+
+<link href="http://unlimited.evenwu.com/favicon.ico?v=0821" rel="shortcut icon">
+<link href="http://unlimited.evenwu.com/images/iOS.png" rel="apple-touch-icon-precomposed">
+
+<meta content="#52BBBB" name="msapplication-TileColor">
+<meta content="http://unlimited.evenwu.com/images/IE10metro.png" name="msapplication-TileImage">
+
+<link href="/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/vender/ss-social-regular/webfonts/ss-social-regular.css" media="screen" rel="stylesheet" type="text/css" /><!--[if lte IE 9]><script src="/vender/placeholders.js" type="text/javascript"></script><![endif]--><!--[if lt IE 9]><link href="/stylesheets/ie8.css" media="screen" rel="stylesheet" type="text/css" /><script src="//html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+<script src="/vender/selectivizr-min.js" type="text/javascript"></script><![endif]-->
+
+    <meta content="柯文哲野生官網 unlimited - API 說明" property="og:title">
+<meta content="柯文哲野生官網 unlimited" property="og:site_name">
+<meta content="http://unlimited.evenwu.com/docs/" property="og:url">
+<meta content="http://unlimited.evenwu.com/images/og-image.jpg" property="og:image">
+<meta content="以前有人說⋯⋯政府的網站很糟糕，設計得不夠好。所謂「官方」作的，不一定是最好、也不一定是市民想要的。甚至，對於什麼樣的網站才是「好」的，每個人也有不同的想像。因此，我們將市長候選人的網站開放，向市民徵求不同的想像、創意，自己來製作心目中理想的「官方網站」、無限個不一樣的柯文哲官方網站。" property="og:description">
+<meta content="website" property="og:type">
+<meta content="612130717" property="fb:admins">
+
+  </head>
+  <body data-spy="scroll" data-target=".quick-nav" data-offset="48">
+    <div class="header">
+  <div class="wrapper">
+    <div class="logo">
+      <a href="/">柯P野生官網</a>
+    </div>
+    <ul class="main-nav">
+      <li>
+        <a href="/">首頁</a>
+      </li>
+      <li>
+        <a href="/docs">API<span class="mobile-hide"> 說明</span></a>
+      </li>
+      <li>
+        <a href="/submit-your-works"><span class="mobile-hide">作品</span>投稿</a>
+      </li>
+      <li>
+        <a href="/showroom"><span class="mobile-hide">野生</span>作品</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Funlimited.evenwu.com" target="_blank"><span class="mobile-hide">FB </span>分享</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="content">
+      <div class="page-info page-info_with-line">
+  <div class="wrapper">
+    <h1 class="page-info-title">
+      API 說明
+    </h1>
+    <p class="page-info-subtitle">
+      API Documentation
+    </p>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="go-to-top"></div>
+  <div class="sidebar">
+    <div class="sidebar-sticky">
+      <div class="quick-nav">
+        <h3>
+          <a class="quick-nav-title" href="#">API 選單</a>
+        </h3>
+        <ul class="quick-nav-list nav is-open">
+          <li><a class="go-anchor" href="#api-license">資料授權條款<span class="new-api">新增</span></a></li>
+          <li><a class="go-anchor" href="#api-ch1">文章類別</a></li>
+          <li><a class="go-anchor" href="#api-ch2">類別內容</a></li>
+          <li><a class="go-anchor" href="#api-ch3">相簿清單</a></li>
+          <li><a class="go-anchor" href="#api-ch4">相簿照片</a></li>
+          <li><a class="go-anchor" href="#api-ch5">影片播放清單</a></li>
+          <li><a class="go-anchor" href="#api-ch6">清單內影片</a></li>
+          <li><a class="go-anchor" href="#api-ch7">台北調音樂清單</a></li>
+          <li><a class="go-anchor" href="#api-ch8">台北調播放清單內歌曲</a></li>
+          <li><a class="go-anchor" href="#api-ch9">競選經費查詢<span class="new-api">新增</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="docs">
+      <div class="docs-content">
+<h2 id="api-license">
+  資料授權條款
+</h2>
+
+<p>說明文章授權條款</p>
+
+<div>
+  <ul>
+    <li>
+      <p><em class="important">除 /musics 資料以外</em> 採用 <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> 條款，即為：</p>
+      <ol>
+        <li>要有來源標示（柯文哲野生官網）</li>
+        <li>可以自由利用（無論營利與否），具體細節請參考上述條款。</li>
+      </ol>
+    </li>
+    <li>
+      <p>/musics 音樂內容授權：</p>
+      <ol>
+        <li>不可重製</li>
+        <li>僅可在非商業用途前提下播放音樂</li>
+        <li>要有來源(柯文哲野生官網)、平台(soundcloud)與音樂作者標示</li>
+      </ol>
+    </li>
+  </ul>
+</div>
+
+
+<h2 id="api-ch1">
+  文章類別查詢
+</h2>
+
+<p>用來取得目前官網文章類別清單</p>
+
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/category/?accessToken=[YOUR_API_KEY]</code>
+</div>
+
+<div class="code-note">
+  <p>[YOUR_API_KEY] 的部分在首頁可填寫申請 API KEY 。</p>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "data": [
+    {
+      "name": "【柯P新政】",
+      "id": "40"
+    },
+    {
+      "name": "【真・柯文哲】",
+      "id": "41"
+    },
+    {
+      "name": "新聞稿",
+      "id": "42"
+    }
+  ],
+  "errorMessage": null
+}</code></pre>
+
+<h2 id="api-ch2">
+  類別內容查詢
+</h2>
+
+<p>給定類別 ID (可由 /category 取得) 後，可取得該類別底下文章清單。</p>
+
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/category/&lt;CATEGORY_ID&gt;?accessToken=[YOUR_API_KEY]</code>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "errorMessage": null,
+  "data": [
+    {
+      "id": 3007,
+      "title": "【柯p新政】14-先進節能城市",
+      "post_date": "2014-08-15T06:09:01.000Z",
+      "author": "柯文哲",
+      "last_modify": "2014-08-19T01:40:22.000Z",
+      "url": "http://kptaipei.tw/?page_id=3007",
+      "category_name": "【柯P新政】",
+      "category_id": 40,
+      "content": "&lt;iframe width=\&quot;560\&quot; height=\&quot;315\&quot; src=\&quot;//www.youtube.com/embed/03eaS6qp4ow\&quot; frameborder=\&quot;0\&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;hr /&gt;\n&lt;h3 class=\&quot;special-h-tag\&quot; style=\&quot;color: \&quot;&gt;&#x5148;&#x9032;&#x7bc0;&#x80fd;&#x57ce;&#x5e02;&lt;/h3&gt;&lt;br /&gt;\n&lt;div class=\&quot;special-heading-wrap style3 \&quot; data-animation=\&quot;fadeIn\&quot;&gt;&lt;div class=\&quot;caption-wrap\&quot;&gt;&lt;h6 class=\&quot;caption\&quot; style=\&quot;color:#999999;\&quot;&gt;&#x3010;&#x67ef;P&#x65b0;&#x653f;&#x3011;#14&lt;span class=\&quot;caption-inner\&quot; style=\&quot;background-color:#efefef;\&quot;&gt;&lt;/span&gt;&lt;/h6&gt;&lt;/div&gt;&lt;/div&gt;&lt;h3 class=\&quot;p1\&quot; style=\&quot;text-align: center;\&quot;&gt;&lt;span class=\&quot;s1\&quot;&gt;&#x300c;&#x67ef;&#xff30;&#x65b0;&#x653f;&#x300d;NO.14&nbsp; &#x6253;&#x9020;&#x5148;&#x9032;&#x7bc0;&#x80fd;&#x57ce;&#x5e02;&lt;/span&gt;&lt;/h3&gt;\n&lt;p class=\&quot;p1\&quot; style=\&quot;text-align: center;\&quot;&gt;&lt;strong&gt;&lt;span class=\&quot;s1\&quot;&gt;&#x53f0;&#x5317;&#x5e02;&#x71b1;&#x5cf6;&#x6548;&#x61c9;&#x56b4;&#x91cd;&nbsp; &#x67ef;P&#x63a8;&#x6d77;&#x7dbf;&#x57ce;&#x5e02;&#x3001;&#x7da0;&#x5efa;&#x7bc9;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;p class=\&quot;p1\&quot; style=\&quot;text-align: center;\&quot;&gt;&lt;span class=\&quot;s1\&quot;&gt;&#x53f0;&#x5317;&#x5e02;&#x9577;&#x53c3;&#x9078;&#x4eba;&#x67ef;&#x6587;&#x54f2;&#x7e7c;&#x5148;&#x524d;&#x63a8;&#x51fa;&#x7684;13&#x652f;&#x653f;&#x7b56;&#x8aaa;&#x660e;&#x5f71;&#x7247;&#xff0c;&#x4eca;&#xff08;8/15&#xff09;&#x65e5;&#x9996;&#x6b21;&#x91dd;&#x5c0d;&#x300c;&#x80fd;&#x6e90;&#x300d;&#x63d0;&#x51fa;&#x653f;&#x898b;&#xff0c;&#x4e3b;&#x5f35;&#x5c07;&#x53f0;&#x5317;&#x5e02;&#x6253;&#x9020;&#x6210;&#x300c;&#x5148;&#x9032;&#x7bc0;&#x80fd;&#x57ce;&#x5e02;&#x300d;&#x3002;&#x67ef;&#x6587;&#x54f2;&#x8a8d;&#x70ba;&#xff0c;&#x6838;&#x56db;&#x505c;&#x5efa;&#x4ee5;&#x5f8c;&#xff0c;&#x53f0;&#x7063;&#x793e;&#x6703;&#x5fc5;&#x9808;&#x5728;&#x7522;&#x696d;&#x653f;&#x7b56;&#x3001;&#x80fd;&#x6e90;&#x653f;&#x7b56;&#x3001;&#x7bc0;&#x80fd;&#x653f;&#x7b56;&#x4f5c;&#x4e00;&#x4e9b;&#x8abf;&#x6574;&#xff0c;&#x4ed6;&#x8209;&#x4f8b;&#xff0c;&#x7522;&#x696d;&#x653f;&#x7b56;&#x4e0d;&#x80fd;&#x518d;&#x767c;&#x5c55;&#x9ad8;&#x8017;&#x80fd;&#x9ad8;&#x6c59;&#x67d3;&#x7522;&#x696d;&#xff1b;&#x80fd;&#x6e90;&#x653f;&#x7b56;&#x5247;&#x5fc5;&#x9808;&#x767c;&#x5c55;&#x66ff;&#x4ee3;&#x80fd;&#x6e90;&#xff0c;&#x5982;&#xff1a;&#x592a;&#x967d;&#x80fd;&#x3001;&#x98a8;&#x529b;&#x3001;&#x6c34;&#x529b;&#x3001;&#x6f6e;&#x6c50;&#x3001;&#x751f;&#x8cea;&#x80fd;&#x6e90;&#xff0c;&#x800c;&#x7bc0;&#x80fd;&#x653f;&#x7b56;&#x5247;&#x8981;&#x63a8;&#x5ee3;&#x7da0;&#x5efa;&#x7bc9;&#x3001;&#x667a;&#x6167;&#x5efa;&#x7bc9;&#x4f86;&#x6e1b;&#x5c11;&#x80fd;&#x6e90;&#x7684;&#x640d;&#x8017;&#x3002;&lt;/span&gt;&lt;/p&gt;\n&lt;p class=\&quot;p1\&quot; style=\&quot;text-align: center;\&quot;&gt;&lt;span class=\&quot;s1\&quot;&gt;&#x67ef;&#x6587;&#x54f2;&#x6307;&#x51fa;&#xff0c;&#x904e;&#x53bb;100&#x5e74;&#x5317;&#x534a;&#x7403;&#x589e;&#x52a0;&#x4e86;0.7&#x5ea6;C&#xff0c;&#x800c;&#x53f0;&#x7063;&#x7684;&#x90fd;&#x6703;&#x5340;&#x5247;&#x589e;&#x52a0;&#x4e86;1.5&#x5ea6;C&#xff0c;1980&#x5e74;&#x4ee5;&#x5f8c;&#xff0c;&#x53f0;&#x5317;&#x5e02;&#x7684;&#x6eab;&#x5ea6;&#x589e;&#x52a0;&#x6bd4;&#x82b1;&#x84ee;&#x3001;&#x53f0;&#x6771;&#x3001;&#x6046;&#x6625;&#x9ad8;&#x51fa;&#x4e86;2&#x500d;&#xff0c;&#x53f0;&#x5317;&#x5e02;&#x5728;&#x590f;&#x65e5;&#x4e2d;&#x5348;&#x7684;&#x6642;&#x5019;&#xff0c;&#x6eab;&#x5ea6;&#x4e5f;&#x6bd4;&#x9031;&#x908a;&#x7684;&#x90ca;&#x5340;&#x9ad8;&#x51fa;&#x4e86;4.5&#x5ea6;C&#xff0c;&#x7531;&#x6b64;&#x53ef;&#x898b;&#xff0c;&#x53f0;&#x5317;&#x5e02;&#x7684;&#x71b1;&#x5cf6;&#x6548;&#x61c9;&#x6700;&#x70ba;&#x56b4;&#x91cd;&#x3002;&lt;/span&gt;&lt;/p&gt;\n&lt;p class=\&quot;p1\&quot; style=\&quot;text-align: center;\&quot;&gt;&lt;span class=\&quot;s1\&quot;&gt;&#x91dd;&#x5c0d;&#x9019;&#x500b;&#x56f0;&#x5883;&#xff0c;&#x67ef;&#x6587;&#x54f2;&#x63d0;&#x51fa;&#x4e86;&#x5e7e;&#x9ede;&#x7bc0;&#x80fd;&#x7b56;&#x7565;&#x3002;&#x7b2c;&#x4e00;&#xff0c;&#x5efa;&#x8a2d;&#x4e00;&#x500b;&#x6c34;&#x51b7;&#x6563;&#x71b1;&#x7684;&#x300c;&#x6d77;&#x7dbf;&#x57ce;&#x5e02;&#x300d;&#xff0c;&#x67ef;&#x6587;&#x54f2;&#x5206;&#x6790;&#xff0c;&#x53f0;&#x5317;&#x5e02;&#x7528;&#x96fb;&#x91cf;&#x5728;&#x590f;&#x5b63;&#x6700;&#x591a;&#xff0c;&#x53c8;&#x4ee5;&#x4e2d;&#x5348;&#x6642;&#x6bb5;&#x9054;&#x5230;&#x9ad8;&#x5cf0;&#xff0c;&#x56e0;&#x6b64;&#x8981;&#x7bc0;&#x7701;&#x7a7a;&#x8abf;&#x6700;&#x91cd;&#x8981;&#x7684;&#x662f;&#x964d;&#x6eab;&#x3002;&#x67ef;&#x6587;&#x54f2;&#x8868;&#x793a;&#xff0c;&#x53f0;&#x5317;&#x5e02;&#x71b1;&#x5cf6;&#x6548;&#x61c9;&#x6700;&#x5927;&#x539f;&#x56e0;&#x662f;&#x904e;&#x5ea6;&#x7684;&#x6c34;&#x6ce5;&#x5316;&#x3001;&#x9053;&#x8def;&#x53ca;&#x5efa;&#x7269;&#x5438;&#x71b1;&#x4f46;&#x4e0d;&#x6563;&#x71b1;&#xff0c;&#x5c0e;&#x81f4;&#x60b6;&#x71b1;&#x7684;&#x5929;&#x6c23;&#x589e;&#x52a0;&#xff0c;&#x4f7f;&#x7528;&#x51b7;&#x6c23;&#x7684;&#x6642;&#x9593;&#x3001;&#x65e5;&#x6578;&#x4e5f;&#x589e;&#x52a0;&#x3002;&lt;/span&gt;&lt;/p&gt;\n&lt;p class=\&quot;p1\&quot; style=\&quot;text-align: center;\&quot;&gt;&lt;span class=\&quot;s1\&quot;&gt;&#x81f3;&#x65bc;&#x5be6;&#x969b;&#x505a;&#x6cd5;&#xff0c;&#x67ef;&#x6587;&#x54f2;&#x63d0;&#x5021;&#x5e02;&#x5340;&#x7684;&#x9053;&#x8def;&#x6216;&#x5ee3;&#x5834;&#x6539;&#x6210;&#x900f;&#x6c34;&#x6027;&#x7684;&#x92ea;&#x9762;&#xff0c;&#x92ea;&#x9762;&#x7e2b;&#x9699;&#x7576;&#x4e2d;&#x4e26;&#x6c92;&#x6709;&#x5c01;&#x6b7b;&#xff0c;&#x4e0b;&#x96e8;&#x7684;&#x6642;&#x5019;&#x53ef;&#x4ee5;&#x8b93;&#x6c34;&#x6ef2;&#x5230;&#x5730;&#x5e95;&#x4e0b;&#xff0c;&#x4e0d;&#x6703;&#x7a4d;&#x5728;&#x5730;&#x9762;&#x4e0a;&#xff0c;&#x800c;&#x7576;&#x592a;&#x967d;&#x51fa;&#x4f86;&#x6642;&#xff0c;&#x9019;&#x4e9b;&#x6c34;&#x53c8;&#x53ef;&#x4ee5;&#x84b8;&#x767c;&#x4f86;&#x964d;&#x4f4e;&#x6574;&#x500b;&#x74b0;&#x5883;&#x7684;&#x6eab;&#x5ea6;&#x3002;&#x6b64;&#x5916;&#xff0c;&#x5728;&#x7a7a;&#x66e0;&#x5730;&#x5ee3;&#x8a2d;&#x8caf;&#x6c34;&#x6c60;&#xff0c;&#x8b93;&#x5c4b;&#x9802;&#x8ddf;&#x8def;&#x9762;&#x4e0a;&#x7684;&#x7a4d;&#x6c34;&#x53ef;&#x4ee5;&#x6d41;&#x9032;&#x53bb;&#xff0c;&#x540c;&#x6a23;&#x9054;&#x5230;&#x300c;&#x96e8;&#x5929;&#x5132;&#x6c34;&#xff0c;&#x6674;&#x5929;&#x6563;&#x71b1;&#x300d;&#x7684;&#x6548;&#x679c;&#x3002;&#x67ef;&#x6587;&#x54f2;&#x4e5f;&#x5f37;&#x8abf;&#xff0c;&#x8981;&#x5168;&#x9762;&#x7da0;&#x5316;&#x3001;&#x5c4b;&#x9802;&#x7da0;&#x5316;&#xff0c;&#x4ee5;&#x53ca;&#x7a2e;&#x6a39;&#x4e0d;&#x780d;&#x6a39;&#x3002;&lt;/span&gt;&lt;/p&gt;\n&lt;p class=\&quot;p1\&quot; style=\&quot;text-align: center;\&quot;&gt;&lt;span class=\&quot;s1\&quot;&gt;&#x7bc0;&#x80fd;&#x7b56;&#x7565;&#x4e8c;&#xff0c;&#x63a8;&#x5ee3;&#x7da0;&#x5efa;&#x7bc9;&#x548c;&#x667a;&#x6167;&#x5efa;&#x7bc9;&#xff0c;&#x67ef;&#x6587;&#x54f2;&#x4e3b;&#x5f35;&#xff0c;&#x516c;&#x5171;&#x5efa;&#x7bc9;&#x5fc5;&#x9808;&#x662f;&#x7bc0;&#x80fd;&#x7701;&#x96fb;&#x7684;&#x7da0;&#x5efa;&#x7bc9;&#x548c;&#x667a;&#x6167;&#x5efa;&#x7bc9;&#xff0c;&#x4e00;&#x822c;&#x5efa;&#x7bc9;&#x51e1;&#x662f;&#x7528;&#x96fb;&#x91cf;&#x4f4e;&#x65bc;&#x6a19;&#x6e96;&#x7684;&#xff0c;&#x96fb;&#x8cbb;&#x61c9;&#x7576;&#x7d66;&#x4e88;&#x6253;&#x6298;&#x512a;&#x5f85;&#xff1b;&#x7528;&#x96fb;&#x8d85;&#x904e;&#x6a19;&#x6e96;&#x7684;&#xff0c;&#x5247;&#x5e02;&#x653f;&#x5e9c;&#x61c9;&#x7576;&#x8058;&#x8acb;&#x7bc0;&#x80fd;&#x516c;&#x53f8;&#x514d;&#x8cbb;&#x5354;&#x52a9;&#x8f14;&#x5c0e;&#x6539;&#x5584;&#x3002;&#x67ef;&#x6587;&#x54f2;&#x66f4;&#x9f13;&#x52f5;&#xff0c;&#x51e1;&#x662f;&#x4f7f;&#x7528;&#x9694;&#x71b1;&#x5916;&#x7246;&#x3001;&#x906e;&#x967d;&#x677f;&#x3001;&#x9694;&#x71b1;&#x73bb;&#x7483;&#x3001;&#x7701;&#x96fb;&#x7167;&#x660e;&#x3001;&#x7701;&#x96fb;&#x8a2d;&#x5099;&#x7684;&#x5efa;&#x7bc9;&#xff0c;&#x653f;&#x5e9c;&#x6703;&#x5354;&#x52a9;&#x878d;&#x8cc7;&#xff0c;&#x7d66;&#x4e88;&#x4e00;&#x5b9a;&#x984d;&#x5ea6;&#x7684;&#x88dc;&#x52a9;&#xff0c;&#x751a;&#x81f3;&#x76f4;&#x63a5;&#x5f9e;&#x623f;&#x5c4b;&#x7a05;&#x8ddf;&#x5730;&#x50f9;&#x7a05;&#x4f86;&#x62b5;&#x6263;&#x3002;&lt;/span&gt;&lt;/p&gt;\n&lt;p class=\&quot;p1\&quot; style=\&quot;text-align: center;\&quot;&gt;&lt;strong&gt;&lt;span class=\&quot;s1\&quot;&gt;&#x67ef;&#x6587;&#x54f2;&#xff1a;&#x6211;&#x7576;&#x5e02;&#x9577;&#xff0c;&#x8981;&#x8b93;&#x7d93;&#x6fdf;&#x6210;&#x9577;&#xff0c;&#x7528;&#x96fb;&#x96f6;&#x6210;&#x9577;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;p class=\&quot;p2\&quot; style=\&quot;text-align: center;\&quot;&gt;&#x8ac7;&#x5230;&#x300c;&#x958b;&#x6e90;&#x300d;&#xff0c;&#x67ef;&#x6587;&#x54f2;&#x8a8d;&#x70ba;&#x5fc5;&#x9808;&#x7a4d;&#x6975;&#x767c;&#x5c55;&#x592a;&#x967d;&#x80fd;&#xff0c;&#x56e0;&#x70ba;&#x6bd4;&#x6211;&#x5011;&#x689d;&#x4ef6;&#x66f4;&#x5dee;&#x7684;&#x570b;&#x5bb6;&#xff0c;&#x50cf;&#x5fb7;&#x570b;&#x3001;&#x65e5;&#x672c;&#xff0c;&#x904e;&#x53bb;&#x5e7e;&#x5e74;&#x90fd;&#x5728;&#x5927;&#x91cf;&#x767c;&#x5c55;&#x592a;&#x967d;&#x80fd;&#x767c;&#x96fb;&#xff0c;&#x67ef;&#x6587;&#x54f2;&#x6307;&#x51fa;&#xff0c;&#x76ee;&#x524d;&#x4e2d;&#x592e;&#x653f;&#x5e9c;&#x63a1;&#x53d6;&#x5c4b;&#x9802;&#x8a2d;&#x592a;&#x967d;&#x80fd;&#x677f;&#x7684;&#x653f;&#x7b56;&#xff0c;&#x4f5c;&#x6cd5;&#x662f;&#x7de9;&#x4e0d;&#x6fdf;&#x6025;&#xff0c;&#x56e0;&#x6b64;&#x53ea;&#x8981;&#x53f0;&#x96fb;&#x9858;&#x610f;&#x4ee5;&#x5408;&#x7406;&#x7684;&#x50f9;&#x683c;&#x4f86;&#x6536;&#x8cfc;&#xff0c;&#x67ef;&#x6587;&#x54f2;&#x4e3b;&#x5f35;&#x516c;&#x958b;&#x62db;&#x5546;&#xff0c;&#x7531;&#x767c;&#x96fb;&#x5ee0;&#x5546;&#x4f86;&#x6295;&#x8cc7;&#x8a2d;&#x7acb;&#x592a;&#x967d;&#x80fd;&#x96fb;&#x5ee0;&#x3002;&#x81f3;&#x65bc;&#x5982;&#x4f55;&#x4f7f;&#x7528;&#x516c;&#x5171;&#x7a7a;&#x9593;&#x4f86;&#x8a2d;&#x7f6e;&#x592a;&#x967d;&#x80fd;&#x677f;&#xff0c;&#x67ef;&#x6587;&#x54f2;&#x5247;&#x8aaa;&#xff0c;&#x50cf;&#x5feb;&#x901f;&#x9053;&#x8def;&#x3001;&#x6377;&#x904b;&#x9ad8;&#x67b6;&#x9053;&#x3001;&#x6cb3;&#x6ff1;&#x9ad8;&#x7058;&#x5730;&#x3001;&#x5357;&#x5411;&#x5c71;&#x5761;&#x5730;&#x90fd;&#x53ef;&#x4ee5;&#x5229;&#x7528;&#x3002;&lt;/p&gt;\n&lt;p class=\&quot;p1\&quot; style=\&quot;text-align: center;\&quot;&gt;&lt;span class=\&quot;s1\&quot;&gt;&#x67ef;&#x6587;&#x54f2;&#x4e5f;&#x63d0;&#x51fa;&#x5e7e;&#x9ede;&#x9f13;&#x52f5;&#x958b;&#x6e90;&#x7bc0;&#x6d41;&#x7684;&#x505a;&#x6cd5;&#xff0c;&#x5305;&#x62ec;&#x672a;&#x4f86;&#x53f0;&#x5317;&#x5e02;&#x5c07;&#x9f13;&#x52f5;&#x512a;&#x5148;&#x63a1;&#x8cfc;&#x7da0;&#x80fd;&#x8fb2;&#x5834;&#x7684;&#x8fb2;&#x6f01;&#x7522;&#x54c1;&#xff0c;&#x5982;&#xff1a;&#x592a;&#x967d;&#x80fd;&#x6eab;&#x5ba4;&#x548c;&#x98a8;&#x529b;&#x96fb;&#x5834;&#x6240;&#x751f;&#x7522;&#x7684;&#x8fb2;&#x6f01;&#x7522;&#x54c1;&#x3002;&lt;/span&gt;&nbsp;&lt;/p&gt;\n&lt;p class=\&quot;p1\&quot; style=\&quot;text-align: center;\&quot;&gt;&lt;span class=\&quot;s1\&quot;&gt;&#x67ef;&#x6587;&#x54f2;&#x8868;&#x793a;&#xff0c;&#x672a;&#x4f86;&#x50b3;&#x7d71;&#x7684;&#x80fd;&#x6e90;&#x6703;&#x8d8a;&#x4f86;&#x8d8a;&#x8cb4;&#xff0c;&#x800c;&#x6838;&#x80fd;&#x53c8;&#x4e0d;&#x5b89;&#x5168;&#xff0c;&#x56e0;&#x6b64;&#x5fc5;&#x9808;&#x8981;&#x6709;&#x5176;&#x4ed6;&#x7684;&#x66ff;&#x4ee3;&#x65b9;&#x6848;&#xff0c;&#x67ef;&#x6587;&#x54f2;&#x5f37;&#x8abf;&#xff0c;&#x8981;&#x7a4d;&#x6975;&#x8abf;&#x6574;&#x53f0;&#x5317;&#x5e02;&#x7684;&#x7522;&#x696d;&#x653f;&#x7b56;&#x3001;&#x80fd;&#x6e90;&#x653f;&#x7b56;&#x548c;&#x7bc0;&#x80fd;&#x653f;&#x7b56;&#xff0c;&#x52aa;&#x529b;&#x958b;&#x6e90;&#x7bc0;&#x6d41;&#x3002;&#x67ef;&#x6587;&#x54f2;&#x8aaa;&#xff0c;&#x4ed6;&#x82e5;&#x7576;&#x9078;&#x53f0;&#x5317;&#x5e02;&#x9577;&#xff0c;&#x300c;&#x8981;&#x8b93;&#x7d93;&#x6fdf;&#x6210;&#x9577;&#xff0c;&#x7528;&#x96fb;&#x96f6;&#x6210;&#x9577;&#x300d;&#x3002;&lt;/span&gt;&lt;/p&gt;\n&lt;br /&gt;\n&lt;h3 class=\&quot;special-h-tag\&quot; style=\&quot;color: \&quot;&gt;&#x67ef;P&#x7684;&#x4e3b;&#x5f35;&lt;/h3&gt;&lt;div class=\&quot;sub-title\&quot;&gt;&lt;p&gt;&#x67ef;&#x6587;&#x54f2;&#x7684;&#x653f;&#x7b56;&#x4e3b;&#x5f35;&#xff0c;&#x4e0d;&#x662f;&#x4ec0;&#x9ebc;&#x5927;&#x5efa;&#x8a2d;&#x6216;&#x8ef8;&#x7dda;&#x7ffb;&#x8f49;&#xff0c;&#x800c;&#x662f;&#x8cbc;&#x8fd1;&#x5e02;&#x6c11;&#x751f;&#x6d3b;&#x7684;&#x9053;&#x8def;&#x6316;&#x88dc;&#x3001;&#x98df;&#x54c1;&#x5b89;&#x5168;&#x3001;&#x6559;&#x80b2;&#x8207;&#x91ab;&#x7642;&#x8cc7;&#x6e90;&#x7684;&#x5e73;&#x7b49;&#x3002;&#x5f9e;&#x91ab;&#x751f;&#x8f49;&#x63db;&#x70ba;&#x7d20;&#x4eba;&#x53c3;&#x653f;&#xff0c;&#x6211;&#x59cb;&#x7d42;&#x8a8d;&#x70ba;&#xff0c;&#x4e0d;&#x7ba1;&#x662f;&#x653f;&#x6cbb;&#x4eba;&#x7269;&#x6216;&#x5a92;&#x9ad4;&#xff0c;&#x90fd;&#x61c9;&#x8a72;&#x5805;&#x5b88;&#x57fa;&#x672c;&#x7684;&#x9053;&#x5fb7;&#x8207;&#x50f9;&#x503c;&#xff0c;&#x5426;&#x5247;&#x5c31;&#x6703;&#x9020;&#x6210;&#x4fe1;&#x4efb;&#x7684;&#x5d29;&#x89e3;&#xff0c;&#x4eba;&#x6c11;&#x4e4b;&#x9593;&#x4e0d;&#x4e92;&#x4fe1;&#xff0c;&#x66f4;&#x4e0d;&#x76f8;&#x4fe1;&#x653f;&#x5e9c;&#xff0c;&#x9019;&#x662f;&#x76ee;&#x524d;&#x53f0;&#x7063;&#x793e;&#x6703;&#x7a7a;&#x8f49;&#x7684;&#x91cd;&#x8981;&#x539f;&#x56e0;&#x3002;&#x5c0d;&#x6211;&#x800c;&#x8a00;&#xff0c;&#x9019;&#x4e0d;&#x53ea;&#x662f;&#x4e00;&#x5834;&#x9078;&#x8209;&#x800c;&#x5df2;&#xff0c;&#x5b83;&#x66f4;&#x662f;&#x4e00;&#x5834;&#x6539;&#x8b8a;&#x653f;&#x6cbb;&#x3001;&#x6539;&#x8b8a;&#x9078;&#x8209;&#x6587;&#x5316;&#x7684;&#x793e;&#x6703;&#x904b;&#x52d5;&#x3002;&lt;/p&gt;&lt;/div&gt;&lt;hr class=\&quot;separator style-2\&quot; style=\&quot;background-color:#efefef;border-color:#efefef;color:#efefef;\&quot;&gt;&lt;br /&gt;\n&lt;div class=\&quot;special-heading-wrap style1 0\&quot; data-animation=\&quot;fadeIn\&quot;&gt;&lt;/div&gt;&lt;br /&gt;",
+      "plain_content": "[http://www.youtube.com/watch?v=03eaS6qp4ow]\n先進節能城市\n【柯P新政】#14「柯Ｐ新政」NO.14  打造先進節能城市\n台北市熱島效應嚴重  柯P推海綿城市、綠建築\n台北市長參選人柯文哲繼先前推出的13支政策說明影片，今（8/15）日首次針對「能源」提出政見，主張將台北市打造成「先進節能城市」。柯文哲認為，核四停建以後，台灣社會必須在產業政策、能源政策、節能政策作一些調整，他舉例，產業政策不能再發展高耗能高汙染產業；能源政策則必須發展替代能源，如：太陽能、風力、水力、潮汐、生質能源，而節能政策則要推廣綠建築、智慧建築來減少能源的損耗。\n柯文哲指出，過去100年北半球增加了0.7度C，而台灣的都會區則增加了1.5度C，1980年以後，台北市的溫度增加比花蓮、台東、恆春高出了2倍，台北市在夏日中午的時候，溫度也比週邊的郊區高出了4.5度C，由此可見，台北市的熱島效應最為嚴重。\n針對這個困境，柯文哲提出了幾點節能策略。第一，建設一個水冷散熱的「海綿城市」，柯文哲分析，台北市用電量在夏季最多，又以中午時段達到高峰，因此要節省空調最重要的是降溫。柯文哲表示，台北市熱島效應最大原因是過度的水泥化、道路及建物吸熱但不散熱，導致悶熱的天氣增加，使用冷氣的時間、日數也增加。\n至於實際做法，柯文哲提倡市區的道路或廣場改成透水性的鋪面，鋪面縫隙當中並沒有封死，下雨的時候可以讓水滲到地底下，不會積在地面上，而當太陽出來時，這些水又可以蒸發來降低整個環境的溫度。此外，在空曠地廣設貯水池，讓屋頂跟路面上的積水可以流進去，同樣達到「雨天儲水，晴天散熱」的效果。柯文哲也強調，要全面綠化、屋頂綠化，以及種樹不砍樹。\n節能策略二，推廣綠建築和智慧建築，柯文哲主張，公共建築必須是節能省電的綠建築和智慧建築，一般建築凡是用電量低於標準的，電費應當給予打折優待；用電超過標準的，則市政府應當聘請節能公司免費協助輔導改善。柯文哲更鼓勵，凡是使用隔熱外牆、遮陽板、隔熱玻璃、省電照明、省電設備的建築，政府會協助融資，給予一定額度的補助，甚至直接從房屋稅跟地價稅來抵扣。\n柯文哲：我當市長，要讓經濟成長，用電零成長\n談到「開源」，柯文哲認為必須積極發展太陽能，因為比我們條件更差的國家，像德國、日本，過去幾年都在大量發展太陽能發電，柯文哲指出，目前中央政府採取屋頂設太陽能板的政策，作法是緩不濟急，因此只要台電願意以合理的價格來收購，柯文哲主張公開招商，由發電廠商來投資設立太陽能電廠。至於如何使用公共空間來設置太陽能板，柯文哲則說，像快速道路、捷運高架道、河濱高灘地、南向山坡地都可以利用。\n柯文哲也提出幾點鼓勵開源節流的做法，包括未來台北市將鼓勵優先採購綠能農場的農漁產品，如：太陽能溫室和風力電場所生產的農漁產品。 \n柯文哲表示，未來傳統的能源會越來越貴，而核能又不安全，因此必須要有其他的替代方案，柯文哲強調，要積極調整台北市的產業政策、能源政策和節能政策，努力開源節流。柯文哲說，他若當選台北市長，「要讓經濟成長，用電零成長」。\n\n柯P的主張柯文哲的政策主張，不是什麼大建設或軸線翻轉，而是貼近市民生活的道路挖補、食品安全、教育與醫療資源的平等。從醫生轉換為素人參政，我始終認為，不管是政治人物或媒體，都應該堅守基本的道德與價值，否則就會造成信任的崩解，人民之間不互信，更不相信政府，這是目前台灣社會空轉的重要原因。對我而言，這不只是一場選舉而已，它更是一場改變政治、改變選舉文化的社會運動。\n"
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 500
+  }
+}</code></pre>
+
+<div class="note-message">
+  <h4 class="note-title">
+    參數
+  </h4>
+  <dl>
+    <dt>GET page=?</dt>
+    <dd>第幾頁 (optional,default:0)</dd>
+    <dt>GET page_size=?</dt>
+    <dd>一次顯示幾筆 (optional,default:100,max:500)</dd>
+  </dl>
+</div>
+
+
+<h2 id="api-ch3">
+  相簿清單查詢
+</h2>
+
+<p>柯文哲每天的行程都有許多紀錄，在這你可以找到所有相簿</p>
+
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/albums/?accessToken=[YOUR_API_KEY]</code>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "errorMessage": null,
+  "data": [
+    {
+      "id": "72157646357158490",
+      "photos": "18",
+      "videos": 0,
+      "title": "2014.8.23圖書教育用品後援會",
+      "description": "",
+      "date_create": 1408802369000,
+      "date_update": 1408802386000,
+      "link": "https://www.flickr.com/photos/110839995@N06/sets/72157646357158490/",
+      "thumbnails": {
+        "small": "https://farm6.staticflickr.com/5588/14985662396_fcb33afc3e_n.jpg",
+        "small_square": "https://farm6.staticflickr.com/5588/14985662396_fcb33afc3e_s.jpg",
+        "large_square": "https://farm6.staticflickr.com/5588/14985662396_fcb33afc3e_q.jpg",
+        "thumbnail": "https://farm6.staticflickr.com/5588/14985662396_fcb33afc3e_t.jpg",
+        "medium": "https://farm6.staticflickr.com/5588/14985662396_fcb33afc3e_z.jpg",
+        "large": "https://farm6.staticflickr.com/5588/14985662396_fcb33afc3e_b.jpg",
+        "original": "https://farm6.staticflickr.com/5588/14985662396_undefined_o.jpg"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 500
+  }
+}</code></pre>
+
+<div class="note-message">
+  <h4 class="note-title">
+    參數
+  </h4>
+  <dl>
+    <dt>GET page=?</dt>
+    <dd>第幾頁 (optional,default:0)</dd>
+    <dt>GET page_size=?</dt>
+    <dd>一次顯示幾筆 (optional,default:100,max:500)</dd>
+  </dl>
+</div>
+
+
+<h2 id="api-ch4">
+  相簿照片查詢
+</h2>
+
+<p>給定相簿 ID 之後可以查詢裡面所有相片 </p>
+
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/albums/[ALBUM_ID]?accessToken=[YOUR_API_KEY]</code>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "errorMessage": null,
+  "data": {
+    "set": {
+      "id": "72157646239459867",
+      "title": "2014.8.20電信工程公會"
+    },
+    "photos": [
+      {
+        "id": "14791341020",
+        "images": {
+          "small": "https://farm6.staticflickr.com/5571/14791341020_3854a614d6_n.jpg",
+          "small_square": "https://farm6.staticflickr.com/5571/14791341020_3854a614d6_s.jpg",
+          "large_square": "https://farm6.staticflickr.com/5571/14791341020_3854a614d6_q.jpg",
+          "thumbnail": "https://farm6.staticflickr.com/5571/14791341020_3854a614d6_t.jpg",
+          "medium": "https://farm6.staticflickr.com/5571/14791341020_3854a614d6_z.jpg",
+          "large": "https://farm6.staticflickr.com/5571/14791341020_3854a614d6_b.jpg",
+          "original": "https://farm6.staticflickr.com/5571/14791341020_493c41de8c_o.jpg"
+        },
+        "date_upload": 1408525503000,
+        "date_taken": 1408517557000,
+        "location": {
+          "latitude": 0,
+          "longitude": 0
+        },
+        "title": "IMG_3823",
+        "isprimary": "0",
+        "link": "https://www.flickr.com/photos/110839995@N06/14791341020/in/set-72157646239459867"
+      }
+    ]
+  },
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 500
+  }
+}</code></pre>
+
+<div class="note-message">
+  <h4 class="note-title">
+   說明
+  </h4>
+  <dl>
+    <dt>small_square</dt>
+    <dd> 75x75 正方形裁切</dd>
+    <dt>large_square</dt>
+    <dd> 150x150 正方形裁切</dd>
+
+    <dt> thumbnail</dt>
+    <dd> 裁切比較長的一邊為 100px </dd>
+    <dt> small</dt>
+    <dd> 裁切比較長的一邊為 320px </dd>
+    <dt> medium</dt>
+    <dd> 裁切比較長的一邊為 640px </dd>
+    <dt> large</dt>
+    <dd> 裁切比較長的一邊為 1024px </dd>
+    <dt> original</dt>
+    <dd> 原圖大小 </dd>
+
+  </dl>
+  <h4 class="note-title">
+    參數
+  </h4>
+  <dl>
+    <dt>GET page=?</dt>
+    <dd>第幾頁 (optional,default:0)</dd>
+    <dt>GET page_size=?</dt>
+    <dd>一次顯示幾筆 (optional,default:100,max:500)</dd>
+  </dl>
+</div>
+
+<h2 id="api-ch5">
+   影片播放清單查詢
+</h2>
+
+<p>柯文哲有許多影片清單，像是柯P新政等等等，這裡可以取得"播放清單" (playlist)。</p>
+
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/videos/?accessToken=[YOUR_API_KEY]</code>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "errorMessage": null,
+  "data": [
+    {
+      "id": "PLivp01P9aEvZDSf-DNicnXhmJZQPA8rBc",
+      "title": "向新世代學習",
+      "description": "",
+      "publishedAt": "2014-08-16T11:25:34.000Z",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "link": "https://www.youtube.com/playlist?list=PLivp01P9aEvZDSf-DNicnXhmJZQPA8rBc",
+      "video_count": 5
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 100
+  }
+}</code></pre>
+
+<div class="note-message">
+  <h4 class="note-title">
+    參數
+  </h4>
+  <dl>
+    <dt>GET page=?</dt>
+    <dd>第幾頁 (optional,default:0)</dd>
+    <dt>GET page_size=?</dt>
+    <dd>一次顯示幾筆 (optional,default:100,max:500)</dd>
+  </dl>
+</div>
+
+<h2 id="api-ch6">
+  清單內影片查詢
+</h2>
+
+<p>給定清單 id 查閱特定播放清單(playlist) 裡面的影片們 。</p>
+
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/videos/[PLAYLIST_ID]?accessToken=[YOUR_API_KEY]</code>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "errorMessage": null,
+  "data": [
+    {
+      "id": "YjmkzYpPfTU",
+      "sys_id": "PLpaoUVtD2cSNTIxxkJEdgPeexmJjt4IGN0kBvaQqLkds",
+      "title": "【Go! Youth! 做你自己】柯P向新世代學習-預告片",
+      "description": "Go! Youth! 做你自己- 柯P向新世代學習系列短片，8/17～8/21，一共五天，每天晚上19:00上線。\n\n柯P官方網站：http://kptaipei.tw/\n柯P粉絲專頁：https://www.facebook.com/DoctorKoWJ",
+      "publishedAt": "2014-08-18T10:09:10.000Z",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/YjmkzYpPfTU/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "link": "https://www.youtube.com/watch?v=YjmkzYpPfTU"
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 100
+  }
+}</code></pre>
+
+<div class="note-message">
+  <h4 class="note-title">
+    參數
+  </h4>
+  <dl>
+    <dt>GET page=?</dt>
+    <dd>第幾頁 (optional,default:0)</dd>
+    <dt>GET page_size=?</dt>
+    <dd>一次顯示幾筆 (optional,default:100,max:500)</dd>
+  </dl>
+</div>
+
+
+<h2 id="api-ch7">
+   台北調音樂清單查詢
+</h2>
+
+<p>台北調共計有 82 首歌曲投稿，這裡可以取得"歌曲清單" (playlist)。</p>
+
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/musics/?accessToken=[YOUR_API_KEY]</code>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "errorMessage": null,
+  "data": [
+    {
+      "id": "1",
+      "name": "全部歌曲",
+      "count": 82
+    },
+    {
+      "id": "2",
+      "name": "票選入圍",
+      "count": 0
+    },
+    {
+      "id": "3",
+      "name": "評審嚴選",
+      "count": 0
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 3,
+    "resultsPerPage": 500
+  }
+}</code></pre>
+
+<div class="note-message">
+  <h4 class="note-title">
+    參數
+  </h4>
+  <dl>
+    <dt>GET page=?</dt>
+    <dd>第幾頁 (optional,default:0)</dd>
+    <dt>GET page_size=?</dt>
+    <dd>一次顯示幾筆 (optional,default:100,max:500)</dd>
+  </dl>
+</div>
+
+<h2 id="api-ch8">
+  台北調播放清單內歌曲查詢
+</h2>
+
+<p>給定清單 id 查閱特定播放清單(playlist) 裡面的音樂們(sound cloud)。要特別注意的是「請只用於播放」，請勿進行各種形式的鼓勵下載檔案、備份或重製，也不能拿來營利。</p>
+
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/musics/[PLAYLIST_ID]?accessToken=[YOUR_API_KEY]</code>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "errorMessage": null,
+  "data": [
+      {
+        "musicID": 48,
+        "soundcloudID": "onhdaixllula",
+        "votes": "24",
+        "song_name": "流水帳進行曲",
+        "groupname": "石倍宗",
+        "link": null,
+        "creative": " ",
+        "tags": "華語",
+        "track_id": 163687452,
+        "waveform_url": "https://w1.sndcdn.com/OhVu2jGhThio_m.png",
+        "stream_url": "https://api.soundcloud.com/tracks/163687452/stream?client_id=7d716d401f4d5096ceb5ab87fc0dc217",
+        "play_count": 1158,
+        "favoritings_count": 0,
+        "soundcloud_url": "http://soundcloud.com/kptaipei/onhdaixllula"
+      }
+
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 150
+  }
+}</code></pre>
+
+<div class="note-message">
+  <h4 class="note-title">
+    參數
+  </h4>
+  <dl>
+    <dt>GET page=?</dt>
+    <dd>第幾頁 (optional,default:0)</dd>
+    <dt>GET page_size=?</dt>
+    <dd>一次顯示幾筆 (optional,default:100,max:500)</dd>
+  </dl>
+</div>
+
+
+
+<h2 id="api-ch9">
+  競選經費查詢
+</h2>
+
+ <p>
+    主要欄位說明
+    <ul>
+      <li>account : 會計科目</li>
+      <li>start_date : 開始日期(yyyy/mm/dd) 形式</li>
+      <li>end_date : 結束日期(yyyy/mm/dd) 形式</li>
+      <li>start_timestamp :  timestamp (毫秒為單位的時間戳記) ，注意是"大於"、不是"超過"</li>
+      <li>end_timestamp : timestamp (毫秒為單位的時間戳記)，但注意是"未達"、不是"小於"。</li>
+      <li>label : 詳細內容</li>
+      <li>price : 金額</li>
+      <li>type : [income|expense] (收入|支出)</li>
+      <li>props : 各種類型會計科目的額外資料，像是人事費有銀行名(bank)跟帳戶(account)，
+        政治獻金有匿名與否(anonymous) 跟捐贈人數(counts)，支出費用則有傳票(voucher) 等資料。</li>
+    </ul>
+ </p>
+
+<div class="api">
+  <span class="label">GET</span>
+  <code>http://api.kptaipei.tw/v1/financial/all?accessToken=[YOUR_API_KEY]</code>
+</div>
+
+<p>資料範例：</p>
+
+<pre><code class="javascripts">{
+  "isSuccess": true,
+  "errorCode": 0,
+  "errorMessage": null,
+  "data": [
+    {
+      "account": "網路募款捐贈-匿名",
+      "start_date": "2014/4/1",
+      "end_date": "2014/4/30",
+      "label": "網路募款捐贈-匿名-四月份",
+      "props": {
+        "anonymous": 1,
+        "counts": 0
+      },
+      "price": 0,
+      "type": "income",
+      "start_timestamp": 1396281600000,
+      "end_timestamp": 1398873600000
+    },
+    {
+      "account": "網路募款捐贈-非匿名",
+      "start_date": "2014/4/1",
+      "end_date": "2014/4/30",
+      "label": "網路募款捐贈-非匿名-四月份",
+      "props": {
+        "anonymous": 0,
+        "counts": 0
+      },
+      "price": 0,
+      "type": "income",
+      "start_timestamp": 1396281600000,
+      "end_timestamp": 1398873600000
+    }
+  ]
+}</code></pre>
+
+<div class="note-message">
+  <h4 class="note-title">
+    參數
+  </h4>
+  <dl>
+    <dt>GET page=?</dt>
+    <dd>第幾頁 (optional,default:0)</dd>
+    <dt>GET page_size=?</dt>
+    <dd>一次顯示幾筆 (optional,default:100,max:500)</dd>
+  </dl>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="footer">
+  <div class="footer-top">
+    <div class="wrapper">
+      <ul class="big-links">
+        <li>
+          <a class="kp-taipei" href="http://kptaipei.tw/" target="_blank">柯文哲本尊官網</a>
+        </li>
+        <li>
+          <a class="rgba" href="http://rgba.tw" target="_blank">RGBA</a>
+        </li>
+        <li>
+          <a class="kp-ton" href="http://kptaipei.tw/kp-ton/" target="_blank">台北調你來定調</a>
+        </li>
+      </ul>
+      <ul class="small-links">
+        <li>
+          <a href="http://kptaipei.tw/" target="_blank">柯P新政</a>
+        </li>
+        <li>
+          <a href="http://kptaipei.tw/?page_id=2723" target="_blank">真・柯文哲</a>
+        </li>
+        <li>
+          <a href="http://kptaipei.tw/kp-ton/" target="_blank">臺北調，你來定調</a>
+        </li>
+        <li>
+          <a href="https://donate.kptaipei.tw" target="_blank">捐款支持</a>
+        </li>
+        <li>
+          <a href="http://kptaipei.tw/?page_id=2836" target="_blank">新聞稿</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/wildkp" target="_blank">野生柯P記錄團</a>
+        </li>
+      </ul>
+      <ul class="sns-links">
+        <li>
+          <a href="https://www.facebook.com/DoctorKoWJ" target="_blank"><i class="ss ss-facebook"></i>facebook 粉絲專頁</a>
+        </li>
+        <li>
+          <a href="https://www.flickr.com/photos/110839995@N06/" target="_blank"><i class="ss ss-flickr"></i>flickr 相簿</a>
+        </li>
+        <li>
+          <a href="http://kptaipei.tumblr.com" target="_blank"><i class="ss ss-tumblr"></i>tumblr 柯P新政</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCllMvuz1DIPIoqNnur7_Pig" target="_blank"><i class="ss ss-youtube"></i>youtube 影音</a>
+        </li>
+        <li>
+          <a href="mailto:unlimited@kptaipei.tw"><i class="ss ss-mail"></i>Email 客服</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrapper">
+      <div class="copyright">
+        &copy; 柯文哲野生官網&nbsp;<br class="pad-hide">unlimited 官方活動網站 2014
+      </div>
+      <div class="contact-us">
+        聯絡我們&nbsp;<a href="mailto:unlimited@kptaipei.tw">unlimited@kptaipei.tw</a>
+      </div>
+    </div>
+  </div>
+</div>
+    <script type="text/javascript">var _jf = _jf || [];_jf.push(['p','29084']);_jf.push(['_setFont','xingothic-tc-w3','css','.xingothic-tc-w3']);_jf.push(['_setFont','xingothic-tc-w3','alias','kp-w3']);(function(f,q,c,h,e,i,r,d){var k=f._jf;if(k.constructor===Object){return}var l,t=q.getElementsByTagName("html")[0],a=function(u){for(var v in k){if(k[v][0]==u){if(false===k[v][1].call(k)){break}}}},j=/\S+/g,o=/[\t\r\n\f]/g,b=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,g="".trim,s=g&&!g.call("\uFEFF\xA0")?function(u){return u==null?"":g.call(u)}:function(u){return u==null?"":(u+"").replace(b,"")},m=function(y){var w,z,v,u,x=typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):" ";if(z){u=0;while((v=w[u++])){if(z.indexOf(" "+v+" ")<0){z+=v+" "}}t[c]=s(z)}}},p=function(y){var w,z,v,u,x=arguments.length===0||typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):"";if(z){u=0;while((v=w[u++])){while(z.indexOf(" "+v+" ")>=0){z=z.replace(" "+v+" "," ")}}t[c]=y?s(z):""}}},n;k.push(["_eventActived",function(){p(h);m(e)}]);k.push(["_eventInactived",function(){p(h);m(i)}]);k.addScript=n=function(u,A,w,C,E,B){E=E||function(){};B=B||function(){};var x=q.createElement("script"),z=q.getElementsByTagName("script")[0],v,y=false,D=function(){x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;a("_eventInactived");B()};if(C){v=setTimeout(function(){D()},C)}x.type=A||"text/javascript";x.async=w;x.onload=x.onreadystatechange=function(G,F){if(!y&&(!x.readyState||/loaded|complete/.test(x.readyState))){y=true;if(C){clearTimeout(v)}x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;if(!F){setTimeout(function(){E()},200)}}};x.onerror=function(H,G,F){if(C){clearTimeout(v)}D();return true};x.src=u;z.parentNode.insertBefore(x,z)};a("_eventPreload");m(h);n(r,"text/javascript",false,3000)})(this,this.document,"className","jf-loading","jf-active","jf-inactive","//ds.justfont.com/js/stable/v/4.3/id/30668557695");</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script src="/vender/bootstrap.min.js" type="text/javascript"></script>
+<script src="/vender/highlight.pack.js" type="text/javascript"></script>
+<script src="/vender/jquery.hc-sticky.js" type="text/javascript"></script>
+<script src="/javascripts/all.js" type="text/javascript"></script>
+
+<script src="/vender/ss-social-regular/webfonts/ss-social.js" type="text/javascript"></script>
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-50968884-5', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
