@@ -1,2 +1,5 @@
+User-agent: facebookexternalhit
+Allow: /
+
 User-agent: *
-Disallow: /thanks-for-submitting-your-works
+Allow: /
